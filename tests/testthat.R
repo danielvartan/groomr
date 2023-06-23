@@ -30,11 +30,3 @@ test_check("groomr")
 # usethis::use_github_action("check-release")
 # usethis::use_logo(file.choose())
 # usethis::use_tidy_description()
-
-# # Encryption
-#
-# lockr::rsa_keygen()
-# lockr::lock_dir(dir = "./inst/extdata")
-# lockr::unlock_dir(dir = "./inst/extdata")
-# lockr::lock_file(file.choose())
-# lockr::unlock_file(file.choose())

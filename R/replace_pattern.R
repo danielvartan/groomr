@@ -65,7 +65,7 @@ replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
   checkmate::assert_character(replacement)
   gutils:::assert_identical(pattern, replacement, type = "length")
 
-  files <- list_files(dir)
+  files <- list_files(dir) #nolint
 
   cli::cli_progress_bar(
     "Replacing patterns", total = length(files), clear = FALSE

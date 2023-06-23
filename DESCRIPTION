@@ -1,5 +1,5 @@
 Package: groomr
-Title: Tools to Process Text Files
+Title: Tools to Tidy Text Files
 Version: 0.0.0.9000
 Authors@R: c(
         person(
@@ -10,7 +10,7 @@ Authors@R: c(
             comment = c(ORCID = "0000-0001-7782-759X")
             )
         )
-Description: A set of tools to process text files.
+Description: A set of tools to tidy text files.
 License: MIT + file LICENSE
 URL: https://github.com/giperbio/groomr/
 BugReports: https://github.com/giperbio/groomr/issues/

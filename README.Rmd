@@ -27,7 +27,7 @@ library(groomr)
 
 ## Overview
 
-`groomr` is an R package that helps you automate processes for tidying text files.
+`groomr` is an R package that helps you tidy text files.
 
 ## Installation
 

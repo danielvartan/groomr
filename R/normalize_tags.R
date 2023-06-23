@@ -53,7 +53,7 @@ normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
   checkmate::assert_directory_exists(dir)
   checkmate::assert_number(tag_line)
 
-  files <- list_files(dir)
+  files <- list_files(dir) #nolint
 
   cli::cli_progress_bar(
     "Normalizing tags", total = length(files), clear = FALSE
@@ -91,7 +91,5 @@ normalize_hashtag_string <- function(tag) {
     stringr::str_to_lower() |>
     stringr::str_squish() |>
     stringr::str_replace_all("[^[:alnum:]\\s#-]", "") |>
-    iconv(from = 'UTF-8', to = 'ASCII//TRANSLIT')
+    iconv(from = "UTF-8", to = "ASCII//TRANSLIT")
 }
-
-
