@@ -201,7 +201,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "21.819KB",
+  "fileSize": "21.546KB",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -215,7 +215,7 @@
           "@id": "https://orcid.org/0000-0001-7782-759X"
         }
       ],
-      "name": "{groomr}: Tools to tidy text files",
+      "name": "{groomr}: tools to tidy text files",
       "url": "https://giperbio.github.io/groomr/",
       "description": "R package version 0.0.0.9000"
     }

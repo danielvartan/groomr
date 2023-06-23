@@ -17,7 +17,7 @@ authors:
   orcid: https://orcid.org/0000-0001-7782-759X
 preferred-citation:
   type: unpublished
-  title: 'groomr: Tools to tidy text files'
+  title: 'groomr: tools to tidy text files'
   authors:
   - family-names: Vartanian
     given-names: Daniel
