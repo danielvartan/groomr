@@ -1,0 +1,43 @@
+Package: groomr
+Title: Tools to Process Text Files
+Version: 0.0.0.9000
+Authors@R: c(
+        person(
+            given = "Daniel",
+            family = "Vartanian",
+            role = c("aut", "cre", "ccp", "cph"),
+            email = "danvartan@gmail.com",
+            comment = c(ORCID = "0000-0001-7782-759X")
+            )
+        )
+Description: A set of tools to process text files.
+License: MIT + file LICENSE
+URL: https://github.com/giperbio/groomr/
+BugReports: https://github.com/giperbio/groomr/issues/
+Depends:
+    R (>= 4.2)
+Imports: 
+    checkmate (>= 2.2.0),
+    cli (>= 3.6.1),
+    gutils,
+    lifecycle (>= 1.0.3),
+    magrittr (>= 2.0.3),
+    stringr (>= 1.5.0)
+Suggests: 
+    covr (>= 3.6.2),
+    knitr (>= 1.43),
+    mockr (>= 0.2.1),
+    rmarkdown (>= 2.22),
+    spelling (>= 2.2.1),
+    testthat (>= 3.1.9)
+Remotes: 
+    github::giperbio/gutils
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: bzip2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

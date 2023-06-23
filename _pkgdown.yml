@@ -1,0 +1,38 @@
+url: https://giperbio.github.io/groomr/
+
+template:
+  params:
+    bootswatch: cosmo
+    mathjax: true
+    noindex: false
+
+navbar:
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - news
+    right: github
+  components:
+    home: ~
+    intro: ~
+    articles: ~
+
+reference:
+- title: Tags
+  contents:
+  - normalize_tags
+
+- title: Strings
+  contents:
+  - replace_pattern
+
+authors:
+  Daniel Vartanian:
+    href: https://github.com/danielvartan
+
+development:
+  mode: auto
+  version_label: warning

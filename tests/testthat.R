@@ -1,0 +1,40 @@
+library(checkmate)
+library(groomr)
+library(testthat)
+
+test_check("groomr")
+
+# # For development use only (comment the code after use (Ctrl + Shift + C)).
+#
+# .rs.restartR()
+# cffr::cff_write()
+# codemetar::write_codemeta()
+# covr::package_coverage()
+# devtools::check()
+# devtools::document()
+# devtools::install()
+# devtools::release()
+# devtools:test()
+# goodpractice::gp()
+# lintr::use_lintr(type = "tidyverse")
+# lintr::lint_package()
+# normalizePath(readClipboard(), "/", mustWork = FALSE)
+# pkgdown::build_article()
+# pkgdown::build_favicons()
+# pkgdown::build_reference()
+# pkgdown::build_site()
+# spelling::spell_check_package()
+# spelling::update_wordlist()
+# urlchecker::url_check()
+# usethis::use_coverage()
+# usethis::use_github_action("check-release")
+# usethis::use_logo(file.choose())
+# usethis::use_tidy_description()
+
+# # Encryption
+#
+# lockr::rsa_keygen()
+# lockr::lock_dir(dir = "./inst/extdata")
+# lockr::unlock_dir(dir = "./inst/extdata")
+# lockr::lock_file(file.choose())
+# lockr::unlock_file(file.choose())
