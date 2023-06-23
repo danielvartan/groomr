@@ -23,7 +23,7 @@ navbar:
 reference:
 - title: Tags
   contents:
-  - normalize_tags
+  - normalize_hashtags
 
 - title: Strings
   contents:
