@@ -8,10 +8,10 @@
 #' `normalize_hashtags()` lower case and remove accents and non-alphanumeric
 #' characters from hashtags.
 #'
-#' __TIP__:
+#' @section Tip:
 #'
 #' ```
-#' normalize_hashtag(normalizePath(readClipboard(), "/", mustWork = FALSE))
+#' normalize_hashtags(normalizePath(readClipboard(), "/", mustWork = FALSE))
 #' ```
 #'
 #' @param dir (optional) a string indicating the directory of the files. This
@@ -26,28 +26,21 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
 #' file_name <- tempfile(tmpdir = tempfile())
 #' dir_name <- dirname(file_name)
 #' dir.create(dir_name)
 #' file.create(file_name)
 #'
-#' con <- file(file_name)
-#' open(con, open = "r+")
-#'
-#' data <- c("#tEs43(23)ds, "#45&$dAAsad-dsade", "", "Test", "")
-#'
+#' con <- file(file_name, "r+")
+#' data <- c("#tEs43(23)ds", "#45&$dAAsad-dsade", "", "Test", "")
 #' writeLines(data, con = con)
 #' close(con)
 #'
 #' normalize_hashtags(dir_name, tag_line = 1)
 #'
-#' con <- file(file_name)
-#' open(con, open = "r+")
+#' con <- file(file_name, "r+")
 #' readLines(con)
-#'
 #' close(con)
-#' }
 normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
   checkmate::assert_string(dir)
   checkmate::assert_directory_exists(dir)
@@ -57,25 +50,23 @@ normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
 
   cli::cli_progress_bar(
     "Normalizing tags", total = length(files), clear = FALSE
-    )
+  )
 
   for (i in files) {
-    con <- file(i)
-    open(con, open = "r+")
-
+    con <- file(i, "r+")
     data <- readLines(con, warn = FALSE)
 
     if (length(data) == 0) {
-      cli::cli_progress_update()
       close(con)
+      cli::cli_progress_update()
 
       next
     }
 
     data[tag_line] <- normalize_hashtag_string(data[tag_line])
     write(data, file = con)
-
     close(con)
+
     cli::cli_progress_update()
   }
 

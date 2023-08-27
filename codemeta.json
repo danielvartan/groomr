@@ -85,7 +85,7 @@
       "@type": "SoftwareApplication",
       "identifier": "rmarkdown",
       "name": "rmarkdown",
-      "version": ">= 2.22",
+      "version": ">= 2.24",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -111,7 +111,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 3.1.9",
+      "version": ">= 3.1.10",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -201,7 +201,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "21.546KB",
+  "fileSize": "25.139KB",
   "citation": [
     {
       "@type": "CreativeWork",

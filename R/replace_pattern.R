@@ -8,7 +8,7 @@
 #' `replace_pattern()` search each line of a file and replace a specific pattern
 #' when found.
 #'
-#' __TIP__:
+#' @section Tip:
 #'
 #' ```
 #' replace_pattern(
@@ -20,10 +20,10 @@
 #' @param dir (optional) a string indicating the directory of the files. This
 #'   function will look up just for files, directories will not be affected.
 #'   (default:: `utils::choose.dir()`).
-#' @param pattern An [character][base::character()] vector indicating the
+#' @param pattern A [character][base::character()] vector indicating the
 #'   pattern to look for. The default interpretation is a regular expression.
 #'   This parameter will be used on [stringr::str_replace_all()].
-#' @param replacement An [character][base::character()] vector indicating the
+#' @param replacement A [character][base::character()] vector indicating the
 #'   replacement value. This parameter will be used on
 #'   [stringr::str_replace_all()].
 #'
@@ -33,31 +33,25 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
 #' file_name <- tempfile(tmpdir = tempfile())
 #' dir_name <- dirname(file_name)
 #' dir.create(dir_name)
 #' file.create(file_name)
 #'
-#' con <- file(file_name)
-#' open(con, open = "r+")
-#'
+#' con <- file(file_name, "r+")
 #' data <- c("01:00:56", "", "Test", "")
-#'
 #' writeLines(data, con = con)
 #' close(con)
 #'
-#' remove_pattern(
-#'   dir = dir_name, pattern = "([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]",
+#' replace_pattern(
+#'   dir = dir_name,
+#'   pattern = "([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]",
 #'   replacement = ""
 #'   )
 #'
-#' con <- file(file_name)
-#' open(con, open = "r+")
+#' con <- file(file_name, "r+")
 #' readLines(con)
-#'
 #' close(con)
-#' }
 replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
   checkmate::assert_string(dir)
   checkmate::assert_directory_exists(dir)
@@ -72,22 +66,20 @@ replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
   )
 
   for (i in files) {
-    con <- file(i)
-    open(con, open = "r+")
-
+    con <- file(i, "r+")
     data <- readLines(con, warn = FALSE)
 
     if (length(data) == 0) {
-      cli::cli_progress_update()
       close(con)
+      cli::cli_progress_update()
 
       next
     }
 
     data <- stringr::str_replace_all(data, pattern, replacement)
     write(data, file = con)
-
     close(con)
+
     cli::cli_progress_update()
   }
 

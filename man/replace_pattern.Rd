@@ -11,11 +11,11 @@ replace_pattern(dir = utils::choose.dir(), pattern, replacement)
 function will look up just for files, directories will not be affected.
 (default:: \code{utils::choose.dir()}).}
 
-\item{pattern}{An \link[base:character]{character} vector indicating the
+\item{pattern}{A \link[base:character]{character} vector indicating the
 pattern to look for. The default interpretation is a regular expression.
 This parameter will be used on \code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
 
-\item{replacement}{An \link[base:character]{character} vector indicating the
+\item{replacement}{A \link[base:character]{character} vector indicating the
 replacement value. This parameter will be used on
 \code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
 }
@@ -28,8 +28,9 @@ this function.
 
 \code{replace_pattern()} search each line of a file and replace a specific pattern
 when found.
+}
+\section{Tip}{
 
-\strong{TIP}:
 
 \if{html}{\out{<div class="sourceCode">}}\preformatted{replace_pattern(
   dir = normalizePath(readClipboard(), "/", mustWork = FALSE),
@@ -37,31 +38,26 @@ when found.
 )
 }\if{html}{\out{</div>}}
 }
+
 \examples{
-\dontrun{
 file_name <- tempfile(tmpdir = tempfile())
 dir_name <- dirname(file_name)
 dir.create(dir_name)
 file.create(file_name)
 
-con <- file(file_name)
-open(con, open = "r+")
-
+con <- file(file_name, "r+")
 data <- c("01:00:56", "", "Test", "")
-
 writeLines(data, con = con)
 close(con)
 
-remove_pattern(
-  dir = dir_name, pattern = "([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]",
+replace_pattern(
+  dir = dir_name,
+  pattern = "([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]",
   replacement = ""
   )
 
-con <- file(file_name)
-open(con, open = "r+")
+con <- file(file_name, "r+")
 readLines(con)
-
 close(con)
-}
 }
 \concept{string functions.}

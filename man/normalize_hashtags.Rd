@@ -23,34 +23,29 @@ this function. It only works for hashed tags.
 
 \code{normalize_hashtags()} lower case and remove accents and non-alphanumeric
 characters from hashtags.
+}
+\section{Tip}{
 
-\strong{TIP}:
 
-\if{html}{\out{<div class="sourceCode">}}\preformatted{normalize_hashtag(normalizePath(readClipboard(), "/", mustWork = FALSE))
+\if{html}{\out{<div class="sourceCode">}}\preformatted{normalize_hashtags(normalizePath(readClipboard(), "/", mustWork = FALSE))
 }\if{html}{\out{</div>}}
 }
+
 \examples{
-\dontrun{
 file_name <- tempfile(tmpdir = tempfile())
 dir_name <- dirname(file_name)
 dir.create(dir_name)
 file.create(file_name)
 
-con <- file(file_name)
-open(con, open = "r+")
-
-data <- c("#tEs43(23)ds, "#45&$dAAsad-dsade", "", "Test", "")
-
+con <- file(file_name, "r+")
+data <- c("#tEs43(23)ds", "#45&$dAAsad-dsade", "", "Test", "")
 writeLines(data, con = con)
 close(con)
 
 normalize_hashtags(dir_name, tag_line = 1)
 
-con <- file(file_name)
-open(con, open = "r+")
+con <- file(file_name, "r+")
 readLines(con)
-
 close(con)
-}
 }
 \concept{tag functions.}

@@ -2,5 +2,6 @@
 
 export(normalize_hashtags)
 export(replace_pattern)
+export(split_file)
 importFrom(lifecycle,deprecate_soft)
 importFrom(magrittr,"%>%")

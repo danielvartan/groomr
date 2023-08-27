@@ -66,8 +66,8 @@ references:
   url: https://cli.r-lib.org
   repository: https://CRAN.R-project.org/package=cli
   authors:
-  - family-names: Csardi
-    given-names: Gabor
+  - family-names: Csárdi
+    given-names: Gábor
     email: csardi.gabor@gmail.com
   year: '2023'
   version: '>= 3.6.1'
@@ -205,7 +205,7 @@ references:
     email: rich@posit.co
     orcid: https://orcid.org/0000-0003-3925-190X
   year: '2023'
-  version: '>= 2.22'
+  version: '>= 2.24'
 - type: software
   title: spelling
   abstract: 'spelling: Tools for Spell Checking in R'
@@ -233,4 +233,4 @@ references:
     given-names: Hadley
     email: hadley@posit.co
   year: '2023'
-  version: '>= 3.1.9'
+  version: '>= 3.1.10'

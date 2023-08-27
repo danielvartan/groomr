@@ -27,9 +27,9 @@ Suggests:
     covr (>= 3.6.2),
     knitr (>= 1.43),
     mockr (>= 0.2.1),
-    rmarkdown (>= 2.22),
+    rmarkdown (>= 2.24),
     spelling (>= 2.2.1),
-    testthat (>= 3.1.9)
+    testthat (>= 3.1.10)
 Remotes: 
     github::giperbio/gutils
 VignetteBuilder: 

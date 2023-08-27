@@ -29,6 +29,10 @@ reference:
   contents:
   - replace_pattern
 
+- title: Files
+  contents:
+  - split_file
+
 authors:
   Daniel Vartanian:
     href: https://github.com/danielvartan
