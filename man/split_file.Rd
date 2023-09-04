@@ -4,7 +4,7 @@
 \alias{split_file}
 \title{Split files into parts}
 \usage{
-split_file(file = file.choose(), n, dir = dirname(file), has_header = TRUE)
+split_file(file = file.choose(), n, dir = dirname(file), has_header = FALSE)
 }
 \arguments{
 \item{file}{(optional) a string indicating the file path.
@@ -17,7 +17,8 @@ amount of parts to split the file.}
 file parts. (default:: \code{base::dirname(file)}).}
 
 \item{has_header}{(optional) a \code{\link[base:logical]{logical}} flag
-indicating if the file has a header (e.g., a CSV file). (default: \code{TRUE}).}
+indicating if the file has a header (e.g., a CSV file). If \code{TRUE}, the
+header will be repeated as the first line in every part (default: \code{FALSE}).}
 }
 \value{
 An invisible \code{NULL}. This function don't aim to return values.
@@ -36,9 +37,21 @@ data <- as.character(0:100)
 writeLines(data, con = con)
 close(con)
 
-split_file(file = file_name, n = 3, has_header = FALSE)
+split_file(file = file_name, n = 3)
 
 con <- file(file_name, "r+")
+readLines(con)
+close(con)
+
+con <- file(paste0(file_name, "_part-1"), "r+")
+readLines(con)
+close(con)
+
+con <- file(paste0(file_name, "_part-2"), "r+")
+readLines(con)
+close(con)
+
+con <- file(paste0(file_name, "_part-3"), "r+")
 readLines(con)
 close(con)
 }

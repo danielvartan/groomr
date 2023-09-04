@@ -11,7 +11,8 @@
 #' @param dir (optional) a string indicating the directory where to write the
 #'  file parts. (default:: `base::dirname(file)`).
 #' @param has_header (optional) a [`logical`][base::as.logical()] flag
-#'   indicating if the file has a header (e.g., a CSV file). (default: `TRUE`).
+#'   indicating if the file has a header (e.g., a CSV file). If `TRUE`, the
+#'   header will be repeated as the first line in every part (default: `FALSE`).
 #'
 #' @return An invisible `NULL`. This function don't aim to return values.
 #'
@@ -29,13 +30,25 @@
 #' writeLines(data, con = con)
 #' close(con)
 #'
-#' split_file(file = file_name, n = 3, has_header = FALSE)
+#' split_file(file = file_name, n = 3)
 #'
 #' con <- file(file_name, "r+")
 #' readLines(con)
 #' close(con)
+#'
+#' con <- file(paste0(file_name, "_part-1"), "r+")
+#' readLines(con)
+#' close(con)
+#'
+#' con <- file(paste0(file_name, "_part-2"), "r+")
+#' readLines(con)
+#' close(con)
+#'
+#' con <- file(paste0(file_name, "_part-3"), "r+")
+#' readLines(con)
+#' close(con)
 split_file <- function(file = file.choose(), n, dir = dirname(file),
-                       has_header = TRUE) {
+                       has_header = FALSE) {
   checkmate::assert_string(file)
   checkmate::assert_file_exists(file)
   checkmate::assert_integerish(n, lower = 2)
