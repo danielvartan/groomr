@@ -19,10 +19,10 @@ Depends:
 Imports: 
     checkmate (>= 2.2.0),
     cli (>= 3.6.1),
-    gutils,
     lifecycle (>= 1.0.3),
     magrittr (>= 2.0.3),
-    stringr (>= 1.5.0)
+    stringr (>= 1.5.0),
+    rutils
 Suggests: 
     covr (>= 3.6.2),
     knitr (>= 1.43),
@@ -31,7 +31,7 @@ Suggests:
     spelling (>= 2.2.1),
     testthat (>= 3.1.10)
 Remotes: 
-    github::giperbio/gutils
+    github::danielvartan/rutils
 VignetteBuilder: 
     knitr
 Config/testthat/edition: 3

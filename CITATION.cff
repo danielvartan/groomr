@@ -72,17 +72,6 @@ references:
   year: '2023'
   version: '>= 3.6.1'
 - type: software
-  title: gutils
-  abstract: 'gutils: Utility Functions Created by the GIPERBIO Developer Team'
-  notes: Imports
-  url: https://giperbio.github.io/gutils/
-  authors:
-  - family-names: Vartanian
-    given-names: Daniel
-    email: danvartan@gmail.com
-    orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2023'
-- type: software
   title: lifecycle
   abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'
   notes: Imports
@@ -125,6 +114,17 @@ references:
     email: hadley@rstudio.com
   year: '2023'
   version: '>= 1.5.0'
+- type: software
+  title: rutils
+  abstract: 'rutils: Utility Functions for R'
+  notes: Imports
+  url: https://danielvartan.github.io/rutils/
+  authors:
+  - family-names: Vartanian
+    given-names: Daniel
+    email: danvartan@gmail.com
+    orcid: https://orcid.org/0000-0001-7782-759X
+  year: '2023'
 - type: software
   title: covr
   abstract: 'covr: Test Coverage for Packages'

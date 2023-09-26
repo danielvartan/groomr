@@ -72,11 +72,11 @@ split_file <- function(file = file.choose(), n, dir = dirname(file),
     ))
   }
 
-  ext <- gutils:::get_file_ext(file)
+  ext <- rutils:::get_file_ext(file)
   if (is.na(ext)) ext <- ""
-  file_name <- gutils:::get_file_name_without_ext(file)
+  file_name <- rutils:::get_file_name_without_ext(file)
 
-  data <- data |> gutils:::cut_into_parts(n)
+  data <- data |> rutils:::cut_into_parts(n)
 
   for (i in seq_along(data)) {
     file_i <- file.path(dir, paste0(file_name, "_part-", i, ext))

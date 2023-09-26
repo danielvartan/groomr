@@ -57,7 +57,7 @@ replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
   checkmate::assert_directory_exists(dir)
   checkmate::assert_character(pattern)
   checkmate::assert_character(replacement)
-  gutils:::assert_identical(pattern, replacement, type = "length")
+  rutils:::assert_identical(pattern, replacement, type = "length")
 
   files <- list_files(dir) #nolint
 

@@ -13,7 +13,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.3.0 (2023-04-21 ucrt)",
+  "runtimePlatform": "R version 4.3.1 (2023-06-16 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -156,12 +156,6 @@
     },
     "4": {
       "@type": "SoftwareApplication",
-      "identifier": "gutils",
-      "name": "gutils",
-      "sameAs": "https://github.com/giperbio/gutils"
-    },
-    "5": {
-      "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
       "version": ">= 1.0.3",
@@ -173,7 +167,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=lifecycle"
     },
-    "6": {
+    "5": {
       "@type": "SoftwareApplication",
       "identifier": "magrittr",
       "name": "magrittr",
@@ -186,7 +180,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=magrittr"
     },
-    "7": {
+    "6": {
       "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
@@ -199,9 +193,15 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     },
+    "7": {
+      "@type": "SoftwareApplication",
+      "identifier": "rutils",
+      "name": "rutils",
+      "sameAs": "https://github.com/danielvartan/rutils"
+    },
     "SystemRequirements": null
   },
-  "fileSize": "25.139KB",
+  "fileSize": "25.745KB",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -221,7 +221,7 @@
     }
   ],
   "releaseNotes": "https://github.com/giperbio/groomr/blob/master/NEWS.md",
-  "readme": "https://github.com/giperbio/groomr/blob/main/README.md",
+  "readme": "https://github.com/danielvartan/groomr/blob/main/README.md",
   "contIntegration": ["https://github.com/giperbio/groomr/actions", "https://app.codecov.io/gh/giperbio/groomr?branch=main"],
   "developmentStatus": ["https://www.repostatus.org/#wip", "https://lifecycle.r-lib.org/articles/stages.html#experimental"],
   "keywords": ["r", "r-package", "cleaning"]
