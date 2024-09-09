@@ -1,36 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://giperbio.github.io/groomr/404.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/index.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/reference/groomr-package.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/reference/normalize_hashtags.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/reference/replace_pattern.html</loc>
-  </url>
-  <url>
-    <loc>https://giperbio.github.io/groomr/reference/split_file.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://danielvartan.github.io/groomr/404.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/CONTRIBUTING.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/LICENSE-text.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/LICENSE.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/authors.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/index.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/news/index.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/blank_line_neighbors.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/groomr-package.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/index.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/normalize_hashtags.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/remove_blank_line_dups.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/replace_pattern.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/split_file.html</loc></url>
 </urlset>
+
