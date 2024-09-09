@@ -60,6 +60,6 @@ MIT](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/lic
 
 <br>
 
-Become an `prettycheck` supporter!
+Become an `groomr` supporter!
 
-Click [here](https://github.com/sponsors/danielvartan) to make a donation. Please indicate the `actverse` package in your donation message.
+Click [here](https://github.com/sponsors/danielvartan) to make a donation. Please indicate the `groomr` package in your donation message.
