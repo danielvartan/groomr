@@ -1,14 +1,14 @@
-# -----------------------------------------------------------
-# CITATION file created with {cffr} R package, v0.5.0
+# --------------------------------------------
+# CITATION file created with {cffr} R package
 # See also: https://docs.ropensci.org/cffr/
-# -----------------------------------------------------------
+# --------------------------------------------
  
 cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
 license: MIT
 title: 'groomr: Tools to Tidy Text Files'
-version: 0.0.0.9000
+version: 0.0.0.9002
 abstract: A set of tools to tidy text files.
 authors:
 - family-names: Vartanian
@@ -23,11 +23,11 @@ preferred-citation:
     given-names: Daniel
     email: danvartan@gmail.com
     orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2023'
-  url: https://giperbio.github.io/groomr/
+  year: '2024'
+  url: https://danielvartan.github.io/groomr/
   notes: R package version 0.0.0.9000
-repository-code: https://github.com/giperbio/groomr/issues/
-url: https://github.com/giperbio/groomr/
+repository-code: https://github.com/danielvartan/groomr/issues/
+url: https://github.com/danielvartan/groomr/
 contact:
 - family-names: Vartanian
   given-names: Daniel
@@ -40,25 +40,11 @@ references:
   url: https://www.R-project.org/
   authors:
   - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2023'
   institution:
     name: R Foundation for Statistical Computing
-  version: '>= 4.2'
-- type: software
-  title: checkmate
-  abstract: 'checkmate: Fast and Versatile Argument Checks'
-  notes: Imports
-  url: https://mllg.github.io/checkmate/
-  repository: https://CRAN.R-project.org/package=checkmate
-  authors:
-  - family-names: Lang
-    given-names: Michel
-    email: michellang@gmail.com
-    orcid: https://orcid.org/0000-0001-9754-0393
-  year: '2023'
-  version: '>= 2.2.0'
+    address: Vienna, Austria
+  year: '2024'
+  version: '>= 4.4'
 - type: software
   title: cli
   abstract: 'cli: Helpers for Developing Command Line Interfaces'
@@ -69,8 +55,35 @@ references:
   - family-names: Csárdi
     given-names: Gábor
     email: csardi.gabor@gmail.com
-  year: '2023'
-  version: '>= 3.6.1'
+  year: '2024'
+  doi: 10.32614/CRAN.package.cli
+  version: '>= 3.6.3'
+- type: software
+  title: dplyr
+  abstract: 'dplyr: A Grammar of Data Manipulation'
+  notes: Imports
+  url: https://dplyr.tidyverse.org
+  repository: https://CRAN.R-project.org/package=dplyr
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+    orcid: https://orcid.org/0000-0003-4757-117X
+  - family-names: François
+    given-names: Romain
+    orcid: https://orcid.org/0000-0002-2444-4226
+  - family-names: Henry
+    given-names: Lionel
+  - family-names: Müller
+    given-names: Kirill
+    orcid: https://orcid.org/0000-0002-1416-3412
+  - family-names: Vaughan
+    given-names: Davis
+    email: davis@posit.co
+    orcid: https://orcid.org/0000-0003-4777-038X
+  year: '2024'
+  doi: 10.32614/CRAN.package.dplyr
+  version: '>= 1.1.4'
 - type: software
   title: lifecycle
   abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'
@@ -80,13 +93,14 @@ references:
   authors:
   - family-names: Henry
     given-names: Lionel
-    email: lionel@rstudio.com
+    email: lionel@posit.co
   - family-names: Wickham
     given-names: Hadley
-    email: hadley@rstudio.com
+    email: hadley@posit.co
     orcid: https://orcid.org/0000-0003-4757-117X
-  year: '2023'
-  version: '>= 1.0.3'
+  year: '2024'
+  doi: 10.32614/CRAN.package.lifecycle
+  version: '>= 1.0.4'
 - type: software
   title: magrittr
   abstract: 'magrittr: A Forward-Pipe Operator for R'
@@ -100,20 +114,39 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@rstudio.com
-  year: '2023'
+  year: '2024'
+  doi: 10.32614/CRAN.package.magrittr
   version: '>= 2.0.3'
 - type: software
-  title: stringr
-  abstract: 'stringr: Simple, Consistent Wrappers for Common String Operations'
+  title: prettycheck
+  abstract: 'prettycheck: Pretty assertive programming'
   notes: Imports
-  url: https://stringr.tidyverse.org
-  repository: https://CRAN.R-project.org/package=stringr
+  url: https://github.com/danielvartan/prettycheck/
+  authors:
+  - family-names: Vartanian
+    given-names: Daniel
+    email: danvartan@gmail.com
+    orcid: https://orcid.org/0000-0001-7782-759X
+  year: '2024'
+- type: software
+  title: readr
+  abstract: 'readr: Read Rectangular Text Data'
+  notes: Imports
+  url: https://readr.tidyverse.org
+  repository: https://CRAN.R-project.org/package=readr
   authors:
   - family-names: Wickham
     given-names: Hadley
-    email: hadley@rstudio.com
-  year: '2023'
-  version: '>= 1.5.0'
+    email: hadley@posit.co
+  - family-names: Hester
+    given-names: Jim
+  - family-names: Bryan
+    given-names: Jennifer
+    email: jenny@posit.co
+    orcid: https://orcid.org/0000-0002-6983-2759
+  year: '2024'
+  doi: 10.32614/CRAN.package.readr
+  version: '>= 2.1.5'
 - type: software
   title: rutils
   abstract: 'rutils: Utility Functions for R'
@@ -124,7 +157,20 @@ references:
     given-names: Daniel
     email: danvartan@gmail.com
     orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2023'
+  year: '2024'
+- type: software
+  title: stringr
+  abstract: 'stringr: Simple, Consistent Wrappers for Common String Operations'
+  notes: Imports
+  url: https://stringr.tidyverse.org
+  repository: https://CRAN.R-project.org/package=stringr
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  year: '2024'
+  doi: 10.32614/CRAN.package.stringr
+  version: '>= 1.5.1'
 - type: software
   title: covr
   abstract: 'covr: Test Coverage for Packages'
@@ -135,8 +181,9 @@ references:
   - family-names: Hester
     given-names: Jim
     email: james.f.hester@gmail.com
-  year: '2023'
-  version: '>= 3.6.2'
+  year: '2024'
+  doi: 10.32614/CRAN.package.covr
+  version: '>= 3.6.4'
 - type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
@@ -148,8 +195,9 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
-  year: '2023'
-  version: '>= 1.43'
+  year: '2024'
+  doi: 10.32614/CRAN.package.knitr
+  version: '>= 1.48'
 - type: software
   title: mockr
   abstract: 'mockr: Mocking in R'
@@ -160,57 +208,14 @@ references:
   - family-names: Müller
     given-names: Kirill
     email: kirill@cynkra.com
-  year: '2023'
+  year: '2024'
+  doi: 10.32614/CRAN.package.mockr
   version: '>= 0.2.1'
-- type: software
-  title: rmarkdown
-  abstract: 'rmarkdown: Dynamic Documents for R'
-  notes: Suggests
-  url: https://pkgs.rstudio.com/rmarkdown/
-  repository: https://CRAN.R-project.org/package=rmarkdown
-  authors:
-  - family-names: Allaire
-    given-names: JJ
-    email: jj@posit.co
-  - family-names: Xie
-    given-names: Yihui
-    email: xie@yihui.name
-    orcid: https://orcid.org/0000-0003-0645-5666
-  - family-names: Dervieux
-    given-names: Christophe
-    email: cderv@posit.co
-    orcid: https://orcid.org/0000-0003-4474-2498
-  - family-names: McPherson
-    given-names: Jonathan
-    email: jonathan@posit.co
-  - family-names: Luraschi
-    given-names: Javier
-  - family-names: Ushey
-    given-names: Kevin
-    email: kevin@posit.co
-  - family-names: Atkins
-    given-names: Aron
-    email: aron@posit.co
-  - family-names: Wickham
-    given-names: Hadley
-    email: hadley@posit.co
-  - family-names: Cheng
-    given-names: Joe
-    email: joe@posit.co
-  - family-names: Chang
-    given-names: Winston
-    email: winston@posit.co
-  - family-names: Iannone
-    given-names: Richard
-    email: rich@posit.co
-    orcid: https://orcid.org/0000-0003-3925-190X
-  year: '2023'
-  version: '>= 2.24'
 - type: software
   title: spelling
   abstract: 'spelling: Tools for Spell Checking in R'
   notes: Suggests
-  url: https://docs.ropensci.org/spelling/
+  url: https://ropensci.r-universe.dev/spelling
   repository: https://CRAN.R-project.org/package=spelling
   authors:
   - family-names: Ooms
@@ -220,8 +225,9 @@ references:
   - family-names: Hester
     given-names: Jim
     email: james.hester@rstudio.com
-  year: '2023'
-  version: '>= 2.2.1'
+  year: '2024'
+  doi: 10.32614/CRAN.package.spelling
+  version: '>= 2.3.0'
 - type: software
   title: testthat
   abstract: 'testthat: Unit Testing for R'
@@ -232,5 +238,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2023'
-  version: '>= 3.1.10'
+  year: '2024'
+  doi: 10.32614/CRAN.package.testthat
+  version: '>= 3.2.1.1'
+

@@ -11,8 +11,8 @@ A set of tools to tidy text files.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/giperbio/groomr/}
-  \item Report bugs at \url{https://github.com/giperbio/groomr/issues/}
+  \item \url{https://github.com/danielvartan/groomr/}
+  \item Report bugs at \url{https://github.com/danielvartan/groomr/issues/}
 }
 
 }

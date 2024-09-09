@@ -53,10 +53,10 @@
 #' readLines(con)
 #' close(con)
 replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
-  checkmate::assert_string(dir)
-  checkmate::assert_directory_exists(dir)
-  checkmate::assert_character(pattern)
-  checkmate::assert_character(replacement)
+  prettycheck:::assert_string(dir)
+  prettycheck:::assert_directory_exists(dir)
+  prettycheck:::assert_character(pattern)
+  prettycheck:::assert_character(replacement)
   rutils:::assert_identical(pattern, replacement, type = "length")
 
   files <- list_files(dir) #nolint

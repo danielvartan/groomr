@@ -10,8 +10,7 @@ split_file(file = file.choose(), n, dir = dirname(file), has_header = FALSE)
 \item{file}{(optional) a string indicating the file path.
 (default:: \code{base::file.choose()}).}
 
-\item{n}{An \link[checkmate:checkIntegerish]{integerish} indicating the
-amount of parts to split the file.}
+\item{n}{An integer number indicating the amount of parts to split the file.}
 
 \item{dir}{(optional) a string indicating the directory where to write the
 file parts. (default:: \code{base::dirname(file)}).}

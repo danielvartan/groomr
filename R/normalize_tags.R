@@ -42,9 +42,9 @@
 #' readLines(con)
 #' close(con)
 normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
-  checkmate::assert_string(dir)
-  checkmate::assert_directory_exists(dir)
-  checkmate::assert_number(tag_line)
+  prettycheck:::assert_string(dir)
+  prettycheck:::assert_directory_exists(dir)
+  prettycheck:::assert_number(tag_line)
 
   files <- list_files(dir) #nolint
 
@@ -76,7 +76,7 @@ normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
 }
 
 normalize_hashtag_string <- function(tag) {
-  checkmate::assert_character(tag)
+  prettycheck:::assert_character(tag)
 
   tag |>
     stringr::str_to_lower() |>

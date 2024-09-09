@@ -1,4 +1,4 @@
-url: https://giperbio.github.io/groomr/
+url: https://danielvartan.github.io/groomr/
 
 template:
   params:
@@ -14,7 +14,10 @@ navbar:
     - reference
     - articles
     - news
-    right: github
+    right:
+    - search
+    - lightswitch
+    - github
   components:
     home: ~
     intro: ~
@@ -29,7 +32,12 @@ reference:
   contents:
   - replace_pattern
 
-- title: Files
+- title: Cleaning
+  contents:
+  - blank_line_neighbors
+  - remove_blank_line_dups
+
+- title: Others
   contents:
   - split_file
 

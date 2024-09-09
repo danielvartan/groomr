@@ -1,4 +1,4 @@
-library(checkmate)
+library(prettycheck)
 library(groomr)
 library(testthat)
 

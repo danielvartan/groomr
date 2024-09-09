@@ -1,6 +1,6 @@
 Package: groomr
 Title: Tools to Tidy Text Files
-Version: 0.0.0.9000
+Version: 0.0.0.9002
 Authors@R: c(
         person(
             given = "Daniel",
@@ -12,32 +12,32 @@ Authors@R: c(
         )
 Description: A set of tools to tidy text files.
 License: MIT + file LICENSE
-URL: https://github.com/giperbio/groomr/
-BugReports: https://github.com/giperbio/groomr/issues/
+URL: https://github.com/danielvartan/groomr/
+BugReports: https://github.com/danielvartan/groomr/issues/
 Depends:
-    R (>= 4.2)
-Imports: 
-    checkmate (>= 2.2.0),
-    cli (>= 3.6.1),
-    lifecycle (>= 1.0.3),
+    R (>= 4.4)
+Imports:
+    cli (>= 3.6.3),
+    dplyr (>= 1.1.4),
+    lifecycle (>= 1.0.4),
     magrittr (>= 2.0.3),
-    stringr (>= 1.5.0),
-    rutils
+    prettycheck,
+    readr (>= 2.1.5),
+    rutils,
+    stringr (>= 1.5.1),
 Suggests: 
-    covr (>= 3.6.2),
-    knitr (>= 1.43),
+    covr (>= 3.6.4),
+    knitr (>= 1.48),
     mockr (>= 0.2.1),
-    rmarkdown (>= 2.24),
-    spelling (>= 2.2.1),
-    testthat (>= 3.1.10)
+    spelling (>= 2.3.0),
+    testthat (>= 3.2.1.1)
 Remotes: 
+    github::danielvartan/prettycheck
     github::danielvartan/rutils
-VignetteBuilder: 
-    knitr
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
 LazyData: true
 LazyDataCompression: bzip2
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2

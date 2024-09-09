@@ -4,16 +4,16 @@
   "identifier": "groomr",
   "description": "A set of tools to tidy text files.",
   "name": "groomr: Tools to Tidy Text Files",
-  "codeRepository": "https://github.com/giperbio/groomr/",
-  "issueTracker": "https://github.com/giperbio/groomr/issues/",
+  "codeRepository": "https://github.com/danielvartan/groomr/",
+  "issueTracker": "https://github.com/danielvartan/groomr/issues/",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.0.9000",
+  "version": "0.0.0.9002",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.3.1 (2023-06-16 ucrt)",
+  "runtimePlatform": "R version 4.4.1 (2024-06-14 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -46,7 +46,7 @@
       "@type": "SoftwareApplication",
       "identifier": "covr",
       "name": "covr",
-      "version": ">= 3.6.2",
+      "version": ">= 3.6.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -59,7 +59,7 @@
       "@type": "SoftwareApplication",
       "identifier": "knitr",
       "name": "knitr",
-      "version": ">= 1.43",
+      "version": ">= 1.48",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -83,22 +83,9 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "rmarkdown",
-      "name": "rmarkdown",
-      "version": ">= 2.24",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "spelling",
       "name": "spelling",
-      "version": ">= 2.2.1",
+      "version": ">= 2.3.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -111,7 +98,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 3.1.10",
+      "version": ">= 3.2.1.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -126,26 +113,13 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 4.2"
+      "version": ">= 4.4"
     },
     "2": {
       "@type": "SoftwareApplication",
-      "identifier": "checkmate",
-      "name": "checkmate",
-      "version": ">= 2.2.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=checkmate"
-    },
-    "3": {
-      "@type": "SoftwareApplication",
       "identifier": "cli",
       "name": "cli",
-      "version": ">= 3.6.1",
+      "version": ">= 3.6.3",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -154,11 +128,24 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=cli"
     },
+    "3": {
+      "@type": "SoftwareApplication",
+      "identifier": "dplyr",
+      "name": "dplyr",
+      "version": ">= 1.1.4",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=dplyr"
+    },
     "4": {
       "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
-      "version": ">= 1.0.3",
+      "version": ">= 1.0.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -182,9 +169,33 @@
     },
     "6": {
       "@type": "SoftwareApplication",
+      "identifier": "prettycheck",
+      "name": "prettycheck"
+    },
+    "7": {
+      "@type": "SoftwareApplication",
+      "identifier": "readr",
+      "name": "readr",
+      "version": ">= 2.1.5",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=readr"
+    },
+    "8": {
+      "@type": "SoftwareApplication",
+      "identifier": "rutils",
+      "name": "rutils",
+      "sameAs": "https://github.com/danielvartan/prettycheck\n    danielvartan/rutils"
+    },
+    "9": {
+      "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
-      "version": ">= 1.5.0",
+      "version": ">= 1.5.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -193,19 +204,13 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     },
-    "7": {
-      "@type": "SoftwareApplication",
-      "identifier": "rutils",
-      "name": "rutils",
-      "sameAs": "https://github.com/danielvartan/rutils"
-    },
     "SystemRequirements": null
   },
-  "fileSize": "25.745KB",
+  "fileSize": "33.276KB",
   "citation": [
     {
       "@type": "CreativeWork",
-      "datePublished": "2023",
+      "datePublished": "2024",
       "author": [
         {
           "@type": "Person",
@@ -216,13 +221,13 @@
         }
       ],
       "name": "{groomr}: tools to tidy text files",
-      "url": "https://giperbio.github.io/groomr/",
+      "url": "https://danielvartan.github.io/groomr/",
       "description": "R package version 0.0.0.9000"
     }
   ],
-  "releaseNotes": "https://github.com/giperbio/groomr/blob/master/NEWS.md",
+  "releaseNotes": "https://github.com/danielvartan/groomr/blob/master/NEWS.md",
   "readme": "https://github.com/danielvartan/groomr/blob/main/README.md",
-  "contIntegration": ["https://github.com/giperbio/groomr/actions", "https://app.codecov.io/gh/giperbio/groomr?branch=main"],
+  "contIntegration": ["https://github.com/danielvartan/groomr/actions", "https://app.codecov.io/gh/danielvartan/groomr?branch=main"],
   "developmentStatus": ["https://www.repostatus.org/#wip", "https://lifecycle.r-lib.org/articles/stages.html#experimental"],
   "keywords": ["r", "r-package", "cleaning"]
 }

@@ -6,8 +6,7 @@
 #'
 #' @param file (optional) a string indicating the file path.
 #'  (default:: `base::file.choose()`).
-#' @param n An [integerish][checkmate::check_integerish()] indicating the
-#'  amount of parts to split the file.
+#' @param n An integer number indicating the amount of parts to split the file.
 #' @param dir (optional) a string indicating the directory where to write the
 #'  file parts. (default:: `base::dirname(file)`).
 #' @param has_header (optional) a [`logical`][base::as.logical()] flag
@@ -49,12 +48,12 @@
 #' close(con)
 split_file <- function(file = file.choose(), n, dir = dirname(file),
                        has_header = FALSE) {
-  checkmate::assert_string(file)
-  checkmate::assert_file_exists(file)
-  checkmate::assert_integerish(n, lower = 2)
-  checkmate::assert_string(dir)
-  checkmate::assert_directory_exists(dir)
-  checkmate::assert_flag(has_header)
+  prettycheck:::assert_string(file)
+  prettycheck:::assert_file_exists(file)
+  prettycheck:::assert_integerish(n, lower = 2)
+  prettycheck:::assert_string(dir)
+  prettycheck:::assert_directory_exists(dir)
+  prettycheck:::assert_flag(has_header)
 
   con <- file(file, "r")
   data <- readLines(con)
@@ -81,7 +80,7 @@ split_file <- function(file = file.choose(), n, dir = dirname(file),
   for (i in seq_along(data)) {
     file_i <- file.path(dir, paste0(file_name, "_part-", i, ext))
 
-    if (!checkmate::test_file_exists(file_i)) {
+    if (!prettycheck:::test_file_exists(file_i)) {
       file.create(file_i)
     } else {
       cli::cli_abort(paste0(
