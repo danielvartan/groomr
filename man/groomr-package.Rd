@@ -4,7 +4,7 @@
 \name{groomr-package}
 \alias{groomr}
 \alias{groomr-package}
-\title{groomr: Tools to Tidy Text Files}
+\title{groomr: Tools to Tidy Strings and Text Files}
 \description{
 A set of tools to tidy text files.
 }

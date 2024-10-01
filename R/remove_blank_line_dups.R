@@ -1,5 +1,9 @@
 #' Remove blank line duplicates from a file
 #'
+#' @description
+#'
+#' `r lifecycle::badge("experimental")`
+#'
 #' This function removes blank line duplicates (e.g., a `""` line, followed by
 #' another `""` line) from a file.
 #'

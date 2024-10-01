@@ -2,7 +2,7 @@ utils::bibentry(
     header = "To cite {groomr} in publications use:",
     bibtype  = "Unpublished",
     title = paste0(
-        "{groomr}: tools to tidy text files"
+        "{groomr}: tools to tidy strings and text files"
         ),
     author = c(
         utils::person(
@@ -22,7 +22,7 @@ utils::bibentry(
     textVersion = paste0(
         "Vartanian, D.", " ",
         "(2024)",  ". ",
-        "{groomr}: tools to tidy text files", ". ",
+        "{groomr}: tools to tidy strings and text files", ". ",
         "R package", ". ",
         "https://danielvartan.github.io/",
         "groomr/"

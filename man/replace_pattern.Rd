@@ -22,6 +22,8 @@ will be used on \code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
 An invisible \code{NULL}. This function don't aim to return values.
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 \strong{ATTENTION}: Be careful, there is no coming back from the effects of
 this function.
 
@@ -62,6 +64,7 @@ close(con)
 }
 \seealso{
 Other string functions: 
+\code{\link{cutter}()},
 \code{\link{split_by_pattern}()}
 }
 \concept{string functions}

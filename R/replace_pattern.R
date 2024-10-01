@@ -2,6 +2,8 @@
 #'
 #' @description
 #'
+#' `r lifecycle::badge("experimental")`
+#'
 #' __ATTENTION__: Be careful, there is no coming back from the effects of
 #' this function.
 #'

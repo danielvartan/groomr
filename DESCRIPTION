@@ -1,5 +1,5 @@
 Package: groomr
-Title: Tools to Tidy Text Files
+Title: Tools to Tidy Strings and Text Files
 Version: 0.0.0.9002
 Authors@R: c(
         person(
@@ -17,8 +17,10 @@ BugReports: https://github.com/danielvartan/groomr/issues/
 Depends:
     R (>= 4.3)
 Imports:
+    checkmate (>= 2.3.2),
     cli (>= 3.6.3),
     dplyr (>= 1.1.4),
+    here (>= 1.0.1),
     lifecycle (>= 1.0.4),
     magrittr (>= 2.0.3),
     prettycheck,

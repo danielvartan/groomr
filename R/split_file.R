@@ -2,6 +2,8 @@
 #'
 #' @description
 #'
+#' `r lifecycle::badge("experimental")`
+#'
 #' `split_file()` split a single file into `n` parts.
 #'
 #' @param file (optional) a string indicating the file path.

@@ -7,7 +7,7 @@ cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
 license: MIT
-title: 'groomr: Tools to Tidy Text Files'
+title: 'groomr: Tools to Tidy Strings and Text Files'
 version: 0.0.0.9002
 abstract: A set of tools to tidy text files.
 authors:
@@ -17,7 +17,7 @@ authors:
   orcid: https://orcid.org/0000-0001-7782-759X
 preferred-citation:
   type: unpublished
-  title: 'groomr: tools to tidy text files'
+  title: 'groomr: tools to tidy strings and text files'
   authors:
   - family-names: Vartanian
     given-names: Daniel
@@ -45,6 +45,20 @@ references:
     address: Vienna, Austria
   year: '2024'
   version: '>= 4.3'
+- type: software
+  title: checkmate
+  abstract: 'checkmate: Fast and Versatile Argument Checks'
+  notes: Imports
+  url: https://mllg.github.io/checkmate/
+  repository: https://CRAN.R-project.org/package=checkmate
+  authors:
+  - family-names: Lang
+    given-names: Michel
+    email: michellang@gmail.com
+    orcid: https://orcid.org/0000-0001-9754-0393
+  year: '2024'
+  doi: 10.32614/CRAN.package.checkmate
+  version: '>= 2.3.2'
 - type: software
   title: cli
   abstract: 'cli: Helpers for Developing Command Line Interfaces'
@@ -84,6 +98,20 @@ references:
   year: '2024'
   doi: 10.32614/CRAN.package.dplyr
   version: '>= 1.1.4'
+- type: software
+  title: here
+  abstract: 'here: A Simpler Way to Find Your Files'
+  notes: Imports
+  url: https://here.r-lib.org/
+  repository: https://CRAN.R-project.org/package=here
+  authors:
+  - family-names: Müller
+    given-names: Kirill
+    email: krlmlr+r@mailbox.org
+    orcid: https://orcid.org/0000-0002-1416-3412
+  year: '2024'
+  doi: 10.32614/CRAN.package.here
+  version: '>= 1.0.1'
 - type: software
   title: lifecycle
   abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'

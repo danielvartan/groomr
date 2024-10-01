@@ -34,6 +34,8 @@ An \code{\link[=as.integer]{integer}} vector with the indexes of the blank
 lines.
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 \code{blank_line_neighbors()} identify and returns the indexes of blank lines
 around a specific line matching a pattern.
 }

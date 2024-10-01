@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "identifier": "groomr",
   "description": "A set of tools to tidy text files.",
-  "name": "groomr: Tools to Tidy Text Files",
+  "name": "groomr: Tools to Tidy Strings and Text Files",
   "codeRepository": "https://github.com/danielvartan/groomr/",
   "issueTracker": "https://github.com/danielvartan/groomr/issues/",
   "license": "https://spdx.org/licenses/MIT",
@@ -117,6 +117,19 @@
     },
     "2": {
       "@type": "SoftwareApplication",
+      "identifier": "checkmate",
+      "name": "checkmate",
+      "version": ">= 2.3.2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=checkmate"
+    },
+    "3": {
+      "@type": "SoftwareApplication",
       "identifier": "cli",
       "name": "cli",
       "version": ">= 3.6.3",
@@ -128,7 +141,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=cli"
     },
-    "3": {
+    "4": {
       "@type": "SoftwareApplication",
       "identifier": "dplyr",
       "name": "dplyr",
@@ -141,7 +154,20 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=dplyr"
     },
-    "4": {
+    "5": {
+      "@type": "SoftwareApplication",
+      "identifier": "here",
+      "name": "here",
+      "version": ">= 1.0.1",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=here"
+    },
+    "6": {
       "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
@@ -154,7 +180,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=lifecycle"
     },
-    "5": {
+    "7": {
       "@type": "SoftwareApplication",
       "identifier": "magrittr",
       "name": "magrittr",
@@ -167,13 +193,13 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=magrittr"
     },
-    "6": {
+    "8": {
       "@type": "SoftwareApplication",
       "identifier": "prettycheck",
       "name": "prettycheck",
       "sameAs": "https://github.com/danielvartan/prettycheck"
     },
-    "7": {
+    "9": {
       "@type": "SoftwareApplication",
       "identifier": "readr",
       "name": "readr",
@@ -186,13 +212,13 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=readr"
     },
-    "8": {
+    "10": {
       "@type": "SoftwareApplication",
       "identifier": "rutils",
       "name": "rutils",
       "sameAs": "https://github.com/danielvartan/rutils"
     },
-    "9": {
+    "11": {
       "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
@@ -207,7 +233,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "39.396KB",
+  "fileSize": "52.404KB",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -221,7 +247,7 @@
           "@id": "https://orcid.org/0000-0001-7782-759X"
         }
       ],
-      "name": "{groomr}: tools to tidy text files",
+      "name": "{groomr}: tools to tidy strings and text files",
       "url": "https://danielvartan.github.io/groomr/",
       "description": "R package version 0.0.0.9000"
     }

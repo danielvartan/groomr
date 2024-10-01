@@ -23,6 +23,8 @@ header will be repeated as the first line in every part (default: \code{FALSE}).
 An invisible \code{NULL}. This function don't aim to return values.
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 \code{split_file()} split a single file into \code{n} parts.
 }
 \examples{

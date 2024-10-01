@@ -17,7 +17,7 @@ Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](c
 
 ## Overview
 
-`groomr` is an R package that helps you tidy text files.
+`groomr` is an R package that helps you tidy strings and text files.
 
 ## Installation
 
@@ -37,6 +37,7 @@ Here are some functions that you can use with `groomr`:
 - `blank_line_neighbours()`: Identify blank lines around a line.
 - `remove_blank_line_dups()`: Remove duplicate blank lines in text
   files.
+- `split_by_pattern`: Split a character vector by a pattern.
 - `split_file()`: Split text files into multiple files.
 
 Click [here](https://danielvartan.github.io/groomr/) to see the full

@@ -24,23 +24,28 @@ navbar:
     articles: ~
 
 reference:
-- title: Tags
-  contents:
-  - normalize_hashtags
-
-- title: Strings
-  contents:
-  - replace_pattern
-  - split_by_pattern
-
 - title: Cleaning
   contents:
   - blank_line_neighbors
   - remove_blank_line_dups
 
-- title: Others
+- title: Files
   contents:
   - split_file
+
+- title: Strings
+  contents:
+  - cutter
+  - replace_pattern
+  - split_by_pattern
+
+- title: R packages
+  contents:
+  - normalize_extdata
+
+- title: Tags
+  contents:
+  - normalize_hashtags
 
 authors:
   Daniel Vartanian:

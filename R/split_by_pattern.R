@@ -1,11 +1,15 @@
 #' Split a character vector by a pattern
 #'
+#' @description
+#'
+#' `r lifecycle::badge("experimental")`
+#'
 #' `split_by_pattern()` allow you to split a character vector considering a
 #' start and end pattern.
 #'
-#' @param x A [`character`][base::as.character()] vector
+#' @param x A [`character`][base::as.character()] vector.
 #' @param start_pattern A string with the start pattern (default:
-#'   `"^# |^## |---"`)
+#'   `"^# |^## |---"`).
 #' @param end_pattern A string with the end pattern. Use `NULL` if there isn't
 #'   one (default: `NULL`).
 #' @param name_list A [`logical`][base::as.logical()] flag indicating if each
@@ -14,7 +18,7 @@
 #'   line flagged in the start pattern should be included in the split (default:
 #'   `FALSE`).
 #'
-#' @return A list with the split character vector.
+#' @return A [list][base::as.list()] with the split character vector.
 #'
 #' @family string functions
 #' @export
@@ -38,17 +42,6 @@
 #'    name_list = TRUE,
 #'    include_start = FALSE
 #'  )
-#'  #> $`# Title 1 [line 1]` # Expected
-#'  #> character(0) # Expected
-#'  #> # Expected
-#'  #> $`## Subtitle 1 [line 2]` # Expected
-#'  #> [1] "Content 1" "Content 2" # Expected
-#'  #> # Expected
-#'  #> $`# Title 2 [line 5]` # Expected
-#'  #> character(0) "# Title 2" # Expected
-#'  #> # Expected
-#'  #> $`## Subtitle 2 [line 6]` # Expected
-#'  #> [1] "Content 3" "Content 4" # Expected
 split_by_pattern <- function(
     x,
     start_pattern = "^# |^## |---",

@@ -13,10 +13,10 @@ split_by_pattern(
 )
 }
 \arguments{
-\item{x}{A \code{\link[base:character]{character}} vector}
+\item{x}{A \code{\link[base:character]{character}} vector.}
 
 \item{start_pattern}{A string with the start pattern (default:
-\code{"^# |^## |---"})}
+\code{"^# |^## |---"}).}
 
 \item{end_pattern}{A string with the end pattern. Use \code{NULL} if there isn't
 one (default: \code{NULL}).}
@@ -29,9 +29,11 @@ line flagged in the start pattern should be included in the split (default:
 \code{FALSE}).}
 }
 \value{
-A list with the split character vector.
+A \link[base:list]{list} with the split character vector.
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 \code{split_by_pattern()} allow you to split a character vector considering a
 start and end pattern.
 }
@@ -54,20 +56,10 @@ x <- c(
    name_list = TRUE,
    include_start = FALSE
  )
- #> $`# Title 1 [line 1]` # Expected
- #> character(0) # Expected
- #> # Expected
- #> $`## Subtitle 1 [line 2]` # Expected
- #> [1] "Content 1" "Content 2" # Expected
- #> # Expected
- #> $`# Title 2 [line 5]` # Expected
- #> character(0) "# Title 2" # Expected
- #> # Expected
- #> $`## Subtitle 2 [line 6]` # Expected
- #> [1] "Content 3" "Content 4" # Expected
 }
 \seealso{
 Other string functions: 
+\code{\link{cutter}()},
 \code{\link{replace_pattern}()}
 }
 \concept{string functions}
