@@ -46,7 +46,7 @@ normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
   prettycheck:::assert_directory_exists(dir)
   prettycheck:::assert_number(tag_line)
 
-  files <- list_files(dir) #nolint
+  files <- rutils:::list_files(dir) #nolint
 
   cli::cli_progress_bar(
     "Normalizing tags", total = length(files), clear = FALSE

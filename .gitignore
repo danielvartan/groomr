@@ -17,3 +17,5 @@ pkgdown/
 revdep/
 vignettes/*.html
 vignettes/*.pdf
+
+/.quarto/

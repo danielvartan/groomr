@@ -13,23 +13,23 @@
 #' ```
 #' replace_pattern(
 #'   dir = normalizePath(readClipboard(), "/", mustWork = FALSE),
-#'   pattern = "pattern", replacement = "pattern"
+#'   pattern = "pattern",
+#'   replacement = "pattern"
 #' )
 #' ```
 #'
 #' @param dir (optional) a string indicating the directory of the files. This
 #'   function will look up just for files, directories will not be affected.
 #'   (default:: `utils::choose.dir()`).
-#' @param pattern A [character][base::character()] vector indicating the
-#'   pattern to look for. The default interpretation is a regular expression.
-#'   This parameter will be used on [stringr::str_replace_all()].
-#' @param replacement A [character][base::character()] vector indicating the
-#'   replacement value. This parameter will be used on
+#' @param pattern A string indicating the pattern to look for. The default
+#'   interpretation is a regular expression. This parameter will be used on
 #'   [stringr::str_replace_all()].
+#' @param replacement A string indicating the replacement value. This parameter
+#'   will be used on [stringr::str_replace_all()].
 #'
 #' @return An invisible `NULL`. This function don't aim to return values.
 #'
-#' @family string functions.
+#' @family string functions
 #' @export
 #'
 #' @examples
@@ -55,11 +55,11 @@
 replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
   prettycheck:::assert_string(dir)
   prettycheck:::assert_directory_exists(dir)
-  prettycheck:::assert_character(pattern)
-  prettycheck:::assert_character(replacement)
+  prettycheck:::assert_string(pattern)
+  prettycheck:::assert_string(replacement)
   rutils:::assert_identical(pattern, replacement, type = "length")
 
-  files <- list_files(dir) #nolint
+  files <- rutils:::list_files(dir) #nolint
 
   cli::cli_progress_bar(
     "Replacing patterns", total = length(files), clear = FALSE
@@ -87,5 +87,3 @@ replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
 
   invisible(NULL)
 }
-
-# pattern = "../_resources/|./_resources/"

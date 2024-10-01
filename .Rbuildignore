@@ -1,5 +1,6 @@
 ^\.github$
 ^\.lintr$
+^.quarto$
 ^\.Rproj\.user$
 ^_pkgdown\.yml$
 ^CITATION\.cff$

@@ -11,13 +11,12 @@ replace_pattern(dir = utils::choose.dir(), pattern, replacement)
 function will look up just for files, directories will not be affected.
 (default:: \code{utils::choose.dir()}).}
 
-\item{pattern}{A \link[base:character]{character} vector indicating the
-pattern to look for. The default interpretation is a regular expression.
-This parameter will be used on \code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
-
-\item{replacement}{A \link[base:character]{character} vector indicating the
-replacement value. This parameter will be used on
+\item{pattern}{A string indicating the pattern to look for. The default
+interpretation is a regular expression. This parameter will be used on
 \code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
+
+\item{replacement}{A string indicating the replacement value. This parameter
+will be used on \code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
 }
 \value{
 An invisible \code{NULL}. This function don't aim to return values.
@@ -34,7 +33,8 @@ when found.
 
 \if{html}{\out{<div class="sourceCode">}}\preformatted{replace_pattern(
   dir = normalizePath(readClipboard(), "/", mustWork = FALSE),
-  pattern = "pattern", replacement = "pattern"
+  pattern = "pattern",
+  replacement = "pattern"
 )
 }\if{html}{\out{</div>}}
 }
@@ -60,4 +60,8 @@ con <- file(file_name, "r+")
 readLines(con)
 close(con)
 }
-\concept{string functions.}
+\seealso{
+Other string functions: 
+\code{\link{split_by_pattern}()}
+}
+\concept{string functions}

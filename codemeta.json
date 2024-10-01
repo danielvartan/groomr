@@ -113,7 +113,7 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 4.4"
+      "version": ">= 4.3"
     },
     "2": {
       "@type": "SoftwareApplication",
@@ -170,7 +170,8 @@
     "6": {
       "@type": "SoftwareApplication",
       "identifier": "prettycheck",
-      "name": "prettycheck"
+      "name": "prettycheck",
+      "sameAs": "https://github.com/danielvartan/prettycheck"
     },
     "7": {
       "@type": "SoftwareApplication",
@@ -189,7 +190,7 @@
       "@type": "SoftwareApplication",
       "identifier": "rutils",
       "name": "rutils",
-      "sameAs": "https://github.com/danielvartan/prettycheck\n    danielvartan/rutils"
+      "sameAs": "https://github.com/danielvartan/rutils"
     },
     "9": {
       "@type": "SoftwareApplication",
@@ -206,7 +207,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "33.276KB",
+  "fileSize": "39.396KB",
   "citation": [
     {
       "@type": "CreativeWork",

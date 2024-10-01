@@ -31,6 +31,7 @@ reference:
 - title: Strings
   contents:
   - replace_pattern
+  - split_by_pattern
 
 - title: Cleaning
   contents:
