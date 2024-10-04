@@ -32,11 +32,12 @@ remotes::install_github("danielvartan/groomr")
 
 Here are some functions that you can use with `groomr`:
 
-- `normalize_hashtags()`: Normalize hashtags in text files.
-- `replace_pattern()`: Replace a pattern in text files.
 - `blank_line_neighbours()`: Identify blank lines around a line.
+- `cutter()`: Cut a vector into pieces.
+- `normalize_hashtags()`: Normalize hashtags in text files.
 - `remove_blank_line_dups()`: Remove duplicate blank lines in text
   files.
+- `replace_pattern()`: Replace a pattern in text files.
 - `split_by_pattern`: Split a character vector by a pattern.
 - `split_file()`: Split text files into multiple files.
 

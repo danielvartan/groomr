@@ -18,10 +18,6 @@
 #'
 #' @family R package functions
 #' @export
-#'
-#' @examples
-#' \dontrun{
-#' normalize_extdata()}
 normalize_extdata <- function(package = basename(here::here())) {
   prettycheck:::assert_namespace(package)
 
