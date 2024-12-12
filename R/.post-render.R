@@ -1,12 +1,19 @@
-# library(beepr, quietly = TRUE)
-# library(groomr, quietly = TRUE)
-# library(here, quietly = TRUE)
-# library(readr, quietly = TRUE)
-# library(stringr, quietly = TRUE)
+# library(beepr)
+# library(cffr)
+# library(codemetar)
+# library(groomr) # https://github.com/danielvartan/groomr
+# library(here)
+# library(readr)
+# library(rutils) # https://github.com/danielvartan/rutils
+# library(stringr)
 
 # Remove empty lines from `README.md` -----
 
 groomr::remove_blank_line_dups(here::here("README.md"))
+
+# Update package versions in `DESCRIPTION` -----
+
+rutils::update_pkg_versions()
 
 # Update package year -----
 
@@ -35,4 +42,6 @@ codemetar::write_codemeta()
 
 # Check if the script ran successfully -----
 
-# beepr::beep(1)
+beepr::beep(1)
+
+Sys.sleep(3)
