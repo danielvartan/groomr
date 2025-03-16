@@ -2,10 +2,7 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("experimental")`
-#'
-#' __ATTENTION__: Be careful, there is no coming back from the effects of
-#' this function. It only works for hashed tags.
+#' `r lifecycle::badge("maturing")`
 #'
 #' `normalize_hashtags()` lower case and remove accents and non-alphanumeric
 #' characters from hashtags.
@@ -34,7 +31,7 @@
 #' file.create(file_name)
 #'
 #' con <- file(file_name, "r+")
-#' data <- c("#tEs43(23)ds", "#45&$dAAsad-dsade", "", "Test", "")
+#' data <- c("#tEs43(23)ds #45&$dAAsad-dsade", "", "Test", "")
 #' writeLines(data, con = con)
 #' close(con)
 #'
@@ -44,15 +41,11 @@
 #' readLines(con)
 #' close(con)
 normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
-  prettycheck:::assert_string(dir)
-  prettycheck:::assert_directory_exists(dir)
-  prettycheck:::assert_number(tag_line)
+  checkmate::assert_string(dir)
+  checkmate::assert_directory_exists(dir)
+  checkmate::assert_number(tag_line)
 
-  files <- rutils:::list_files(dir) #nolint
-
-  cli::cli_progress_bar(
-    "Normalizing tags", total = length(files), clear = FALSE
-  )
+  files <- fs::dir_ls(dir, type = "file")
 
   for (i in files) {
     con <- file(i, "r+")
@@ -60,7 +53,6 @@ normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
 
     if (length(data) == 0) {
       close(con)
-      cli::cli_progress_update()
 
       next
     }
@@ -68,17 +60,13 @@ normalize_hashtags <- function(dir = utils::choose.dir(), tag_line = 1) {
     data[tag_line] <- normalize_hashtag_string(data[tag_line])
     write(data, file = con)
     close(con)
-
-    cli::cli_progress_update()
   }
 
-  cli::cli_progress_done()
-
-  invisible(NULL)
+  invisible()
 }
 
 normalize_hashtag_string <- function(tag) {
-  prettycheck:::assert_character(tag)
+  checkmate::assert_character(tag)
 
   tag |>
     stringr::str_to_lower() |>

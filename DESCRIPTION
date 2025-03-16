@@ -1,5 +1,5 @@
 Package: groomr
-Title: Tools to Tidy Strings and Text Files
+Title: Tidy Strings and Text Files
 Version: 0.0.0.9002
 Authors@R: c(
         person(
@@ -10,7 +10,7 @@ Authors@R: c(
             comment = c(ORCID = "0000-0001-7782-759X")
             )
         )
-Description: A set of tools to tidy text files.
+Description: A set of tools to tidy strings and text files.
 License: MIT + file LICENSE
 URL: https://github.com/danielvartan/groomr/
 BugReports: https://github.com/danielvartan/groomr/issues/
@@ -19,21 +19,21 @@ Depends:
 Imports:
     checkmate (>= 2.3.2),
     cli (>= 3.6.3),
+    clipr (>= 0.8.0),
     dplyr (>= 1.1.4),
-    here (>= 1.0.1),
+    fs (>= 1.6.5),
     lifecycle (>= 1.0.4),
-    magrittr (>= 2.0.3),
     prettycheck,
     readr (>= 2.1.5),
     rutils,
     stringr (>= 1.5.1),
-Suggests: 
+Suggests:
     covr (>= 3.6.4),
-    knitr (>= 1.48),
+    knitr (>= 1.49),
     mockr (>= 0.2.1),
-    spelling (>= 2.3.0),
-    testthat (>= 3.2.1.1)
-Remotes: 
+    spelling (>= 2.3.1),
+    testthat (>= 3.2.2)
+Remotes:
     github::danielvartan/prettycheck,
     github::danielvartan/rutils
 Config/testthat/edition: 3

@@ -2,7 +2,7 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("experimental")`
+#' `r lifecycle::badge("maturing")`
 #'
 #' This function removes blank line duplicates (e.g., a `""` line, followed by
 #' another `""` line) from a file.
@@ -36,12 +36,12 @@ remove_blank_line_dups <- function(
     block_start_pattern = "<!-- badges: start -->",
     block_end_pattern = "<!-- badges: end -->"
   ) {
-  prettycheck:::assert_file(file)
-  prettycheck:::assert_file_exists(file, access = "rw")
-  prettycheck:::assert_flag(remove_caps)
-  prettycheck:::assert_flag(block_fix)
-  prettycheck:::assert_string(block_start_pattern)
-  prettycheck:::assert_string(block_end_pattern)
+  checkmate::assert_file(file)
+  checkmate::assert_file_exists(file, access = "rw")
+  checkmate::assert_flag(remove_caps)
+  checkmate::assert_flag(block_fix)
+  checkmate::assert_string(block_start_pattern)
+  checkmate::assert_string(block_end_pattern)
 
   data <- readr::read_lines(file)
 

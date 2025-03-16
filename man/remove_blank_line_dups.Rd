@@ -29,7 +29,7 @@ should fix blank lines around a text block}
 An invisible \code{NULL}. This function don't aim to return values.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
 
 This function removes blank line duplicates (e.g., a \code{""} line, followed by
 another \code{""} line) from a file.

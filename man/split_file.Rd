@@ -7,23 +7,24 @@
 split_file(file = file.choose(), n, dir = dirname(file), has_header = FALSE)
 }
 \arguments{
-\item{file}{(optional) a string indicating the file path.
-(default:: \code{base::file.choose()}).}
+\item{file}{(Optional) a string indicating the file path.
+(Default:: \code{file.choose()}).}
 
 \item{n}{An integer number indicating the amount of parts to split the file.}
 
-\item{dir}{(optional) a string indicating the directory where to write the
-file parts. (default:: \code{base::dirname(file)}).}
+\item{dir}{(Optional) a string indicating the directory where to write the
+file parts. (Default:: \code{dirname(file)}).}
 
-\item{has_header}{(optional) a \code{\link[base:logical]{logical}} flag
+\item{has_header}{(Optional) a \code{\link[base:logical]{logical}} flag
 indicating if the file has a header (e.g., a CSV file). If \code{TRUE}, the
-header will be repeated as the first line in every part (default: \code{FALSE}).}
+header will be repeated as the first line in every part
+(Default: \code{FALSE}).}
 }
 \value{
-An invisible \code{NULL}. This function don't aim to return values.
+An invisible \code{NULL}. This function is used for its side effect.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
 
 \code{split_file()} split a single file into \code{n} parts.
 }
@@ -55,5 +56,9 @@ close(con)
 con <- file(paste0(file_name, "_part-3"), "r+")
 readLines(con)
 close(con)
+}
+\seealso{
+Other file functions.: 
+\code{\link{normalize_names}()}
 }
 \concept{file functions.}

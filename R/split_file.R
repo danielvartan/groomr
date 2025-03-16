@@ -2,20 +2,21 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("experimental")`
+#' `r lifecycle::badge("maturing")`
 #'
 #' `split_file()` split a single file into `n` parts.
 #'
-#' @param file (optional) a string indicating the file path.
-#'  (default:: `base::file.choose()`).
+#' @param file (Optional) a string indicating the file path.
+#'  (Default:: `file.choose()`).
 #' @param n An integer number indicating the amount of parts to split the file.
-#' @param dir (optional) a string indicating the directory where to write the
-#'  file parts. (default:: `base::dirname(file)`).
-#' @param has_header (optional) a [`logical`][base::as.logical()] flag
+#' @param dir (Optional) a string indicating the directory where to write the
+#'  file parts. (Default:: `dirname(file)`).
+#' @param has_header (Optional) a [`logical`][base::as.logical()] flag
 #'   indicating if the file has a header (e.g., a CSV file). If `TRUE`, the
-#'   header will be repeated as the first line in every part (default: `FALSE`).
+#'   header will be repeated as the first line in every part
+#'   (Default: `FALSE`).
 #'
-#' @return An invisible `NULL`. This function don't aim to return values.
+#' @return An invisible `NULL`. This function is used for its side effect.
 #'
 #' @family file functions.
 #' @export
@@ -48,14 +49,18 @@
 #' con <- file(paste0(file_name, "_part-3"), "r+")
 #' readLines(con)
 #' close(con)
-split_file <- function(file = file.choose(), n, dir = dirname(file),
-                       has_header = FALSE) {
-  prettycheck:::assert_string(file)
-  prettycheck:::assert_file_exists(file)
-  prettycheck:::assert_integerish(n, lower = 2)
-  prettycheck:::assert_string(dir)
-  prettycheck:::assert_directory_exists(dir)
-  prettycheck:::assert_flag(has_header)
+split_file <- function(
+    file = file.choose(), #nolint
+    n,
+    dir = dirname(file),
+    has_header = FALSE
+  ) {
+  checkmate::assert_string(file)
+  checkmate::assert_file_exists(file)
+  checkmate::assert_integerish(n, lower = 2)
+  checkmate::assert_string(dir)
+  checkmate::assert_directory_exists(dir)
+  checkmate::assert_flag(has_header)
 
   con <- file(file, "r")
   data <- readLines(con)
@@ -73,16 +78,16 @@ split_file <- function(file = file.choose(), n, dir = dirname(file),
     ))
   }
 
-  ext <- rutils:::get_file_ext(file)
+  ext <- rutils::get_file_ext(file)
   if (is.na(ext)) ext <- ""
-  file_name <- rutils:::get_file_name_without_ext(file)
+  file_name <- rutils::get_file_name_without_ext(file)
 
-  data <- data |> rutils:::cut_into_parts(n)
+  data <- data |> cut_into_parts(n)
 
   for (i in seq_along(data)) {
     file_i <- file.path(dir, paste0(file_name, "_part-", i, ext))
 
-    if (!prettycheck:::test_file_exists(file_i)) {
+    if (!checkmate::test_file_exists(file_i)) {
       file.create(file_i)
     } else {
       cli::cli_abort(paste0(
@@ -103,5 +108,5 @@ split_file <- function(file = file.choose(), n, dir = dirname(file),
     close(con)
   }
 
-  invisible(NULL)
+  invisible()
 }

@@ -2,7 +2,7 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("experimental")`
+#' `r lifecycle::badge("maturing")`
 #'
 #' `blank_line_neighbors()` identify and returns the indexes of blank lines
 #' around a specific line matching a pattern.
@@ -37,12 +37,12 @@ blank_line_neighbors <- function(
     top = TRUE,
     bottom = TRUE
   ) {
-  prettycheck:::assert_character(x)
-  prettycheck:::assert_string(pattern, null.ok = TRUE)
-  prettycheck:::assert_integerish(index, null.ok = TRUE)
-  prettycheck:::assert_flag(top)
-  prettycheck:::assert_flag(bottom)
-  prettycheck:::assert_pick(pattern, index, pick = 1)
+  checkmate::assert_character(x)
+  checkmate::assert_string(pattern, null.ok = TRUE)
+  checkmate::assert_integerish(index, null.ok = TRUE)
+  checkmate::assert_flag(top)
+  checkmate::assert_flag(bottom)
+  prettycheck::assert_pick(pattern, index, pick = 1)
 
   if (is.null(index)) {
     line <- stringr::str_which(x, pattern)

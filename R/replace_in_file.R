@@ -2,34 +2,20 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("experimental")`
+#' `r lifecycle::badge("maturing")`
 #'
-#' __ATTENTION__: Be careful, there is no coming back from the effects of
-#' this function.
+#' `replace_in_file()` searches each line of a file and replaces a specific
+#' pattern when found.
 #'
-#' `replace_pattern()` search each line of a file and replace a specific pattern
-#' when found.
-#'
-#' @section Tip:
-#'
-#' ```
-#' replace_pattern(
-#'   dir = normalizePath(readClipboard(), "/", mustWork = FALSE),
-#'   pattern = "pattern",
-#'   replacement = "pattern"
-#' )
-#' ```
-#'
-#' @param dir (optional) a string indicating the directory of the files. This
-#'   function will look up just for files, directories will not be affected.
-#'   (default:: `utils::choose.dir()`).
+#' @param dir (Optional) a string indicating the directory of the files.
+#'   Defaults to clipboard content.
 #' @param pattern A string indicating the pattern to look for. The default
 #'   interpretation is a regular expression. This parameter will be used on
 #'   [stringr::str_replace_all()].
 #' @param replacement A string indicating the replacement value. This parameter
 #'   will be used on [stringr::str_replace_all()].
 #'
-#' @return An invisible `NULL`. This function don't aim to return values.
+#' @return An invisible `NULL`. This function is used for its side effect.
 #'
 #' @family string functions
 #' @export
@@ -45,7 +31,7 @@
 #' writeLines(data, con = con)
 #' close(con)
 #'
-#' replace_pattern(
+#' replace_in_file(
 #'   dir = dir_name,
 #'   pattern = "([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]",
 #'   replacement = ""
@@ -54,14 +40,18 @@
 #' con <- file(file_name, "r+")
 #' readLines(con)
 #' close(con)
-replace_pattern <- function(dir = utils::choose.dir(), pattern, replacement) {
-  prettycheck:::assert_string(dir)
-  prettycheck:::assert_directory_exists(dir)
-  prettycheck:::assert_string(pattern)
-  prettycheck:::assert_string(replacement)
-  rutils:::assert_identical(pattern, replacement, type = "length")
+replace_in_file <- function(
+    dir = clipr::read_clip(), #nolint
+    pattern,
+    replacement
+  ) {
+  checkmate::assert_string(dir)
+  checkmate::assert_directory_exists(dir)
+  checkmate::assert_string(pattern)
+  checkmate::assert_string(replacement)
+  prettycheck::assert_identical(pattern, replacement, type = "length")
 
-  files <- rutils:::list_files(dir) #nolint
+  files <- fs::dir_ls(dir, type = "file")
 
   cli::cli_progress_bar(
     "Replacing patterns", total = length(files), clear = FALSE

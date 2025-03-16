@@ -2,23 +2,23 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("experimental")`
+#' `r lifecycle::badge("maturing")`
 #'
 #' `split_by_pattern()` allow you to split a character vector considering a
 #' start and end pattern.
 #'
-#' @param x A [`character`][base::as.character()] vector.
-#' @param start_pattern A string with the start pattern (default:
+#' @param x A [`character`][base::as.character] vector.
+#' @param start_pattern (Optional) A string with the start pattern (Default:
 #'   `"^# |^## |---"`).
-#' @param end_pattern A string with the end pattern. Use `NULL` if there isn't
-#'   one (default: `NULL`).
-#' @param name_list A [`logical`][base::as.logical()] flag indicating if each
-#'   output item should have a name (default: `TRUE`).
-#' @param include_start A [`logical`][base::as.logical()] flag indicating if the
-#'   line flagged in the start pattern should be included in the split (default:
-#'   `FALSE`).
+#' @param end_pattern (Optional) A string with the end pattern. Use `NULL` if
+#'   there isn't one (Default: `NULL`).
+#' @param name_list (Optional) A [`logical`][base::logical] flag
+#'   indicating if each output item should have a name (Default: `TRUE`).
+#' @param include_start (Optional) A [`logical`][base::logical] flag
+#'   indicating if the line flagged in the start pattern should be included
+#'   in the split (Default: `FALSE`).
 #'
-#' @return A [list][base::as.list()] with the split character vector.
+#' @return A [list][base::list] with the split character vector.
 #'
 #' @family string functions
 #' @export
@@ -43,16 +43,16 @@
 #'    include_start = FALSE
 #'  )
 split_by_pattern <- function(
-    x,
+    x, #nolint
     start_pattern = "^# |^## |---",
     end_pattern = NULL,
     name_list = TRUE,
     include_start = FALSE
 ) {
-  prettycheck:::assert_character(x)
-  prettycheck:::assert_string(start_pattern)
-  prettycheck:::assert_string(end_pattern, null.ok = TRUE)
-  prettycheck:::assert_flag(include_start)
+  checkmate::assert_character(x)
+  checkmate::assert_string(start_pattern)
+  checkmate::assert_string(end_pattern, null.ok = TRUE)
+  checkmate::assert_flag(include_start)
 
   if (length(x) == 0) return(list())
 
@@ -91,5 +91,5 @@ split_by_pattern <- function(
     }
   }
 
-  lapply(out, rutils:::drop_na)
+  lapply(out, rutils::drop_na)
 }

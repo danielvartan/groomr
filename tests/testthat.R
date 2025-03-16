@@ -1,6 +1,7 @@
 library(prettycheck)
-library(groomr)
 library(testthat)
+
+library(groomr)
 
 test_check("groomr")
 

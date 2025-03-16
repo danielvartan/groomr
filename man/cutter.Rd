@@ -27,7 +27,7 @@ the end element of the cut must be removed (default: \code{FALSE}).}
 A \code{\link[base:list]{list}} object with the cut pieces as elements.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
 
 \code{cutter()} cut vectors into pieces by cutting points/indexes.
 }
@@ -105,7 +105,7 @@ cutter(seq(10), c(3, 9), rm_end = TRUE)
 }
 \seealso{
 Other string functions: 
-\code{\link{replace_pattern}()},
+\code{\link{replace_in_file}()},
 \code{\link{split_by_pattern}()}
 }
 \concept{string functions}

@@ -7,9 +7,9 @@ cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
 license: MIT
-title: 'groomr: Tools to Tidy Strings and Text Files'
+title: 'groomr: Tidy Strings and Text Files'
 version: 0.0.0.9002
-abstract: A set of tools to tidy text files.
+abstract: A set of tools to tidy strings and text files.
 authors:
 - family-names: Vartanian
   given-names: Daniel
@@ -23,7 +23,7 @@ preferred-citation:
     given-names: Daniel
     email: danvartan@gmail.com
     orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2024'
+  year: '2025'
   url: https://danielvartan.github.io/groomr/
   notes: R package version 0.0.0.9000
 repository-code: https://github.com/danielvartan/groomr/issues/
@@ -43,7 +43,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
   version: '>= 4.3'
 - type: software
   title: checkmate
@@ -56,7 +56,7 @@ references:
     given-names: Michel
     email: michellang@gmail.com
     orcid: https://orcid.org/0000-0001-9754-0393
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.checkmate
   version: '>= 2.3.2'
 - type: software
@@ -69,9 +69,23 @@ references:
   - family-names: Csárdi
     given-names: Gábor
     email: csardi.gabor@gmail.com
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.cli
   version: '>= 3.6.3'
+- type: software
+  title: clipr
+  abstract: 'clipr: Read and Write from the System Clipboard'
+  notes: Imports
+  url: http://matthewlincoln.net/clipr/
+  repository: https://CRAN.R-project.org/package=clipr
+  authors:
+  - family-names: Lincoln
+    given-names: Matthew
+    email: matthew.d.lincoln@gmail.com
+    orcid: https://orcid.org/0000-0002-4387-3384
+  year: '2025'
+  doi: 10.32614/CRAN.package.clipr
+  version: '>= 0.8.0'
 - type: software
   title: dplyr
   abstract: 'dplyr: A Grammar of Data Manipulation'
@@ -95,23 +109,27 @@ references:
     given-names: Davis
     email: davis@posit.co
     orcid: https://orcid.org/0000-0003-4777-038X
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.dplyr
   version: '>= 1.1.4'
 - type: software
-  title: here
-  abstract: 'here: A Simpler Way to Find Your Files'
+  title: fs
+  abstract: 'fs: Cross-Platform File System Operations Based on ''libuv'''
   notes: Imports
-  url: https://here.r-lib.org/
-  repository: https://CRAN.R-project.org/package=here
+  url: https://fs.r-lib.org
+  repository: https://CRAN.R-project.org/package=fs
   authors:
-  - family-names: Müller
-    given-names: Kirill
-    email: krlmlr+r@mailbox.org
-    orcid: https://orcid.org/0000-0002-1416-3412
-  year: '2024'
-  doi: 10.32614/CRAN.package.here
-  version: '>= 1.0.1'
+  - family-names: Hester
+    given-names: Jim
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  - family-names: Csárdi
+    given-names: Gábor
+    email: csardi.gabor@gmail.com
+  year: '2025'
+  doi: 10.32614/CRAN.package.fs
+  version: '>= 1.6.5'
 - type: software
   title: lifecycle
   abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'
@@ -126,36 +144,20 @@ references:
     given-names: Hadley
     email: hadley@posit.co
     orcid: https://orcid.org/0000-0003-4757-117X
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.lifecycle
   version: '>= 1.0.4'
-- type: software
-  title: magrittr
-  abstract: 'magrittr: A Forward-Pipe Operator for R'
-  notes: Imports
-  url: https://magrittr.tidyverse.org
-  repository: https://CRAN.R-project.org/package=magrittr
-  authors:
-  - family-names: Bache
-    given-names: Stefan Milton
-    email: stefan@stefanbache.dk
-  - family-names: Wickham
-    given-names: Hadley
-    email: hadley@rstudio.com
-  year: '2024'
-  doi: 10.32614/CRAN.package.magrittr
-  version: '>= 2.0.3'
 - type: software
   title: prettycheck
   abstract: 'prettycheck: Pretty assertive programming'
   notes: Imports
-  url: https://github.com/danielvartan/prettycheck/
+  url: https://danielvartan.github.io/prettycheck/
   authors:
   - family-names: Vartanian
     given-names: Daniel
     email: danvartan@gmail.com
     orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2024'
+  year: '2025'
 - type: software
   title: readr
   abstract: 'readr: Read Rectangular Text Data'
@@ -172,7 +174,7 @@ references:
     given-names: Jennifer
     email: jenny@posit.co
     orcid: https://orcid.org/0000-0002-6983-2759
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.readr
   version: '>= 2.1.5'
 - type: software
@@ -185,7 +187,7 @@ references:
     given-names: Daniel
     email: danvartan@gmail.com
     orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2024'
+  year: '2025'
 - type: software
   title: stringr
   abstract: 'stringr: Simple, Consistent Wrappers for Common String Operations'
@@ -196,7 +198,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.stringr
   version: '>= 1.5.1'
 - type: software
@@ -209,7 +211,7 @@ references:
   - family-names: Hester
     given-names: Jim
     email: james.f.hester@gmail.com
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.covr
   version: '>= 3.6.4'
 - type: software
@@ -223,9 +225,9 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.knitr
-  version: '>= 1.48'
+  version: '>= 1.49'
 - type: software
   title: mockr
   abstract: 'mockr: Mocking in R'
@@ -236,7 +238,7 @@ references:
   - family-names: Müller
     given-names: Kirill
     email: kirill@cynkra.com
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.mockr
   version: '>= 0.2.1'
 - type: software
@@ -248,14 +250,17 @@ references:
   authors:
   - family-names: Ooms
     given-names: Jeroen
-    email: jeroen@berkeley.edu
+    email: jeroenooms@gmail.com
     orcid: https://orcid.org/0000-0002-4035-0289
   - family-names: Hester
     given-names: Jim
     email: james.hester@rstudio.com
-  year: '2024'
+  year: '2025'
+  identifiers:
+  - type: url
+    value: https://docs.ropensci.org/spelling/
   doi: 10.32614/CRAN.package.spelling
-  version: '>= 2.3.0'
+  version: '>= 2.3.1'
 - type: software
   title: testthat
   abstract: 'testthat: Unit Testing for R'
@@ -266,7 +271,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.testthat
-  version: '>= 3.2.1.1'
+  version: '>= 3.2.2'
 
