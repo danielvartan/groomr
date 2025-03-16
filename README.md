@@ -8,7 +8,7 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-[![R-CMD-check](https://github.com/danielvartan/groomr/workflows/R-CMD-check/badge.svg)](https://github.com/danielvartan/groomr/actions)
+[![R-CMD-check.yaml](https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/danielvartan/groomr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/danielvartan/groomr?branch=main)
 [![License:

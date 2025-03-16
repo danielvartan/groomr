@@ -14,15 +14,13 @@ library(cffr)
 library(codemetar)
 library(groomr) # https://github.com/danielvartan/groomr
 library(here)
-library(readr)
 library(rutils) # https://github.com/danielvartan/rutils
-library(stringr)
 ```
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-[![R-CMD-check](https://github.com/danielvartan/groomr/workflows/R-CMD-check/badge.svg)](https://github.com/danielvartan/groomr/actions)
+[![R-CMD-check.yaml](https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml)
 [![Codecov test coverage](https://codecov.io/gh/danielvartan/groomr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/danielvartan/groomr?branch=main)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/license/mit)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)

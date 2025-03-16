@@ -233,7 +233,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "54.595KB",
+  "fileSize": "54.646KB",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -254,7 +254,7 @@
   ],
   "releaseNotes": "https://github.com/danielvartan/groomr/blob/master/NEWS.md",
   "readme": "https://github.com/danielvartan/groomr/blob/main/README.md",
-  "contIntegration": ["https://github.com/danielvartan/groomr/actions", "https://app.codecov.io/gh/danielvartan/groomr?branch=main"],
+  "contIntegration": ["https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml", "https://app.codecov.io/gh/danielvartan/groomr?branch=main"],
   "developmentStatus": ["https://www.repostatus.org/#active", "https://lifecycle.r-lib.org/articles/stages.html#maturing"],
   "keywords": ["r", "r-package", "string-manipulation", "data-cleaning", "data-munging"]
 }
