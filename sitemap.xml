@@ -11,10 +11,11 @@
 <url><loc>https://danielvartan.github.io/groomr/reference/cutter.html</loc></url>
 <url><loc>https://danielvartan.github.io/groomr/reference/groomr-package.html</loc></url>
 <url><loc>https://danielvartan.github.io/groomr/reference/index.html</loc></url>
-<url><loc>https://danielvartan.github.io/groomr/reference/normalize_extdata.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/make_machine_readable.html</loc></url>
 <url><loc>https://danielvartan.github.io/groomr/reference/normalize_hashtags.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/normalize_names.html</loc></url>
 <url><loc>https://danielvartan.github.io/groomr/reference/remove_blank_line_dups.html</loc></url>
-<url><loc>https://danielvartan.github.io/groomr/reference/replace_pattern.html</loc></url>
+<url><loc>https://danielvartan.github.io/groomr/reference/replace_in_file.html</loc></url>
 <url><loc>https://danielvartan.github.io/groomr/reference/split_by_pattern.html</loc></url>
 <url><loc>https://danielvartan.github.io/groomr/reference/split_file.html</loc></url>
 </urlset>
