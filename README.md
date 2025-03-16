@@ -19,7 +19,7 @@ Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](h
 
 ## Overview
 
-`groomr` is an R package that helps you tidy strings and text files.
+`groomr` is an R package that helps you tidy R objects and files.
 
 ## Installation
 

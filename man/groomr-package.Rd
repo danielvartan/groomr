@@ -4,9 +4,9 @@
 \name{groomr-package}
 \alias{groomr}
 \alias{groomr-package}
-\title{groomr: Tidy Strings and Text Files}
+\title{groomr: General Tidy Functions}
 \description{
-A set of tools to tidy strings and text files.
+A set of tools to tidy R objects and files.
 }
 \seealso{
 Useful links:

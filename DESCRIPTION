@@ -1,5 +1,5 @@
 Package: groomr
-Title: Tidy Strings and Text Files
+Title: General Tidy Functions
 Version: 0.0.0.9002
 Authors@R: c(
         person(
@@ -10,7 +10,7 @@ Authors@R: c(
             comment = c(ORCID = "0000-0001-7782-759X")
             )
         )
-Description: A set of tools to tidy strings and text files.
+Description: A set of tools to tidy R objects and files.
 License: MIT + file LICENSE
 URL: https://github.com/danielvartan/groomr/
 BugReports: https://github.com/danielvartan/groomr/issues/

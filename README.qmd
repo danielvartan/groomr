@@ -28,7 +28,7 @@ library(rutils) # https://github.com/danielvartan/rutils
 
 ## Overview
 
-`groomr` is an R package that helps you tidy strings and text files.
+`groomr` is an R package that helps you tidy R objects and files.
 
 ## Installation
 

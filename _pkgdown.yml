@@ -39,8 +39,13 @@ reference:
 
 - title: Strings
   contents:
-  - cutter
   - make_machine_readable
+  - to_ascii
+
+- title: Vectors
+  contents:
+  - cutter
+  - rm_caps
   - split_by_pattern
 
 - title: Tags

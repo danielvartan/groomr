@@ -7,25 +7,25 @@ cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
 license: MIT
-title: 'groomr: Tidy Strings and Text Files'
+title: 'groomr: General Tidy Functions'
 version: 0.0.0.9002
-abstract: A set of tools to tidy strings and text files.
+abstract: A set of tools to tidy R objects and files.
 authors:
 - family-names: Vartanian
   given-names: Daniel
   email: danvartan@gmail.com
   orcid: https://orcid.org/0000-0001-7782-759X
 preferred-citation:
-  type: unpublished
-  title: 'groomr: tools to tidy strings and text files'
+  type: generic
+  title: 'groomr: General tidy tools'
   authors:
   - family-names: Vartanian
     given-names: Daniel
     email: danvartan@gmail.com
     orcid: https://orcid.org/0000-0001-7782-759X
   year: '2025'
-  url: https://danielvartan.github.io/groomr/
-  notes: R package version 0.0.0.9000
+  url: https://danielvartan.github.io/groomr
+  notes: R package
 repository-code: https://github.com/danielvartan/groomr/issues/
 url: https://github.com/danielvartan/groomr/
 contact:
