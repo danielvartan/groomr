@@ -49,7 +49,16 @@ close(con)
 }
 \seealso{
 Other string functions: 
-\code{\link{cutter}()},
-\code{\link{split_by_pattern}()}
+\code{\link{make_machine_readable}()},
+\code{\link{to_ascii}()},
+\code{\link{to_title_case_pt}()}
+
+Other file functions: 
+\code{\link{blank_line_neighbors}()},
+\code{\link{normalize_hashtags}()},
+\code{\link{normalize_names}()},
+\code{\link{remove_blank_line_dups}()},
+\code{\link{split_file}()}
 }
+\concept{file functions}
 \concept{string functions}

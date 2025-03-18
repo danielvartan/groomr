@@ -47,4 +47,12 @@ con <- file(file_name, "r+")
 readLines(con)
 close(con)
 }
-\concept{tag functions.}
+\seealso{
+Other file functions: 
+\code{\link{blank_line_neighbors}()},
+\code{\link{normalize_names}()},
+\code{\link{remove_blank_line_dups}()},
+\code{\link{replace_in_file}()},
+\code{\link{split_file}()}
+}
+\concept{file functions}

@@ -78,7 +78,7 @@
 #'
 #' @return A [`list`][base::as.list()] object with the cut pieces as elements.
 #'
-#' @family string functions
+#' @family vector functions
 #' @export
 #'
 #' @examples

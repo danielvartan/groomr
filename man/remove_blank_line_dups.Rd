@@ -46,3 +46,12 @@ remove_blank_line_dups(file)
 readLines(file)
 #> [1] "line 1" ""       "line 2" ""       "line 3" # Expected
 }
+\seealso{
+Other file functions: 
+\code{\link{blank_line_neighbors}()},
+\code{\link{normalize_hashtags}()},
+\code{\link{normalize_names}()},
+\code{\link{replace_in_file}()},
+\code{\link{split_file}()}
+}
+\concept{file functions}

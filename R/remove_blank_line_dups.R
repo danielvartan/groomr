@@ -19,6 +19,8 @@
 #' @param block_end_pattern A string indicating the end of text block.
 #'
 #' @return An invisible `NULL`. This function don't aim to return values.
+#'
+#' @family file functions
 #' @export
 #'
 #' @examples

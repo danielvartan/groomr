@@ -58,8 +58,8 @@ x <- c(
  )
 }
 \seealso{
-Other string functions: 
+Other vector functions: 
 \code{\link{cutter}()},
-\code{\link{replace_in_file}()}
+\code{\link{rm_caps}()}
 }
-\concept{string functions}
+\concept{vector functions}

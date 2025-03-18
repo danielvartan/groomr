@@ -58,7 +58,11 @@ readLines(con)
 close(con)
 }
 \seealso{
-Other file functions.: 
-\code{\link{normalize_names}()}
+Other file functions: 
+\code{\link{blank_line_neighbors}()},
+\code{\link{normalize_hashtags}()},
+\code{\link{normalize_names}()},
+\code{\link{remove_blank_line_dups}()},
+\code{\link{replace_in_file}()}
 }
-\concept{file functions.}
+\concept{file functions}

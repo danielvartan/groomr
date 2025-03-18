@@ -47,3 +47,12 @@ x <- readLines(file)
 blank_line_neighbors(x, pattern = "^line 2$")
 #> [1] 4 6 # Expected
 }
+\seealso{
+Other file functions: 
+\code{\link{normalize_hashtags}()},
+\code{\link{normalize_names}()},
+\code{\link{remove_blank_line_dups}()},
+\code{\link{replace_in_file}()},
+\code{\link{split_file}()}
+}
+\concept{file functions}

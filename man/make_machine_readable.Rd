@@ -32,8 +32,9 @@ make_machine_readable("TeSt_test.txt")
 #> [1] "test-test.txt" # Expected
 }
 \seealso{
-Other string functions.: 
-\code{\link{rm_caps}()},
-\code{\link{to_ascii}()}
+Other string functions: 
+\code{\link{replace_in_file}()},
+\code{\link{to_ascii}()},
+\code{\link{to_title_case_pt}()}
 }
-\concept{string functions.}
+\concept{string functions}

@@ -34,8 +34,8 @@ rm_caps(c("a", "b", "c"), end = FALSE)
 #> [1] "b" "c" # Expected
 }
 \seealso{
-Other string functions.: 
-\code{\link{make_machine_readable}()},
-\code{\link{to_ascii}()}
+Other vector functions: 
+\code{\link{cutter}()},
+\code{\link{split_by_pattern}()}
 }
-\concept{string functions.}
+\concept{vector functions}

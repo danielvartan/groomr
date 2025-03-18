@@ -13,7 +13,7 @@
 #'
 #' @return A [`character`][base::character] vector.
 #'
-#' @family string functions.
+#' @family string functions
 #' @export
 #'
 #' @examples

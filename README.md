@@ -34,16 +34,22 @@ remotes::install_github("danielvartan/groomr")
 
 Here are some functions that you can use with `groomr`:
 
-- `blank_line_neighbors()`: Identify blank lines around a line.
-- `cutter()`: Cut a vector into pieces.
-- `make_machine_readable()`: Make a string machine-readable.
-- `normalize_hashtags()`: Normalize hashtags in files.
-- `normalize_names()`: Make file and directory names machine-readable.
-- `remove_blank_line_dups()`: Remove duplicate blank lines in text
-  files.
-- `replace_in_file()`: Replace a pattern in files.
-- `split_by_pattern()`: Split a character vector by a pattern.
-- `split_file()`: Split text files into multiple files.
+- [`blank_line_neighbors()`](https://danielvartan.github.io/groomr/reference/blank_line_neighbors.html):
+  Identify blank lines around a line.
+- [`make_machine_readable()`](https://danielvartan.github.io/groomr/reference/make_machine_readable.html):
+  Make a string machine-readable.
+- [`normalize_names()`](https://danielvartan.github.io/groomr/reference/normalize_names.html):
+  Make file and directory names machine-readable.
+- [`remove_blank_line_dups()`](https://danielvartan.github.io/groomr/reference/remove_blank_line_dups.html):
+  Remove duplicate blank lines in text files.
+- [`replace_in_file()`](https://danielvartan.github.io/groomr/reference/replace_in_file.html):
+  Replace a pattern in files.
+- [`split_by_pattern()`](https://danielvartan.github.io/groomr/reference/split_by_pattern.html):
+  Split a character vector by a pattern.
+- [`split_file()`](https://danielvartan.github.io/groomr/reference/split_file.html):
+  Split text files into multiple files.
+- [`to_title_case_pt()`](https://danielvartan.github.io/groomr/reference/to_title_case_pt.html):
+  Convert to title case considering Portuguese rules.
 
 Click [here](https://danielvartan.github.io/groomr/) to see the full
 list.

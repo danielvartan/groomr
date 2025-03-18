@@ -20,7 +20,7 @@
 #'
 #' @return A [list][base::list] with the split character vector.
 #'
-#' @family string functions
+#' @family vector functions
 #' @export
 #'
 #' @examples

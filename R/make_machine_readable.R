@@ -14,7 +14,7 @@
 #'
 #' @return A [`character`][base::character] vector with machine-readable names.
 #'
-#' @family string functions.
+#' @family string functions
 #' @export
 #'
 #' @examples

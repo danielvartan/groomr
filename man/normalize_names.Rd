@@ -51,7 +51,11 @@ list.files(dir)
 #> [1] "test-test-***" # Expected
 }
 \seealso{
-Other file functions.: 
+Other file functions: 
+\code{\link{blank_line_neighbors}()},
+\code{\link{normalize_hashtags}()},
+\code{\link{remove_blank_line_dups}()},
+\code{\link{replace_in_file}()},
 \code{\link{split_file}()}
 }
-\concept{file functions.}
+\concept{file functions}

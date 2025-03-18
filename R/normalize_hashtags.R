@@ -21,7 +21,7 @@
 #'
 #' @return An invisible `NULL`. This function don't aim to return values.
 #'
-#' @family tag functions.
+#' @family file functions
 #' @export
 #'
 #' @examples

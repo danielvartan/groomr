@@ -18,6 +18,8 @@
 #' @return An invisible `NULL`. This function is used for its side effect.
 #'
 #' @family string functions
+#'
+#' @family file functions
 #' @export
 #'
 #' @examples

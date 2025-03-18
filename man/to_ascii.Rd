@@ -29,8 +29,9 @@ to_ascii("Île-de-France")
 #> [1] "Ile-de-France" # Expected
 }
 \seealso{
-Other string functions.: 
+Other string functions: 
 \code{\link{make_machine_readable}()},
-\code{\link{rm_caps}()}
+\code{\link{replace_in_file}()},
+\code{\link{to_title_case_pt}()}
 }
-\concept{string functions.}
+\concept{string functions}

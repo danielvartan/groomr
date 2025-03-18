@@ -104,8 +104,8 @@ cutter(seq(10), c(3, 9), rm_start = TRUE)
 cutter(seq(10), c(3, 9), rm_end = TRUE)
 }
 \seealso{
-Other string functions: 
-\code{\link{replace_in_file}()},
+Other vector functions: 
+\code{\link{rm_caps}()},
 \code{\link{split_by_pattern}()}
 }
-\concept{string functions}
+\concept{vector functions}

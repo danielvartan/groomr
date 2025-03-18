@@ -26,31 +26,26 @@ navbar:
     articles: ~
 
 reference:
-- title: Cleaning
-  contents:
-  - blank_line_neighbors
-  - remove_blank_line_dups
-
 - title: Files
   contents:
+  - blank_line_neighbors
   - split_file
+  - normalize_hashtags
   - normalize_names
+  - remove_blank_line_dups
   - replace_in_file
 
 - title: Strings
   contents:
   - make_machine_readable
   - to_ascii
+  - to_title_case_pt
 
 - title: Vectors
   contents:
   - cutter
   - rm_caps
   - split_by_pattern
-
-- title: Tags
-  contents:
-  - normalize_hashtags
 
 authors:
   Daniel Vartanian:

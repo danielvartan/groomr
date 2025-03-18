@@ -18,7 +18,7 @@
 #'
 #' @return An invisible `NULL`. This function is used for its side effect.
 #'
-#' @family file functions.
+#' @family file functions
 #' @export
 #'
 #' @examples

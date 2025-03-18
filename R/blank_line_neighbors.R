@@ -21,6 +21,8 @@
 #'
 #' @return An [`integer`][as.integer()] vector with the indexes of the blank
 #'   lines.
+#'
+#' @family file functions
 #' @export
 #'
 #' @examples
