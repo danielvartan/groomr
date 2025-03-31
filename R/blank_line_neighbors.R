@@ -33,7 +33,7 @@
 #' blank_line_neighbors(x, pattern = "^line 2$")
 #' #> [1] 4 6 # Expected
 blank_line_neighbors <- function(
-    x,
+    x, #nolint
     pattern = NULL,
     index = NULL,
     top = TRUE,

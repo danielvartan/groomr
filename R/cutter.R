@@ -149,7 +149,7 @@ cut_into_parts <- function(x, n) {
   cutter(x, cut_indexes, between = "right")
 }
 
-cut_between <- function(x, index, between) {
+cut_between <- function(x, index, between) { #nolint
   checkmate::assert_atomic_vector(x, min.len = 1)
   checkmate::assert_integerish(index, lower = 1, upper = length(x),
                                any.missing = FALSE, all.missing = FALSE,
