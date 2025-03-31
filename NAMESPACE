@@ -2,6 +2,7 @@
 
 export(blank_line_neighbors)
 export(cutter)
+export(find_closest_match_dbl_2)
 export(make_machine_readable)
 export(match_strings)
 export(normalize_hashtags)

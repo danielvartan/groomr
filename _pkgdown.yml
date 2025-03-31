@@ -37,7 +37,9 @@ reference:
 
 - title: Strings
   contents:
+  - find_closest_match_dbl_2
   - make_machine_readable
+  - match_strings
   - to_ascii
   - to_title_case_pt
 

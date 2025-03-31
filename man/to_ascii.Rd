@@ -31,7 +31,6 @@ to_ascii("Île-de-France")
 \seealso{
 Other string functions: 
 \code{\link{make_machine_readable}()},
-\code{\link{match_strings}()},
 \code{\link{replace_in_file}()},
 \code{\link{to_title_case_pt}()}
 }

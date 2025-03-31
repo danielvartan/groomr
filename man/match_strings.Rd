@@ -27,6 +27,8 @@ A \code{\link[tibble:tibble]{tibble}} with the original strings and their
 matched counterparts.
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+
 \code{match_strings()} performs approximate string matching between two
 \code{\link[base:character]{character}} vectors using the
 \code{\link[stringdist:amatch]{amatch()}} function from the \code{stringdist} package.
@@ -43,10 +45,7 @@ reference <- c("São Paulo", "Rio de Janeiro")
 match_strings(raw, reference, maxDist = 1)
 }
 \seealso{
-Other string functions: 
-\code{\link{make_machine_readable}()},
-\code{\link{replace_in_file}()},
-\code{\link{to_ascii}()},
-\code{\link{to_title_case_pt}()}
+Other match functions: 
+\code{\link{find_closest_match_dbl_2}()}
 }
-\concept{string functions}
+\concept{match functions}

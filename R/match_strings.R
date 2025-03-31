@@ -2,6 +2,8 @@
 #'
 #' @description
 #'
+#' `r lifecycle::badge("maturing")`
+#'
 #' `match_strings()` performs approximate string matching between two
 #' [`character`][base::character()] vectors using the
 #' [`amatch()`][stringdist::amatch()] function from the `stringdist` package.
@@ -27,7 +29,7 @@
 #' @return A [`tibble`][tibble::tibble] with the original strings and their
 #'   matched counterparts.
 #'
-#' @family string functions
+#' @family match functions
 #' @export
 #'
 #' @examples
