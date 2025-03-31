@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.1.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-03-18T05:37Z
+last_built: 2025-03-31T06:02Z
 urls:
   reference: https://danielvartan.github.io/groomr/reference
   article: https://danielvartan.github.io/groomr/articles
