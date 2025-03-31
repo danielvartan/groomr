@@ -78,9 +78,9 @@ split_file <- function(
     ))
   }
 
-  ext <- rutils::get_file_ext(file)
+  ext <- get_file_ext(file)
   if (is.na(ext)) ext <- ""
-  file_name <- rutils::get_file_name_without_ext(file)
+  file_name <- get_file_name_without_ext(file)
 
   data <- data |> cut_into_parts(n)
 

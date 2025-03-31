@@ -60,7 +60,7 @@ split_by_pattern <- function(
   end_flag <- FALSE
 
   for (i in seq_along(x)) {
-    if (!is.null(end_pattern)){
+    if (!is.null(end_pattern)) {
       if (stringr::str_detect(x[i], end_pattern)) {
         end_flag <- TRUE
       }
@@ -91,5 +91,5 @@ split_by_pattern <- function(
     }
   }
 
-  lapply(out, rutils::drop_na)
+  lapply(out, drop_na)
 }

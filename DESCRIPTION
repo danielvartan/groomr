@@ -25,7 +25,6 @@ Imports:
     lifecycle (>= 1.0.4),
     prettycheck,
     readr (>= 2.1.5),
-    rutils,
     stringr (>= 1.5.1),
 Suggests:
     covr (>= 3.6.4),
@@ -34,8 +33,7 @@ Suggests:
     spelling (>= 2.3.1),
     testthat (>= 3.2.2)
 Remotes:
-    github::danielvartan/prettycheck,
-    github::danielvartan/rutils
+    github::danielvartan/prettycheck
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US

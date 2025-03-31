@@ -214,12 +214,6 @@
     },
     "10": {
       "@type": "SoftwareApplication",
-      "identifier": "rutils",
-      "name": "rutils",
-      "sameAs": "https://github.com/danielvartan/rutils"
-    },
-    "11": {
-      "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
       "version": ">= 1.5.1",
@@ -233,7 +227,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "70.554KB",
+  "fileSize": "72.586KB",
   "citation": [
     {
       "@type": "CreativeWork",
