@@ -201,6 +201,19 @@
     },
     "9": {
       "@type": "SoftwareApplication",
+      "identifier": "purrr",
+      "name": "purrr",
+      "version": ">= 1.0.2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=purrr"
+    },
+    "10": {
+      "@type": "SoftwareApplication",
       "identifier": "readr",
       "name": "readr",
       "version": ">= 2.1.5",
@@ -212,7 +225,20 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=readr"
     },
-    "10": {
+    "11": {
+      "@type": "SoftwareApplication",
+      "identifier": "stringdist",
+      "name": "stringdist",
+      "version": ">= 0.9.15",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=stringdist"
+    },
+    "12": {
       "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
@@ -227,7 +253,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "72.586KB",
+  "fileSize": "78.244KB",
   "citation": [
     {
       "@type": "CreativeWork",

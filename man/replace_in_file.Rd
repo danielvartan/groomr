@@ -50,6 +50,7 @@ close(con)
 \seealso{
 Other string functions: 
 \code{\link{make_machine_readable}()},
+\code{\link{match_strings}()},
 \code{\link{to_ascii}()},
 \code{\link{to_title_case_pt}()}
 

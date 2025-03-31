@@ -3,6 +3,7 @@
 export(blank_line_neighbors)
 export(cutter)
 export(make_machine_readable)
+export(match_strings)
 export(normalize_hashtags)
 export(normalize_names)
 export(remove_blank_line_dups)

@@ -24,8 +24,10 @@ Imports:
     fs (>= 1.6.5),
     lifecycle (>= 1.0.4),
     prettycheck,
+    purrr (>= 1.0.2),
     readr (>= 2.1.5),
-    stringr (>= 1.5.1),
+    stringdist (>= 0.9.15),
+    stringr (>= 1.5.1)
 Suggests:
     covr (>= 3.6.4),
     knitr (>= 1.49),
