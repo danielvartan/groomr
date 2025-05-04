@@ -29,11 +29,12 @@ reference:
 - title: Files
   contents:
   - blank_line_neighbors
-  - split_file
   - normalize_hashtags
   - normalize_names
+  - peek_csv_file
   - remove_blank_line_dups
   - replace_in_file
+  - split_file
 
 - title: Strings
   contents:

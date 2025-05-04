@@ -57,6 +57,12 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "datasets",
+      "name": "datasets",
+      "version": ">= 4.4"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "knitr",
       "name": "knitr",
       "version": ">= 1.50",
@@ -182,6 +188,19 @@
     },
     "7": {
       "@type": "SoftwareApplication",
+      "identifier": "fpeek",
+      "name": "fpeek",
+      "version": ">= 0.1.2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=fpeek"
+    },
+    "8": {
+      "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
       "version": ">= 1.0.4",
@@ -193,13 +212,13 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=lifecycle"
     },
-    "8": {
+    "9": {
       "@type": "SoftwareApplication",
       "identifier": "prettycheck",
       "name": "prettycheck",
       "sameAs": "https://github.com/danielvartan/prettycheck"
     },
-    "9": {
+    "10": {
       "@type": "SoftwareApplication",
       "identifier": "purrr",
       "name": "purrr",
@@ -212,7 +231,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=purrr"
     },
-    "10": {
+    "11": {
       "@type": "SoftwareApplication",
       "identifier": "readr",
       "name": "readr",
@@ -225,7 +244,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=readr"
     },
-    "11": {
+    "12": {
       "@type": "SoftwareApplication",
       "identifier": "stringdist",
       "name": "stringdist",
@@ -238,7 +257,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringdist"
     },
-    "12": {
+    "13": {
       "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
@@ -253,7 +272,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "82.221KB",
+  "fileSize": "86.49KB",
   "citation": [
     {
       "@type": "CreativeWork",

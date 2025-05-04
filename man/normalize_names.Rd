@@ -54,6 +54,7 @@ list.files(dir)
 Other file functions: 
 \code{\link{blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
+\code{\link{peek_csv_file}()},
 \code{\link{remove_blank_line_dups}()},
 \code{\link{replace_in_file}()},
 \code{\link{split_file}()}

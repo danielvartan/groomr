@@ -51,6 +51,7 @@ blank_line_neighbors(x, pattern = "^line 2$")
 Other file functions: 
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},
+\code{\link{peek_csv_file}()},
 \code{\link{remove_blank_line_dups}()},
 \code{\link{replace_in_file}()},
 \code{\link{split_file}()}

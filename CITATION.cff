@@ -131,6 +131,19 @@ references:
   doi: 10.32614/CRAN.package.fs
   version: '>= 1.6.6'
 - type: software
+  title: fpeek
+  abstract: 'fpeek: Check Text Files Content at a Glance'
+  notes: Imports
+  url: https://github.com/davidgohel/fpeek
+  repository: https://CRAN.R-project.org/package=fpeek
+  authors:
+  - family-names: Gohel
+    given-names: David
+    email: david.gohel@ardata.fr
+  year: '2025'
+  doi: 10.32614/CRAN.package.fpeek
+  version: '>= 0.1.2'
+- type: software
   title: lifecycle
   abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'
   notes: Imports
@@ -236,6 +249,17 @@ references:
   year: '2025'
   doi: 10.32614/CRAN.package.covr
   version: '>= 3.6.4'
+- type: software
+  title: datasets
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Suggests
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2025'
+  version: '>= 4.4'
 - type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'

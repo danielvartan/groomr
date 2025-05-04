@@ -28,3 +28,12 @@ get_file_name_without_ext <- function(file) {
       stringr::str_replace(paste0("\\", ext, "$"), "")
   )
 }
+
+# Borrowed from `rutils`: github.com/danielvartan/rutils
+shush <- function(x, quiet = TRUE) {
+  if (isTRUE(quiet)) {
+    suppressMessages(suppressWarnings(x))
+  } else {
+    x
+  }
+}
