@@ -13,7 +13,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.4.3 (2025-02-28)",
+  "runtimePlatform": "R version 4.5.0 (2025-04-11)",
   "author": [
     {
       "@type": "Person",
@@ -59,7 +59,7 @@
       "@type": "SoftwareApplication",
       "identifier": "knitr",
       "name": "knitr",
-      "version": ">= 1.49",
+      "version": ">= 1.50",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -98,7 +98,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 3.2.2",
+      "version": ">= 3.2.3",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -132,7 +132,7 @@
       "@type": "SoftwareApplication",
       "identifier": "cli",
       "name": "cli",
-      "version": ">= 3.6.3",
+      "version": ">= 3.6.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -171,7 +171,7 @@
       "@type": "SoftwareApplication",
       "identifier": "fs",
       "name": "fs",
-      "version": ">= 1.6.5",
+      "version": ">= 1.6.6",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -203,7 +203,7 @@
       "@type": "SoftwareApplication",
       "identifier": "purrr",
       "name": "purrr",
-      "version": ">= 1.0.2",
+      "version": ">= 1.0.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -253,7 +253,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "78.244KB",
+  "fileSize": "82.221KB",
   "citation": [
     {
       "@type": "CreativeWork",

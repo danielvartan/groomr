@@ -18,22 +18,22 @@ Depends:
     R (>= 4.3)
 Imports:
     checkmate (>= 2.3.2),
-    cli (>= 3.6.3),
+    cli (>= 3.6.5),
     clipr (>= 0.8.0),
     dplyr (>= 1.1.4),
-    fs (>= 1.6.5),
+    fs (>= 1.6.6),
     lifecycle (>= 1.0.4),
     prettycheck,
-    purrr (>= 1.0.2),
+    purrr (>= 1.0.4),
     readr (>= 2.1.5),
     stringdist (>= 0.9.15),
     stringr (>= 1.5.1)
 Suggests:
     covr (>= 3.6.4),
-    knitr (>= 1.49),
+    knitr (>= 1.50),
     mockr (>= 0.2.1),
     spelling (>= 2.3.1),
-    testthat (>= 3.2.2)
+    testthat (>= 3.2.3)
 Remotes:
     github::danielvartan/prettycheck
 Config/testthat/edition: 3

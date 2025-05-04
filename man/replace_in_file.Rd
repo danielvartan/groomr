@@ -4,18 +4,19 @@
 \alias{replace_in_file}
 \title{Replace patterns inside files}
 \usage{
-replace_in_file(dir = clipr::read_clip(), pattern, replacement)
+replace_in_file(file, pattern, replacement)
 }
 \arguments{
-\item{dir}{(Optional) a string indicating the directory of the files.
-Defaults to clipboard content.}
+\item{file}{A \code{\link[base:character]{character}} vector specifying the
+path(s) to the file(s) in which to perform the replacement.}
 
-\item{pattern}{A string indicating the pattern to look for. The default
-interpretation is a regular expression. This parameter will be used on
-\code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
+\item{pattern}{A \code{\link[base:character]{character}} vector specifying the
+pattern(s) (regular expressions) to search for. If multiple patterns are
+provided, each must correspond to a replacement of the same length.}
 
-\item{replacement}{A string indicating the replacement value. This parameter
-will be used on \code{\link[stringr:str_replace]{stringr::str_replace_all()}}.}
+\item{replacement}{A \code{\link[base:character]{character}} vector specifying the
+replacement value(s) to use. Each element is applied to the corresponding
+pattern via \link[stringr:str_replace]{str_replace_all()}.}
 }
 \value{
 An invisible \code{NULL}. This function is used for its side effect.
@@ -27,32 +28,25 @@ An invisible \code{NULL}. This function is used for its side effect.
 pattern when found.
 }
 \examples{
-file_name <- tempfile(tmpdir = tempfile())
-dir_name <- dirname(file_name)
-dir.create(dir_name)
-file.create(file_name)
+file <- tempfile()
+file.create(file)
 
-con <- file(file_name, "r+")
+con <- file(file, "r+")
 data <- c("01:00:56", "", "Test", "")
 writeLines(data, con = con)
 close(con)
 
 replace_in_file(
-  dir = dir_name,
+  file = file,
   pattern = "([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]",
   replacement = ""
-  )
+)
 
-con <- file(file_name, "r+")
+con <- file(file, "r+")
 readLines(con)
 close(con)
 }
 \seealso{
-Other string functions: 
-\code{\link{make_machine_readable}()},
-\code{\link{to_ascii}()},
-\code{\link{to_title_case_pt}()}
-
 Other file functions: 
 \code{\link{blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
@@ -61,4 +55,3 @@ Other file functions:
 \code{\link{split_file}()}
 }
 \concept{file functions}
-\concept{string functions}

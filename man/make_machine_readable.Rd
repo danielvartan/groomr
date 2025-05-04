@@ -33,7 +33,6 @@ make_machine_readable("TeSt_test.txt")
 }
 \seealso{
 Other string functions: 
-\code{\link{replace_in_file}()},
 \code{\link{to_ascii}()},
 \code{\link{to_title_case_pt}()}
 }
