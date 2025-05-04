@@ -33,8 +33,6 @@
 #'
 #' peek_csv_file(file)
 #' #> The file has 11 columns, 32 rows*, and 352 cells. # Expected
-#' #>
-#' #> # Note: Row count excludes any skipped lines.
 peek_csv_file <- function(file, delim = ",", skip = 0, has_header = TRUE) {
   checkmate::assert_string(file)
   checkmate::assert_file_exists(file)
@@ -57,15 +55,21 @@ peek_csv_file <- function(file, delim = ",", skip = 0, has_header = TRUE) {
   rows <- fpeek::peek_count_lines(file, with_eof = FALSE) - skip
   if (has_header) rows <- rows - 1
 
-  cells <- cols * rows
+  cells <- cols * rows #nolint
 
   cli::cli_inform(paste0(
     "The file has ",
     "{.strong {cli::col_red(prettyNum(cols, big.mark = ','))}} columns, ",
     "{.strong {cli::col_green(prettyNum(rows, big.mark = ','))}} rows*, and ",
     "{.strong {cli::col_blue(prettyNum(cells, big.mark = ','))}} cells.",
-    "\n\n",
-    "*Note: Row count excludes any skipped lines."
+    ifelse(
+      !skip == 0,
+      paste0(
+        "\n\n",
+        "*Note: Row count excludes any skipped lines ({skip})."
+      ),
+      ""
+    )
   ))
 
   invisible()

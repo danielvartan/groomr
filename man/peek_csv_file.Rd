@@ -40,8 +40,6 @@ write_csv(mtcars, file)
 
 peek_csv_file(file)
 #> The file has 11 columns, 32 rows*, and 352 cells. # Expected
-#>
-#> # Note: Row count excludes any skipped lines.
 }
 \seealso{
 Other file functions: 
