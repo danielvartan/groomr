@@ -60,7 +60,7 @@ peek_csv_file <- function(file, delim = ",", skip = 0, has_header = TRUE) {
   cli::cli_inform(paste0(
     "The file has ",
     "{.strong {cli::col_red(prettyNum(cols, big.mark = ','))}} columns, ",
-    "{.strong {cli::col_green(prettyNum(rows, big.mark = ','))}} rows*, and ",
+    "{.strong {cli::col_green(prettyNum(rows, big.mark = ','))}} rows, and ",
     "{.strong {cli::col_blue(prettyNum(cells, big.mark = ','))}} cells.",
     ifelse(
       !skip == 0,
