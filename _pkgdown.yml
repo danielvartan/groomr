@@ -34,7 +34,6 @@ reference:
 - title: Files
   contents:
   - identify_blank_line_neighbors
-  - get_shared_dir
   - normalize_hashtags
   - normalize_names
   - peek_csv_file

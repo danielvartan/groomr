@@ -48,7 +48,6 @@ sort_files_by_size(files, root = dir)
 }
 \seealso{
 Other file functions: 
-\code{\link{get_shared_dir}()},
 \code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},

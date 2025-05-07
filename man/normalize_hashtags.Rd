@@ -49,7 +49,6 @@ close(con)
 }
 \seealso{
 Other file functions: 
-\code{\link{get_shared_dir}()},
 \code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_names}()},
 \code{\link{peek_csv_file}()},

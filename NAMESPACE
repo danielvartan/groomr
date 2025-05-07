@@ -2,7 +2,6 @@
 
 export(cut_vector)
 export(find_closest_match_dbl_2)
-export(get_shared_dir)
 export(identify_blank_line_neighbors)
 export(make_machine_readable)
 export(match_strings)

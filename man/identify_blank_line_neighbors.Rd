@@ -53,7 +53,6 @@ identify_blank_line_neighbors(x, pattern = "^line 2$")
 }
 \seealso{
 Other file functions: 
-\code{\link{get_shared_dir}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},
 \code{\link{peek_csv_file}()},
