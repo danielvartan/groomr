@@ -43,11 +43,15 @@ peek_csv_file(file)
 }
 \seealso{
 Other file functions: 
-\code{\link{blank_line_neighbors}()},
+\code{\link{get_shared_dir}()},
+\code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},
 \code{\link{remove_blank_line_dups}()},
 \code{\link{replace_in_file}()},
-\code{\link{split_file}()}
+\code{\link{sort_files_by_size}()},
+\code{\link{split_file}()},
+\code{\link{split_files_by_size}()},
+\code{\link{zip_files_by_pattern}()}
 }
 \concept{file functions}

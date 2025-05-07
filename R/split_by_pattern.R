@@ -2,21 +2,21 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("maturing")`
+#' `r lifecycle::badge("stable")`
 #'
 #' `split_by_pattern()` allow you to split a character vector considering a
 #' start and end pattern.
 #'
 #' @param x A [`character`][base::as.character] vector.
-#' @param start_pattern (Optional) A string with the start pattern (Default:
+#' @param start_pattern (optional) A string with the start pattern (default:
 #'   `"^# |^## |---"`).
-#' @param end_pattern (Optional) A string with the end pattern. Use `NULL` if
-#'   there isn't one (Default: `NULL`).
-#' @param name_list (Optional) A [`logical`][base::logical] flag
-#'   indicating if each output item should have a name (Default: `TRUE`).
-#' @param include_start (Optional) A [`logical`][base::logical] flag
+#' @param end_pattern (optional) A string with the end pattern. Use `NULL` if
+#'   there isn't one (default: `NULL`).
+#' @param name_list (optional) A [`logical`][base::logical] flag
+#'   indicating if each output item should have a name (default: `TRUE`).
+#' @param include_start (optional) A [`logical`][base::logical] flag
 #'   indicating if the line flagged in the start pattern should be included
-#'   in the split (Default: `FALSE`).
+#'   in the split (default: `FALSE`).
 #'
 #' @return A [list][base::list] with the split character vector.
 #'

@@ -11,7 +11,7 @@ to_ascii(x, from = "UTF-8")
 
 \item{from}{A \code{\link[base:character]{character}} string indicating the encoding
 of the input string, See \code{\link[base:iconv]{iconv}} to learn more.
-(Default: \code{"UTF-8"}).}
+(default: \code{"UTF-8"}).}
 }
 \value{
 A \code{\link[base:character]{character}} vector.

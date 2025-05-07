@@ -2,29 +2,29 @@
 % Please edit documentation in R/split_file.R
 \name{split_file}
 \alias{split_file}
-\title{Split files into parts}
+\title{Split a file into parts}
 \usage{
 split_file(file = file.choose(), n, dir = dirname(file), has_header = FALSE)
 }
 \arguments{
-\item{file}{(Optional) a string indicating the file path.
-(Default:: \code{file.choose()}).}
+\item{file}{(optional) A string indicating the file path
+(default:: \code{file.choose()}).}
 
 \item{n}{An integer number indicating the amount of parts to split the file.}
 
-\item{dir}{(Optional) a string indicating the directory where to write the
-file parts. (Default:: \code{dirname(file)}).}
+\item{dir}{(optional) A string indicating the directory where to write the
+file parts. (default:: \code{dirname(file)}).}
 
-\item{has_header}{(Optional) a \code{\link[base:logical]{logical}} flag
+\item{has_header}{(optional) A \code{\link[base:logical]{logical}} flag
 indicating if the file has a header (e.g., a CSV file). If \code{TRUE}, the
 header will be repeated as the first line in every part
-(Default: \code{FALSE}).}
+(default: \code{FALSE}).}
 }
 \value{
 An invisible \code{NULL}. This function is used for its side effect.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 
 \code{split_file()} split a single file into \code{n} parts.
 }
@@ -59,11 +59,15 @@ close(con)
 }
 \seealso{
 Other file functions: 
-\code{\link{blank_line_neighbors}()},
+\code{\link{get_shared_dir}()},
+\code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},
 \code{\link{peek_csv_file}()},
 \code{\link{remove_blank_line_dups}()},
-\code{\link{replace_in_file}()}
+\code{\link{replace_in_file}()},
+\code{\link{sort_files_by_size}()},
+\code{\link{split_files_by_size}()},
+\code{\link{zip_files_by_pattern}()}
 }
 \concept{file functions}

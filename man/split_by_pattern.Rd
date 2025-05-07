@@ -15,24 +15,24 @@ split_by_pattern(
 \arguments{
 \item{x}{A \code{\link[base:character]{character}} vector.}
 
-\item{start_pattern}{(Optional) A string with the start pattern (Default:
+\item{start_pattern}{(optional) A string with the start pattern (default:
 \code{"^# |^## |---"}).}
 
-\item{end_pattern}{(Optional) A string with the end pattern. Use \code{NULL} if
-there isn't one (Default: \code{NULL}).}
+\item{end_pattern}{(optional) A string with the end pattern. Use \code{NULL} if
+there isn't one (default: \code{NULL}).}
 
-\item{name_list}{(Optional) A \code{\link[base:logical]{logical}} flag
-indicating if each output item should have a name (Default: \code{TRUE}).}
+\item{name_list}{(optional) A \code{\link[base:logical]{logical}} flag
+indicating if each output item should have a name (default: \code{TRUE}).}
 
-\item{include_start}{(Optional) A \code{\link[base:logical]{logical}} flag
+\item{include_start}{(optional) A \code{\link[base:logical]{logical}} flag
 indicating if the line flagged in the start pattern should be included
-in the split (Default: \code{FALSE}).}
+in the split (default: \code{FALSE}).}
 }
 \value{
 A \link[base:list]{list} with the split character vector.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 
 \code{split_by_pattern()} allow you to split a character vector considering a
 start and end pattern.
@@ -59,7 +59,7 @@ x <- c(
 }
 \seealso{
 Other vector functions: 
-\code{\link{cutter}()},
-\code{\link{rm_caps}()}
+\code{\link{cut_vector}()},
+\code{\link{remove_caps}()}
 }
 \concept{vector functions}

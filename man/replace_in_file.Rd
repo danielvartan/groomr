@@ -22,7 +22,7 @@ pattern via \link[stringr:str_replace]{str_replace_all()}.}
 An invisible \code{NULL}. This function is used for its side effect.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 
 \code{replace_in_file()} searches each line of a file and replaces a specific
 pattern when found.
@@ -48,11 +48,15 @@ close(con)
 }
 \seealso{
 Other file functions: 
-\code{\link{blank_line_neighbors}()},
+\code{\link{get_shared_dir}()},
+\code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},
 \code{\link{peek_csv_file}()},
 \code{\link{remove_blank_line_dups}()},
-\code{\link{split_file}()}
+\code{\link{sort_files_by_size}()},
+\code{\link{split_file}()},
+\code{\link{split_files_by_size}()},
+\code{\link{zip_files_by_pattern}()}
 }
 \concept{file functions}

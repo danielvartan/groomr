@@ -17,15 +17,15 @@ find_closest_match_dbl_2(x, y, x_ref, y_ref, tol = 0.05)
 \item{y_ref}{A \code{\link[base:numeric]{numeric}} vector with reference values for
 \code{y}.}
 
-\item{tol}{(Optional) A \code{\link[base:numeric]{numeric}} value that sets the
-maximum acceptable difference for a match (Default: \code{0.05}).}
+\item{tol}{(optional) A \code{\link[base:numeric]{numeric}} value that sets the
+maximum acceptable difference for a match (default: \code{0.05}).}
 }
 \value{
 If any value was found, returns the index of the closest match in
 \code{x_ref}/\code{y_ref}. Else, returns \code{NA}.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 
 \code{find_closest_match_dbl_2()} identifies the closest matches between two
 \code{\link[base:numeric]{numeric}} vectors.

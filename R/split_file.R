@@ -1,20 +1,20 @@
-#' Split files into parts
+#' Split a file into parts
 #'
 #' @description
 #'
-#' `r lifecycle::badge("maturing")`
+#' `r lifecycle::badge("stable")`
 #'
 #' `split_file()` split a single file into `n` parts.
 #'
-#' @param file (Optional) a string indicating the file path.
-#'  (Default:: `file.choose()`).
+#' @param file (optional) A string indicating the file path
+#'  (default:: `file.choose()`).
 #' @param n An integer number indicating the amount of parts to split the file.
-#' @param dir (Optional) a string indicating the directory where to write the
-#'  file parts. (Default:: `dirname(file)`).
-#' @param has_header (Optional) a [`logical`][base::as.logical()] flag
+#' @param dir (optional) A string indicating the directory where to write the
+#'  file parts. (default:: `dirname(file)`).
+#' @param has_header (optional) A [`logical`][base::as.logical()] flag
 #'   indicating if the file has a header (e.g., a CSV file). If `TRUE`, the
 #'   header will be repeated as the first line in every part
-#'   (Default: `FALSE`).
+#'   (default: `FALSE`).
 #'
 #' @return An invisible `NULL`. This function is used for its side effect.
 #'
@@ -82,7 +82,7 @@ split_file <- function(
   if (is.na(ext)) ext <- ""
   file_name <- get_file_name_without_ext(file)
 
-  data <- data |> cut_into_parts(n)
+  data <- data |> cut_vector(n = n)
 
   for (i in seq_along(data)) {
     file_i <- file.path(dir, paste0(file_name, "_part-", i, ext))

@@ -29,7 +29,7 @@ should fix blank lines around a text block}
 An invisible \code{NULL}. This function don't aim to return values.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 
 This function removes blank line duplicates (e.g., a \code{""} line, followed by
 another \code{""} line) from a file.
@@ -48,11 +48,15 @@ readLines(file)
 }
 \seealso{
 Other file functions: 
-\code{\link{blank_line_neighbors}()},
+\code{\link{get_shared_dir}()},
+\code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},
 \code{\link{peek_csv_file}()},
 \code{\link{replace_in_file}()},
-\code{\link{split_file}()}
+\code{\link{sort_files_by_size}()},
+\code{\link{split_file}()},
+\code{\link{split_files_by_size}()},
+\code{\link{zip_files_by_pattern}()}
 }
 \concept{file functions}

@@ -7,9 +7,11 @@ cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
 license: MIT
-title: 'groomr: General Tidy Functions'
-version: 0.0.0.9002
-abstract: A set of tools to tidy R objects and files.
+title: 'groomr: Tidy Tools'
+version: 0.1.0
+abstract: A set of tools to help you tidy and organize R objects and files efficiently.
+  It provides a set of functions for cleaning, renaming, splitting, and managing files
+  and data, making your workflows more streamlined and reproducible.
 authors:
 - family-names: Vartanian
   given-names: Daniel
@@ -159,7 +161,22 @@ references:
     orcid: https://orcid.org/0000-0003-4757-117X
   year: '2025'
   doi: 10.32614/CRAN.package.lifecycle
-  version: '>= 1.0.4'
+- type: software
+  title: magrittr
+  abstract: 'magrittr: A Forward-Pipe Operator for R'
+  notes: Imports
+  url: https://magrittr.tidyverse.org
+  repository: https://CRAN.R-project.org/package=magrittr
+  authors:
+  - family-names: Bache
+    given-names: Stefan Milton
+    email: stefan@stefanbache.dk
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@rstudio.com
+  year: '2025'
+  doi: 10.32614/CRAN.package.magrittr
+  version: '>= 2.0.3'
 - type: software
   title: prettycheck
   abstract: 'prettycheck: Pretty assertive programming'
@@ -237,6 +254,19 @@ references:
   doi: 10.32614/CRAN.package.stringr
   version: '>= 1.5.1'
 - type: software
+  title: zip
+  abstract: 'zip: Cross-Platform ''zip'' Compression'
+  notes: Imports
+  url: https://r-lib.github.io/zip/
+  repository: https://CRAN.R-project.org/package=zip
+  authors:
+  - family-names: Csárdi
+    given-names: Gábor
+    email: csardi.gabor@gmail.com
+  year: '2025'
+  doi: 10.32614/CRAN.package.zip
+  version: '>= 2.3.2'
+- type: software
   title: covr
   abstract: 'covr: Test Coverage for Packages'
   notes: Suggests
@@ -286,7 +316,7 @@ references:
     email: kirill@cynkra.com
   year: '2025'
   doi: 10.32614/CRAN.package.mockr
-  version: '>= 0.2.1'
+  version: '>= 0.2.2'
 - type: software
   title: spelling
   abstract: 'spelling: Tools for Spell Checking in R'

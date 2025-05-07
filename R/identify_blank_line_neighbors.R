@@ -2,10 +2,10 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("maturing")`
+#' `r lifecycle::badge("stable")`
 #'
-#' `blank_line_neighbors()` identify and returns the indexes of blank lines
-#' around a specific line matching a pattern.
+#' `identify_blank_line_neighbors()` identify and returns the indexes of blank
+#' lines around a specific line matching a pattern.
 #'
 #' @param x A [`character`][base::as.character()] vector.
 #' @param pattern A string indicating the pattern to look for. If there's more
@@ -26,13 +26,17 @@
 #' @export
 #'
 #' @examples
-#' file <- tempfile()
-#' writeLines(c("", "line 1", "", "", "line 2", "", "", "line 3", ""), file)
-#' x <- readLines(file)
+#' library(readr)
 #'
-#' blank_line_neighbors(x, pattern = "^line 2$")
+#' file <- tempfile()
+#'
+#' c("", "line 1", "", "", "line 2", "") |> write_lines(file)
+#'
+#' x <- read_lines(file)
+#'
+#' identify_blank_line_neighbors(x, pattern = "^line 2$")
 #' #> [1] 4 6 # Expected
-blank_line_neighbors <- function(
+identify_blank_line_neighbors <- function(
     x, #nolint
     pattern = NULL,
     index = NULL,

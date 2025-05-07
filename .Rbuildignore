@@ -1,10 +1,11 @@
+^_brand\.yml$
+^_pkgdown\.yml$
+^_quarto\.yml$
+^.quarto$
 ^\.github$
 ^\.lintr$
-^.quarto$
 ^\.Rproj\.user$
 ^\.vscode$
-^_quarto\.yml$
-^_pkgdown\.yml$
 ^CITATION\.cff$
 ^CODE_OF_CONDUCT\.md$
 ^codecov\.yml$
@@ -16,6 +17,7 @@
 ^groomr\.Rproj$
 ^LICENSE\.md$
 ^man-roxygen$
+^Meta$
 ^pkgdown$
 ^R/\.post-render\.R$
 ^README\.qmd$

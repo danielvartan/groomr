@@ -4,13 +4,16 @@
 \name{groomr-package}
 \alias{groomr}
 \alias{groomr-package}
-\title{groomr: General Tidy Functions}
+\title{groomr: Tidy Tools}
 \description{
-A set of tools to tidy R objects and files.
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
+A set of tools to help you tidy and organize R objects and files efficiently. It provides a set of functions for cleaning, renaming, splitting, and managing files and data, making your workflows more streamlined and reproducible.
 }
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://danielvartan.github.io/groomr/}
   \item \url{https://github.com/danielvartan/groomr/}
   \item Report bugs at \url{https://github.com/danielvartan/groomr/issues/}
 }

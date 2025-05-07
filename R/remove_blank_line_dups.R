@@ -2,7 +2,7 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("maturing")`
+#' `r lifecycle::badge("stable")`
 #'
 #' This function removes blank line duplicates (e.g., a `""` line, followed by
 #' another `""` line) from a file.
@@ -32,12 +32,12 @@
 #' readLines(file)
 #' #> [1] "line 1" ""       "line 2" ""       "line 3" # Expected
 remove_blank_line_dups <- function(
-    file,
-    remove_caps = TRUE,
-    block_fix = TRUE,
-    block_start_pattern = "<!-- badges: start -->",
-    block_end_pattern = "<!-- badges: end -->"
-  ) {
+  file,
+  remove_caps = TRUE,
+  block_fix = TRUE,
+  block_start_pattern = "<!-- badges: start -->",
+  block_end_pattern = "<!-- badges: end -->"
+) {
   checkmate::assert_file(file)
   checkmate::assert_file_exists(file, access = "rw")
   checkmate::assert_flag(remove_caps)
@@ -73,8 +73,8 @@ remove_blank_line_dups <- function(
   if (isTRUE(block_fix)) {
     lines_to_remove <- append(
       c(
-        blank_line_neighbors(data, block_start_pattern, top = FALSE),
-        blank_line_neighbors(data, block_end_pattern, bottom = FALSE)
+        identify_blank_line_neighbors(data, block_start_pattern, top = FALSE),
+        identify_blank_line_neighbors(data, block_end_pattern, bottom = FALSE)
       ),
       lines_to_remove
     )

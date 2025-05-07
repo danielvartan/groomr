@@ -6,5 +6,6 @@
 ## usethis namespace: start
 #' @importFrom dplyr %>%
 #' @importFrom lifecycle deprecate_soft
+#' @importFrom lifecycle deprecated
 ## usethis namespace: end
 NULL

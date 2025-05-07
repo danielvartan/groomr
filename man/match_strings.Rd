@@ -17,7 +17,7 @@ to match the raw data.}
 perform one-by-one matching. If \code{TRUE}, the function will match each
 string in \code{raw} to the corresponding string in \code{reference}. If \code{FALSE},
 the function will match all strings in \code{raw} to all strings in
-\code{reference} (Default: \code{FALSE}).}
+\code{reference} (default: \code{FALSE}).}
 
 \item{...}{Additional arguments to be passed to
 \code{\link[stringdist:amatch]{amatch()}}.}
@@ -27,7 +27,7 @@ A \code{\link[tibble:tibble]{tibble}} with the original strings and their
 matched counterparts.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 
 \code{match_strings()} performs approximate string matching between two
 \code{\link[base:character]{character}} vectors using the

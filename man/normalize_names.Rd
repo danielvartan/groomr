@@ -6,30 +6,30 @@
 \usage{
 normalize_names(
   path = clipr::read_clip(),
-  regex = "^README|^OFL.txt$|^DESCRIPTION|^Google README.txt$",
+  regexp = "^README|^OFL|^DESCRIPTION|^Google README",
   invert = TRUE,
   ...
 )
 }
 \arguments{
-\item{path}{(Optional) A \code{\link[base:character]{character}} string indicating
+\item{path}{(optional) A \code{\link[base:character]{character}} string indicating
 the directory path. Defaults to clipboard content.}
 
-\item{regex}{(Optional) A \code{\link[base:character]{character}} string with
+\item{regexp}{(optional) A \code{\link[base:character]{character}} string with
 a regular expression to filter files/directories to rename
-(Default: \code{"^README|^OFL.txt$|^DESCRIPTION|^Google README.txt$"}).}
+(default: \code{"^README|^OFL.txt$|^DESCRIPTION|^Google README.txt$"}).}
 
-\item{invert}{(Optional) A \code{\link[base:logical]{logical}} flag indicating if
-the regular expression in \code{regex} should be negated (Default: \code{TRUE}).}
+\item{invert}{(optional) A \code{\link[base:logical]{logical}} flag indicating if
+the regular expression in \code{regex} should be negated (default: \code{TRUE}).}
 
-\item{...}{(Optional) Additional arguments to be passed to
+\item{...}{(optional) Additional arguments to be passed to
 \code{\link[fs:dir_ls]{dir_ls()}} while listing files/directories to rename.}
 }
 \value{
 An invisible \code{NULL}. This function is used for its side effect.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#maturing}{\figure{lifecycle-maturing.svg}{options: alt='[Maturing]'}}}{\strong{[Maturing]}}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 
 \code{normalize_names()} normalizes file and directory names to make them
 machine-readable.
@@ -52,11 +52,15 @@ list.files(dir)
 }
 \seealso{
 Other file functions: 
-\code{\link{blank_line_neighbors}()},
+\code{\link{get_shared_dir}()},
+\code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{peek_csv_file}()},
 \code{\link{remove_blank_line_dups}()},
 \code{\link{replace_in_file}()},
-\code{\link{split_file}()}
+\code{\link{sort_files_by_size}()},
+\code{\link{split_file}()},
+\code{\link{split_files_by_size}()},
+\code{\link{zip_files_by_pattern}()}
 }
 \concept{file functions}

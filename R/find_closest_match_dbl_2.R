@@ -2,7 +2,7 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("maturing")`
+#' `r lifecycle::badge("stable")`
 #'
 #' `find_closest_match_dbl_2()` identifies the closest matches between two
 #' [`numeric`][base::numeric] vectors.
@@ -18,8 +18,8 @@
 #'   `x`.
 #' @param y_ref A [`numeric`][base::numeric] vector with reference values for
 #'   `y`.
-#' @param tol (Optional) A [`numeric`][base::numeric] value that sets the
-#'   maximum acceptable difference for a match (Default: `0.05`).
+#' @param tol (optional) A [`numeric`][base::numeric] value that sets the
+#'   maximum acceptable difference for a match (default: `0.05`).
 #'
 #' @return If any value was found, returns the index of the closest match in
 #'   `x_ref`/`y_ref`. Else, returns `NA`.

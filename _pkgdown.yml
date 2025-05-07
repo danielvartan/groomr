@@ -3,8 +3,13 @@ url: https://danielvartan.github.io/groomr/
 template:
   bslib:
     version: 5
+    navbar-bg: "#292B33"
   math-rendering: mathjax
   light-switch: true
+  opengraph:
+    image:
+      src: man/figures/og-image.svg
+      alt: "{groomr}"
   params:
     noindex: false
 
@@ -28,13 +33,17 @@ navbar:
 reference:
 - title: Files
   contents:
-  - blank_line_neighbors
+  - identify_blank_line_neighbors
+  - get_shared_dir
   - normalize_hashtags
   - normalize_names
   - peek_csv_file
   - remove_blank_line_dups
   - replace_in_file
+  - sort_files_by_size
   - split_file
+  - split_files_by_size
+  - zip_files_by_pattern
 
 - title: Strings
   contents:
@@ -46,13 +55,13 @@ reference:
 
 - title: Vectors
   contents:
-  - cutter
-  - rm_caps
+  - cut_vector
+  - remove_caps
   - split_by_pattern
 
 authors:
   Daniel Vartanian:
-    href: https://github.com/danielvartan
+    href: https://github.com/danielvartan/
 
 development:
   mode: auto

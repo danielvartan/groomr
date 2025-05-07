@@ -16,19 +16,19 @@ to_title_case_pt(
 \arguments{
 \item{x}{A \code{\link[base:character]{character}} vector.}
 
-\item{articles}{(Optional) A \code{\link[base:logical]{logical}} flag indicating if
+\item{articles}{(optional) A \code{\link[base:logical]{logical}} flag indicating if
 articles should be converted (default: \code{TRUE}).}
 
-\item{conjunctions}{(Optional) A \code{\link[base:logical]{logical}} flag indicating
+\item{conjunctions}{(optional) A \code{\link[base:logical]{logical}} flag indicating
 if conjunctions should be converted (default: \code{TRUE}).}
 
-\item{oblique_pronouns}{(Optional) A \code{\link[base:logical]{logical}} flag
+\item{oblique_pronouns}{(optional) A \code{\link[base:logical]{logical}} flag
 indicating if oblique pronouns should be converted (default: \code{TRUE}).}
 
-\item{prepositions}{(Optional) A \code{\link[base:logical]{logical}} flag
+\item{prepositions}{(optional) A \code{\link[base:logical]{logical}} flag
 indicating if prepositions should be converted (default: \code{TRUE}).}
 
-\item{custom_rules}{(Optional) A \code{\link[base:character]{character}} vector
+\item{custom_rules}{(optional) A \code{\link[base:character]{character}} vector
 with custom rules to be applied. The syntax is
 \code{c("regex" = "replacement")}. The default is
 \code{c("(.)\\\\bD(el)\\\\b" = "\\\\1d\\\\2")}, which converts \emph{Del} to \emph{del}.}
@@ -47,8 +47,8 @@ to keep in title case some words, like prepositions, conjunctions,
 articles and some kinds of pronouns. This function locates those
 cases and converts them to lower case.
 
-(Adapted from the original function \code{to_title_case()} by \strong{José de Jesus
-Filho})
+\strong{(Adapted from the original function \code{to_title_case()} by José de Jesus
+Filho)}
 }
 \examples{
 to_title_case_pt("Desterro de Entre Rios")

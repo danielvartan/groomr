@@ -1,0 +1,67 @@
+meta:
+  name:
+    short: "{groomr}"
+    long: "{groomr}: Tidy Tools"
+  link:
+    home: https://danielvartan.github.io/groomr
+    github: https://github.com/danielvartan/groomr
+  description: An R package to tidy things up.
+
+logo:
+  images:
+    logo:
+      path: man/figures/logo.svg
+      alt: "Logo"
+    og-image:
+      path: man/figures/og-image.svg
+      alt: "Open Graph Image"
+  small: logo
+  medium: logo
+  large: logo
+
+color:
+  palette:
+    dark-orange: "#C83B32"
+    orange: "#FF561F"
+    light-orange: "#FF9828"
+    dark-green: "#294035"
+    white: "#FFFFFF"
+    gray: "#8A8F98"
+    black: "#292B33"
+  background: white
+  primary: dark-green
+  secondary: dark-green
+  tertiary: black
+  success: orange
+  info: orange
+  warning: dark-orange
+  danger: dark-orange
+  light: white
+  dark: black
+
+typography:
+  fonts:
+    - family: Josefin Sans
+      source: google
+    - family: Space Mono
+      source: google
+  base:
+    family: Josefin Sans
+    line-height: 1.5
+    weight: normal
+  headings:
+    color: dark-orange
+    family: Josefin Sans
+    weight: 300
+  link:
+    color: orange
+    decoration: underline
+  monospace: Space Mono
+
+defaults:
+  bootstrap:
+    rules: |
+      .fa.fa-github,
+      .text-warning {
+        color: $brand-orange !important;
+      }

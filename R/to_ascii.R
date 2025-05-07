@@ -9,7 +9,7 @@
 #' @param x A [`character`][base::character] vector.
 #' @param from A [`character`][base::character] string indicating the encoding
 #'   of the input string, See [`iconv`][base::iconv] to learn more.
-#'   (Default: `"UTF-8"`).
+#'   (default: `"UTF-8"`).
 #'
 #' @return A [`character`][base::character] vector.
 #'

@@ -2,7 +2,7 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("maturing")`
+#' `r lifecycle::badge("stable")`
 #'
 #' `match_strings()` performs approximate string matching between two
 #' [`character`][base::character()] vectors using the
@@ -22,7 +22,7 @@
 #'   perform one-by-one matching. If `TRUE`, the function will match each
 #'   string in `raw` to the corresponding string in `reference`. If `FALSE`,
 #'   the function will match all strings in `raw` to all strings in
-#'   `reference` (Default: `FALSE`).
+#'   `reference` (default: `FALSE`).
 #' @param ... Additional arguments to be passed to
 #'   [`amatch()`][stringdist::amatch].
 #'

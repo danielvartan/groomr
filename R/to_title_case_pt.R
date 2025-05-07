@@ -12,19 +12,19 @@
 #' articles and some kinds of pronouns. This function locates those
 #' cases and converts them to lower case.
 #'
-#' (Adapted from the original function `to_title_case()` by **José de Jesus
-#' Filho**)
+#' **(Adapted from the original function `to_title_case()` by José de Jesus
+#' Filho)**
 #'
 #' @param x A [`character`][base::character()] vector.
-#' @param articles (Optional) A [`logical`][base::logical()] flag indicating if
+#' @param articles (optional) A [`logical`][base::logical()] flag indicating if
 #'   articles should be converted (default: `TRUE`).
-#' @param conjunctions (Optional) A [`logical`][base::logical()] flag indicating
+#' @param conjunctions (optional) A [`logical`][base::logical()] flag indicating
 #'   if conjunctions should be converted (default: `TRUE`).
-#' @param oblique_pronouns (Optional) A [`logical`][base::logical()] flag
+#' @param oblique_pronouns (optional) A [`logical`][base::logical()] flag
 #'   indicating if oblique pronouns should be converted (default: `TRUE`).
-#' @param prepositions (Optional) A [`logical`][base::logical()] flag
+#' @param prepositions (optional) A [`logical`][base::logical()] flag
 #'   indicating if prepositions should be converted (default: `TRUE`).
-#' @param custom_rules (Optional) A [`character`][base::character()] vector
+#' @param custom_rules (optional) A [`character`][base::character()] vector
 #'   with custom rules to be applied. The syntax is
 #'   `c("regex" = "replacement")`. The default is
 #'   `c("(.)\\bD(el)\\b" = "\\1d\\2")`, which converts *Del* to *del*.
