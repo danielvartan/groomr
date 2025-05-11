@@ -4,10 +4,11 @@
   "identifier": "groomr",
   "description": "A set of tools to help you tidy and organize R objects and files efficiently. It provides a set of functions for cleaning, renaming, splitting, and managing files and data, making your workflows more streamlined and reproducible.",
   "name": "groomr: Tidy Tools",
+  "relatedLink": "https://danielvartan.github.io/groomr/",
   "codeRepository": "https://github.com/danielvartan/groomr/",
   "issueTracker": "https://github.com/danielvartan/groomr/issues/",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0",
+  "version": "0.1.0.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -297,7 +298,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "279.637KB",
+  "fileSize": "276.248KB",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -318,7 +319,7 @@
   ],
   "releaseNotes": "https://github.com/danielvartan/groomr/blob/master/NEWS.md",
   "readme": "https://github.com/danielvartan/groomr/blob/main/README.md",
-  "contIntegration": ["https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml", "https://app.codecov.io/gh/danielvartan/groomr?branch=main"],
-  "developmentStatus": ["https://www.repostatus.org/#active", "https://lifecycle.r-lib.org/articles/stages.html#stable"],
+  "contIntegration": ["https://github.com/danielvartan/groomr/actions", "https://app.codecov.io/gh/danielvartan/groomr"],
+  "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": ["r", "r-package", "string-manipulation", "data-cleaning", "data-munging"]
 }

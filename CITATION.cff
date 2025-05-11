@@ -8,7 +8,10 @@ message: 'To cite package "groomr" in publications use:'
 type: software
 license: MIT
 title: 'groomr: Tidy Tools'
-version: 0.1.0
+version: 0.1.0.9000
+identifiers:
+- type: url
+  value: https://github.com/danielvartan/groomr/
 abstract: A set of tools to help you tidy and organize R objects and files efficiently.
   It provides a set of functions for cleaning, renaming, splitting, and managing files
   and data, making your workflows more streamlined and reproducible.
@@ -29,7 +32,7 @@ preferred-citation:
   url: https://danielvartan.github.io/groomr
   notes: R package
 repository-code: https://github.com/danielvartan/groomr/issues/
-url: https://github.com/danielvartan/groomr/
+url: https://danielvartan.github.io/groomr/
 contact:
 - family-names: Vartanian
   given-names: Daniel

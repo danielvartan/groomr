@@ -3,18 +3,15 @@
 <!-- quarto render -->
 
 <!-- badges: start -->
-[![Project Status: Active – The project has reached a stable, usable
+[![Project Status: Active - The project has reached a stable, usable
 state and is being actively
-developed.](https://img.shields.io/badge/Repo%20Status-Active-10D810.svg)](https://www.repostatus.org/#active)
-[![Lifecycle:
-Stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![R-CMD-check.yaml](https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/danielvartan/groomr/actions/workflows/check-standard.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/danielvartan/groomr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/danielvartan/groomr?branch=main)
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![R build
+status](https://github.com/danielvartan/groomr/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/danielvartan/groomr/actions)
+[![](https://codecov.io/gh/danielvartan/groomr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/danielvartan/groomr)
 [![License:
-MIT](https://img.shields.io/badge/License-MIT-10D810.svg)](https://choosealicense.com/licenses/mit/)
-[![Contributor
-Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 <!-- badges: end -->
 
 ## Overview
@@ -23,6 +20,10 @@ Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](h
 objects and files efficiently. It provides a set of functions for
 cleaning, renaming, splitting, and managing files and data, making your
 workflows more streamlined and reproducible.
+
+> If you find this project useful, please consider giving it a star!  
+> [![GitHub repo
+> stars](https://img.shields.io/github/stars/danielvartan/groomr.png)](https://github.com/danielvartan/groomr/)
 
 ## Installation
 
@@ -63,24 +64,21 @@ list.
 
 ## License
 
-[![License:
-MIT](https://img.shields.io/badge/License-MIT-10D810.svg)](https://choosealicense.com/licenses/mit/)
+[![](https://img.shields.io/badge/license-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 `groomr` code is released under the [MIT
 license](https://opensource.org/license/mit).
 
 ## Contributing
 
-[![Contributor
-Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 Contributions are welcome, including bug reports. Take a moment to
 review the [Guidelines for
 Contributing](https://danielvartan.github.io/groomr/CONTRIBUTING.html).
 
-<br>
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/danielvartan)
 
-Become an `groomr` supporter!
-
+You can also support the development of `groomr` by becoming a sponsor.
 Click [here](https://github.com/sponsors/danielvartan) to make a
-donation. Please indicate the `groomr` package in your donation message.
+donation. Please mention `groomr` in your donation message.
