@@ -25,8 +25,6 @@ If any value was found, returns the index of the closest match in
 \code{x_ref}/\code{y_ref}. Else, returns \code{NA}.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{find_closest_match_dbl_2()} identifies the closest matches between two
 \code{\link[base:numeric]{numeric}} vectors.
 

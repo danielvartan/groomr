@@ -41,8 +41,6 @@ when cutting using \code{n} (default: \code{floor}).}
 A \code{\link[base:list]{list}} object with the cut pieces as elements.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{cut_vector()} splits a vector into segments at specified cutting points
 or indexes. You can define the cuts either by providing explicit index
 positions or by specifying the number of segments.

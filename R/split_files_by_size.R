@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `split_files_by_size()` splits a vector of file paths into chunks based on
 #' their size. It is useful for managing large files or datasets that need to
 #' be processed in smaller parts.

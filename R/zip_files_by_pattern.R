@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `zip_files_by_pattern()` compresses files by grouping them according to
 #' specified patterns and splitting them into chunks if needed.
 #'

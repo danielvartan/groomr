@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `find_closest_match_dbl_2()` identifies the closest matches between two
 #' [`numeric`][base::numeric] vectors.
 #'

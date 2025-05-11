@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `to_title_case_pt()` converts a character vector to title case, but
 #' keeping some classes of words in lower case.
 #'

@@ -13,8 +13,6 @@ make_machine_readable(x)
 A \code{\link[base:character]{character}} vector with machine-readable names.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{make_machine_readable()} makes a string machine-readable by converting it
 to lowercase, removing special characters, and replacing spaces with hyphens.
 

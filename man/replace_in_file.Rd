@@ -22,8 +22,6 @@ pattern via \link[stringr:str_replace]{str_replace_all()}.}
 An invisible \code{NULL}. This function is used for its side effect.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{replace_in_file()} searches each line of a file and replaces a specific
 pattern when found.
 }

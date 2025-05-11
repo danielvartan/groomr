@@ -18,8 +18,6 @@ are in.}
 An invisible \code{NULL}. This function don't aim to return values.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{normalize_hashtags()} lower case and remove accents and non-alphanumeric
 characters from hashtags.
 }

@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `identify_blank_line_neighbors()` identify and returns the indexes of blank
 #' lines around a specific line matching a pattern.
 #'

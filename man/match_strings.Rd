@@ -27,8 +27,6 @@ A \code{\link[tibble:tibble]{tibble}} with the original strings and their
 matched counterparts.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{match_strings()} performs approximate string matching between two
 \code{\link[base:character]{character}} vectors using the
 \code{\link[stringdist:amatch]{amatch()}} function from the \code{stringdist} package.

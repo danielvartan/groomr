@@ -19,8 +19,6 @@ to remove the last element of \code{x} (default: \code{TRUE}).}
 The same vector \code{x} with the first and/or last element removed.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{remove_caps()} removes the first and/or last element of a vector.
 }
 \examples{

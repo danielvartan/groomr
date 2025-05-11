@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `make_machine_readable()` makes a string machine-readable by converting it
 #' to lowercase, removing special characters, and replacing spaces with hyphens.
 #'

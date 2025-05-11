@@ -21,8 +21,6 @@ A \code{\link[base:character]{character}} vectors with the file paths
 sorted by size.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{sort_files_by_size()} sorts a vector of file paths based on their size.
 It is useful for organizing files in a directory or for preparing files
 for processing.

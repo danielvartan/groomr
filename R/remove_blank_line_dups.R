@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' This function removes blank line duplicates (e.g., a `""` line, followed by
 #' another `""` line) from a file.
 #'

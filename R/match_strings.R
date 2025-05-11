@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `match_strings()` performs approximate string matching between two
 #' [`character`][base::character()] vectors using the
 #' [`amatch()`][stringdist::amatch()] function from the `stringdist` package.

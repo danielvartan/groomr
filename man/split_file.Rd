@@ -24,8 +24,6 @@ header will be repeated as the first line in every part
 An invisible \code{NULL}. This function is used for its side effect.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{split_file()} split a single file into \code{n} parts.
 }
 \examples{

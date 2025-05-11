@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `remove_caps()` removes the first and/or last element of a vector.
 #'
 #' @param x An [`atomic`][base::is.atomic()] vector.

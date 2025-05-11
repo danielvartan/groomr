@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `cut_vector()` splits a vector into segments at specified cutting points
 #' or indexes. You can define the cuts either by providing explicit index
 #' positions or by specifying the number of segments.

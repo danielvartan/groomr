@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `sort_files_by_size()` sorts a vector of file paths based on their size.
 #' It is useful for organizing files in a directory or for preparing files
 #' for processing.

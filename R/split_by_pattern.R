@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `split_by_pattern()` allow you to split a character vector considering a
 #' start and end pattern.
 #'

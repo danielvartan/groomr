@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `normalize_names()` normalizes file and directory names to make them
 #' machine-readable.
 #'

@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `peek_csv_file()` reads a CSV file and provides a summary of its contents,
 #' including the number of columns, rows, and cells. It is useful for quickly
 #' inspecting the structure of a CSV file without loading the entire dataset

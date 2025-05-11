@@ -17,8 +17,6 @@ of the input string, See \code{\link[base:iconv]{iconv}} to learn more.
 A \code{\link[base:character]{character}} vector.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{to_ascii()} converts a string to ASCII, removing any non-ASCII characters.
 }
 \examples{

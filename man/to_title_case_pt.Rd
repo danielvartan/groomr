@@ -37,8 +37,6 @@ with custom rules to be applied. The syntax is
 A \code{\link[base:character]{character}} vector.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{to_title_case_pt()} converts a character vector to title case, but
 keeping some classes of words in lower case.
 

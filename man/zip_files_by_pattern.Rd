@@ -48,8 +48,6 @@ An invisible \code{\link[base:character]{character}} vector containing the
 paths to the created zip files.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{zip_files_by_pattern()} compresses files by grouping them according to
 specified patterns and splitting them into chunks if needed.
 }

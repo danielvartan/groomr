@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `replace_in_file()` searches each line of a file and replaces a specific
 #' pattern when found.
 #'

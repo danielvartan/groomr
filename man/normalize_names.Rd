@@ -29,8 +29,6 @@ the regular expression in \code{regex} should be negated (default: \code{TRUE}).
 An invisible \code{NULL}. This function is used for its side effect.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{normalize_names()} normalizes file and directory names to make them
 machine-readable.
 

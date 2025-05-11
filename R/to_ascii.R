@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `to_ascii()` converts a string to ASCII, removing any non-ASCII characters.
 #'
 #' @param x A [`character`][base::character] vector.

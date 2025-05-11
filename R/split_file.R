@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `split_file()` split a single file into `n` parts.
 #'
 #' @param file (optional) A string indicating the file path

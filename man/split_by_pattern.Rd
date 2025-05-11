@@ -32,8 +32,6 @@ in the split (default: \code{FALSE}).}
 A \link[base:list]{list} with the split character vector.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{split_by_pattern()} allow you to split a character vector considering a
 start and end pattern.
 }

@@ -2,8 +2,6 @@
 #'
 #' @description
 #'
-#' `r lifecycle::badge("stable")`
-#'
 #' `normalize_hashtags()` lower case and remove accents and non-alphanumeric
 #' characters from hashtags.
 #'

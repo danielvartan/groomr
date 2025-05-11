@@ -36,8 +36,6 @@ A \code{\link[base:list]{list}} of character vectors, where each vector
 contains file paths that fit within the specified size limit.
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
-
 \code{split_files_by_size()} splits a vector of file paths into chunks based on
 their size. It is useful for managing large files or datasets that need to
 be processed in smaller parts.
