@@ -117,6 +117,7 @@ contains file paths that fit within the specified size limit.</p>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
     <div class="dont-index"><p>Other file functions:
+<code><a href="get_file_size.html">get_file_size</a>()</code>,
 <code><a href="identify_blank_line_neighbors.html">identify_blank_line_neighbors</a>()</code>,
 <code><a href="normalize_hashtags.html">normalize_hashtags</a>()</code>,
 <code><a href="normalize_names.html">normalize_names</a>()</code>,
@@ -146,14 +147,14 @@ contains file paths that fit within the specified size limit.</p>
 <span class="r-in"><span><span class="va">sizes</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://fs.r-lib.org/reference/file_info.html" class="external-link">file_size</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">dir</span>, <span class="va">files</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/trimws.html" class="external-link">trimws</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">sizes</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="va">files</span></span></span>
 <span class="r-in"><span><span class="va">sizes</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> file1.txt file3.txt file5.txt file4.txt file2.txt </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    "126K"    "165K"    "263K"    "285K"    "465K" </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> file5.txt file3.txt file4.txt file2.txt file1.txt </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    "151K"    "184K"    "222K"    "263K"    "285K" </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">total_size</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://fs.r-lib.org/reference/file_info.html" class="external-link">file_size</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">dir</span>, <span class="va">files</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">max_size</span> <span class="op">&lt;-</span> <span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/fs_bytes.html" class="external-link">fs_bytes</a></span><span class="op">(</span><span class="va">total_size</span> <span class="op">/</span> <span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">max_size</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 652K</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 552K</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">split_files_by_size</span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="va">files</span>,</span></span>
@@ -161,13 +162,13 @@ contains file paths that fit within the specified size limit.</p>
 <span class="r-in"><span>  root <span class="op">=</span> <span class="va">dir</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[1]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> file1.txt file3.txt file5.txt </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> file5.txt file3.txt </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[2]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> file4.txt</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> file4.txt file2.txt </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[3]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> file2.txt</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> file1.txt</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
