@@ -1,5 +1,7 @@
 # groomr 0.1.0.9000 (Development Version)
 
+- Added `get_file_sizes()` function to get the length files.
+
 # groomr 0.1.0
 
 - 🎉 First release.

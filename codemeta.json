@@ -202,6 +202,19 @@
     },
     "8": {
       "@type": "SoftwareApplication",
+      "identifier": "httr",
+      "name": "httr",
+      "version": ">= 1.4.7",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=httr"
+    },
+    "9": {
+      "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
       "provider": {
@@ -212,7 +225,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=lifecycle"
     },
-    "9": {
+    "10": {
       "@type": "SoftwareApplication",
       "identifier": "magrittr",
       "name": "magrittr",
@@ -225,13 +238,13 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=magrittr"
     },
-    "10": {
+    "11": {
       "@type": "SoftwareApplication",
       "identifier": "prettycheck",
       "name": "prettycheck",
       "sameAs": "https://github.com/danielvartan/prettycheck"
     },
-    "11": {
+    "12": {
       "@type": "SoftwareApplication",
       "identifier": "purrr",
       "name": "purrr",
@@ -244,7 +257,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=purrr"
     },
-    "12": {
+    "13": {
       "@type": "SoftwareApplication",
       "identifier": "readr",
       "name": "readr",
@@ -257,7 +270,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=readr"
     },
-    "13": {
+    "14": {
       "@type": "SoftwareApplication",
       "identifier": "stringdist",
       "name": "stringdist",
@@ -270,7 +283,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringdist"
     },
-    "14": {
+    "15": {
       "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
@@ -283,7 +296,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     },
-    "15": {
+    "16": {
       "@type": "SoftwareApplication",
       "identifier": "zip",
       "name": "zip",
@@ -298,7 +311,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "276.248KB",
+  "fileSize": "276.875KB",
   "citation": [
     {
       "@type": "CreativeWork",
