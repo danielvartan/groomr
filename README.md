@@ -38,8 +38,6 @@ remotes::install_github("danielvartan/groomr")
 
 Here are some functions that you can use with `groomr`:
 
-- [`get_file_size()`](https://danielvartan.github.io/groomr/reference/get_file_size.html):
-  Get the sizes of local files or files from URLs.
 - [`make_machine_readable()`](https://danielvartan.github.io/groomr/reference/make_machine_readable.html):
   Make a string machine-readable.
 - [`normalize_names()`](https://danielvartan.github.io/groomr/reference/normalize_names.html):

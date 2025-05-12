@@ -33,7 +33,6 @@ navbar:
 reference:
 - title: Files
   contents:
-  - get_file_size
   - identify_blank_line_neighbors
   - normalize_hashtags
   - normalize_names

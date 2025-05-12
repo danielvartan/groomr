@@ -76,7 +76,6 @@ split_files_by_size(
 }
 \seealso{
 Other file functions: 
-\code{\link{get_file_size}()},
 \code{\link{identify_blank_line_neighbors}()},
 \code{\link{normalize_hashtags}()},
 \code{\link{normalize_names}()},
