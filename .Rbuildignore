@@ -14,7 +14,6 @@
 ^data-raw$
 ^doc$
 ^docs$
-^groomr\.Rproj$
 ^LICENSE\.md$
 ^man-roxygen$
 ^Meta$

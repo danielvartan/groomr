@@ -24,7 +24,7 @@ utils::bibentry(
     "Vartanian, D.", ". ",
     "(2025)", ". ",
     "{groomr}:", " ",
-    "Tidy tools fo R", ". ",
+    "Tidy tools for R", ". ",
     "R package", ". ",
     "https://danielvartan.github.io/",
     "groomr"

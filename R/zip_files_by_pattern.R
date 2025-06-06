@@ -18,6 +18,8 @@
 #'   matching each pattern will be aggregated into a single zip file, named
 #'   using the pattern and `suffix`. If `NULL`, each file will be zipped
 #'   individually (default: `NULL`).
+#' @param prefix (optional) A string specifying a prefix to be added to the
+#'   zip file names (default: `NULL`).
 #' @param suffix (optional) A string specifying a suffix to be added to the
 #'   zip file names (default: `NULL`).
 #' @param max_size (optional) An integer or [`fs_bytes`][fs::fs_bytes()] value
@@ -75,6 +77,7 @@
 zip_files_by_pattern <- function(
   files,
   pattern = NULL,
+  prefix = NULL,
   suffix = NULL,
   max_size = fs::fs_bytes("1GB"),
   root = ".",
@@ -85,6 +88,7 @@ zip_files_by_pattern <- function(
   checkmate::assert_directory_exists(root, access = "r")
   checkmate::assert_file_exists(fs::path(root, files), access = "r")
   checkmate::assert_character(pattern, null.ok = TRUE)
+  checkmate::assert_string(prefix, null.ok = TRUE)
   checkmate::assert_string(suffix, null.ok = TRUE)
   checkmate::assert_number(max_size, lower = fs::fs_bytes("1MB"))
   checkmate::assert_directory_exists(dir, access = "w")
@@ -130,6 +134,7 @@ zip_files_by_pattern <- function(
     zip_files_by_pattern_(
       files = files,
       pattern = pattern,
+      prefix = prefix,
       suffix = suffix,
       max_size = max_size,
       root = root,
@@ -189,6 +194,7 @@ zip_each_file_separately <- function(
 zip_files_by_pattern_ <- function(
   files,
   pattern = NULL,
+  prefix = NULL,
   suffix = NULL,
   max_size = fs::fs_bytes("5GB"),
   root = ".",
@@ -199,6 +205,7 @@ zip_files_by_pattern_ <- function(
   checkmate::assert_directory_exists(root, access = "r")
   checkmate::assert_file_exists(fs::path(root, files), access = "r")
   checkmate::assert_character(pattern, null.ok = TRUE)
+  checkmate::assert_string(prefix, null.ok = TRUE)
   checkmate::assert_string(suffix, null.ok = TRUE)
   checkmate::assert_number(max_size, lower = fs::fs_bytes("10MB"))
   checkmate::assert_directory_exists(dir, access = "w")
@@ -263,8 +270,8 @@ zip_files_by_pattern_ <- function(
       i_zipfile_j <-
         ifelse(
           length(i_file_chunks) == 1,
-          fs::path(dir, paste0(i, suffix, ".zip")),
-          fs::path(dir, paste0(i, suffix, "_", j, ".zip"))
+          fs::path(dir, paste0(prefix, i, suffix, ".zip")),
+          fs::path(dir, paste0(prefix, i, suffix, "_", j, ".zip"))
         ) |>
         normalizePath(mustWork = FALSE)
 

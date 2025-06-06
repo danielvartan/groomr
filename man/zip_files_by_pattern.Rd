@@ -7,6 +7,7 @@
 zip_files_by_pattern(
   files,
   pattern = NULL,
+  prefix = NULL,
   suffix = NULL,
   max_size = fs::fs_bytes("1GB"),
   root = ".",
@@ -24,6 +25,9 @@ specifying one or more patterns to group files for zipping. Files
 matching each pattern will be aggregated into a single zip file, named
 using the pattern and \code{suffix}. If \code{NULL}, each file will be zipped
 individually (default: \code{NULL}).}
+
+\item{prefix}{(optional) A string specifying a prefix to be added to the
+zip file names (default: \code{NULL}).}
 
 \item{suffix}{(optional) A string specifying a suffix to be added to the
 zip file names (default: \code{NULL}).}
