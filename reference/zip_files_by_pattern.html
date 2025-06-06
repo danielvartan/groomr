@@ -56,6 +56,7 @@ specified patterns and splitting them into chunks if needed.</p>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">zip_files_by_pattern</span><span class="op">(</span></span>
 <span>  <span class="va">files</span>,</span>
 <span>  pattern <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  prefix <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  suffix <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  max_size <span class="op">=</span> <span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/fs_bytes.html" class="external-link">fs_bytes</a></span><span class="op">(</span><span class="st">"1GB"</span><span class="op">)</span>,</span>
 <span>  root <span class="op">=</span> <span class="st">"."</span>,</span>
@@ -80,6 +81,11 @@ specifying one or more patterns to group files for zipping. Files
 matching each pattern will be aggregated into a single zip file, named
 using the pattern and <code>suffix</code>. If <code>NULL</code>, each file will be zipped
 individually (default: <code>NULL</code>).</p></dd>
+
+
+<dt id="arg-prefix">prefix<a class="anchor" aria-label="anchor" href="#arg-prefix"></a></dt>
+<dd><p>(optional) A string specifying a prefix to be added to the
+zip file names (default: <code>NULL</code>).</p></dd>
 
 
 <dt id="arg-suffix">suffix<a class="anchor" aria-label="anchor" href="#arg-suffix"></a></dt>
@@ -191,7 +197,7 @@ compatibility and efficient file compression.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.2.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
 </div>
 
     </footer></div>
