@@ -28,6 +28,9 @@
 #'   this value. If an individual file is larger than the limit, it will be
 #'   placed in its own chunk. Use `Inf` to disable chunking
 #'   (default: [`fs_bytes("1GB")`][fs::fs_bytes()]).
+#' @param appendices (optional) A [`character`][base::character()] vector
+#'   specifying additional files to be included in each zip file. Like in
+#'   `files`, only relative paths are supported (default: `NULL`).
 #' @param root (optional) A string specifying the root directory of the files.
 #'   See [`zip()`][zip::zip()] for more details (default: `.`).
 #' @param dir (optional) A string specifying the directory where the zip files
@@ -41,7 +44,8 @@
 #' @export
 #'
 #' @examples
-#' files <- c("test_1_1.txt", "test_1_2.txt", "test_2.txt", "test_3.txt")
+#' files <- c("test_1_1.txt", "test_1_2.txt", "test_2.txt")
+#' appendices <- c("appendix.txt")
 #'
 #' txt_dir <- tempfile("dir")
 #' zip_dir <- tempfile("dir")
@@ -49,13 +53,15 @@
 #' dir.create(zip_dir)
 #'
 #' for (i in files) file.create(file.path(txt_dir, i))
+#' for (i in appendices) file.create(file.path(txt_dir, i))
 #'
 #' list.files(txt_dir)
-#' #> [1] "test_1_1.txt" "test_1_2.txt" "test_2.txt" "test_3.txt" # Expected
+#' #> [1] "appendix.txt" "test_1_1.txt" "test_1_2.txt" "test_2.txt" # Expected
 #'
 #' zip_files_by_pattern(
 #'   files = files,
 #'   pattern = c("test_1", "test_2"),
+#'   appendices = appendices,
 #'   root = txt_dir,
 #'   dir = zip_dir
 #' )
@@ -73,13 +79,14 @@
 #' }
 #'
 #' list.files(unzip_dir)
-#' #> [1] "test_1_1.txt" "test_1_2.txt" "test_2.txt" # Expected
+#' #> [1] "appendix.txt" "test_1_1.txt" "test_1_2.txt" "test_2.txt" # Expected
 zip_files_by_pattern <- function(
   files,
   pattern = NULL,
   prefix = NULL,
   suffix = NULL,
   max_size = fs::fs_bytes("1GB"),
+  appendices = NULL,
   root = ".",
   dir = root,
   ...
@@ -91,6 +98,7 @@ zip_files_by_pattern <- function(
   checkmate::assert_string(prefix, null.ok = TRUE)
   checkmate::assert_string(suffix, null.ok = TRUE)
   checkmate::assert_number(max_size, lower = fs::fs_bytes("1MB"))
+  checkmate::assert_character(appendices, any.missing = FALSE, null.ok = TRUE)
   checkmate::assert_directory_exists(dir, access = "w")
 
   if (any(fs::is_absolute_path(files))) {
@@ -120,12 +128,19 @@ zip_files_by_pattern <- function(
     )
   }
 
+  if (!is.null(appendices)) {
+    for (i in appendices) {
+      checkmate::assert_file_exists(fs::path(root, i), access = "r")
+    }
+  }
+
   files <- files |> unique() |> sort()
   pattern <- pattern |> unique() |> sort()
 
   if (is.null(pattern)) {
     zip_each_file_separately(
       files = files,
+      appendices = appendices,
       root = root,
       dir = dir,
       ...
@@ -137,6 +152,7 @@ zip_files_by_pattern <- function(
       prefix = prefix,
       suffix = suffix,
       max_size = max_size,
+      appendices = appendices,
       root = root,
       dir = dir,
       ...
@@ -146,6 +162,7 @@ zip_files_by_pattern <- function(
 
 zip_each_file_separately <- function(
   files,
+  appendices = appendices,
   root = ".",
   dir = root,
   ...
@@ -153,7 +170,14 @@ zip_each_file_separately <- function(
   checkmate::assert_character(files, any.missing = FALSE)
   checkmate::assert_directory_exists(root, access = "r")
   checkmate::assert_file_exists(fs::path(root, files), access = "r")
+  checkmate::assert_character(appendices, any.missing = FALSE, null.ok = TRUE)
   checkmate::assert_directory_exists(dir, access = "w")
+
+  if (!is.null(appendices)) {
+    for (i in appendices) {
+      checkmate::assert_file_exists(fs::path(root, i), access = "r")
+    }
+  }
 
   cli::cli_progress_bar(
     name = ifelse(
@@ -176,7 +200,7 @@ zip_each_file_separately <- function(
 
     zip::zip(
       zipfile = i_zipfile,
-      files = i,
+      files = c(i, appendices),
       root = root,
       ...
     )
@@ -197,6 +221,7 @@ zip_files_by_pattern_ <- function(
   prefix = NULL,
   suffix = NULL,
   max_size = fs::fs_bytes("5GB"),
+  appendices = appendices,
   root = ".",
   dir = root,
   ...
@@ -208,12 +233,19 @@ zip_files_by_pattern_ <- function(
   checkmate::assert_string(prefix, null.ok = TRUE)
   checkmate::assert_string(suffix, null.ok = TRUE)
   checkmate::assert_number(max_size, lower = fs::fs_bytes("10MB"))
+  checkmate::assert_character(appendices, any.missing = FALSE, null.ok = TRUE)
   checkmate::assert_directory_exists(dir, access = "w")
 
   # R CMD Check variable bindings fix
   # nolint start
   . <- NULL
   # nolint end
+
+  if (!is.null(appendices)) {
+    for (i in appendices) {
+      checkmate::assert_file_exists(fs::path(root, i), access = "r")
+    }
+  }
 
   cli::cli_alert_info(
     paste0(
@@ -277,7 +309,7 @@ zip_files_by_pattern_ <- function(
 
       zip::zip(
         zipfile = i_zipfile_j,
-        files = i_file_chunks[[j]] |> basename(),
+        files = c(i_file_chunks[[j]] |> basename(), appendices),
         root = root,
         ...
       )

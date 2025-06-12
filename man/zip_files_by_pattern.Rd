@@ -10,6 +10,7 @@ zip_files_by_pattern(
   prefix = NULL,
   suffix = NULL,
   max_size = fs::fs_bytes("1GB"),
+  appendices = NULL,
   root = ".",
   dir = root,
   ...
@@ -39,6 +40,10 @@ this value. If an individual file is larger than the limit, it will be
 placed in its own chunk. Use \code{Inf} to disable chunking
 (default: \code{\link[fs:fs_bytes]{fs_bytes("1GB")}}).}
 
+\item{appendices}{(optional) A \code{\link[base:character]{character}} vector
+specifying additional files to be included in each zip file. Like in
+\code{files}, only relative paths are supported (default: \code{NULL}).}
+
 \item{root}{(optional) A string specifying the root directory of the files.
 See \code{\link[zip:zip]{zip()}} for more details (default: \code{.}).}
 
@@ -60,7 +65,8 @@ This function uses the \code{\link[zip:zip]{zip}} package for cross-platform
 compatibility and efficient file compression.
 }
 \examples{
-files <- c("test_1_1.txt", "test_1_2.txt", "test_2.txt", "test_3.txt")
+files <- c("test_1_1.txt", "test_1_2.txt", "test_2.txt")
+appendices <- c("appendix.txt")
 
 txt_dir <- tempfile("dir")
 zip_dir <- tempfile("dir")
@@ -68,13 +74,15 @@ dir.create(txt_dir)
 dir.create(zip_dir)
 
 for (i in files) file.create(file.path(txt_dir, i))
+for (i in appendices) file.create(file.path(txt_dir, i))
 
 list.files(txt_dir)
-#> [1] "test_1_1.txt" "test_1_2.txt" "test_2.txt" "test_3.txt" # Expected
+#> [1] "appendix.txt" "test_1_1.txt" "test_1_2.txt" "test_2.txt" # Expected
 
 zip_files_by_pattern(
   files = files,
   pattern = c("test_1", "test_2"),
+  appendices = appendices,
   root = txt_dir,
   dir = zip_dir
 )
@@ -92,7 +100,7 @@ for (i in file.path(zip_dir, list.files(zip_dir))) {
 }
 
 list.files(unzip_dir)
-#> [1] "test_1_1.txt" "test_1_2.txt" "test_2.txt" # Expected
+#> [1] "appendix.txt" "test_1_1.txt" "test_1_2.txt" "test_2.txt" # Expected
 }
 \seealso{
 Other file functions: 
