@@ -58,6 +58,7 @@ x <- c(
 \seealso{
 Other vector functions: 
 \code{\link{cut_vector}()},
-\code{\link{remove_caps}()}
+\code{\link{remove_caps}()},
+\code{\link{replace_caps}()}
 }
 \concept{vector functions}

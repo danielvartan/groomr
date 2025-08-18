@@ -34,6 +34,7 @@ remove_caps(c("a", "b", "c"), end = FALSE)
 \seealso{
 Other vector functions: 
 \code{\link{cut_vector}()},
+\code{\link{replace_caps}()},
 \code{\link{split_by_pattern}()}
 }
 \concept{vector functions}

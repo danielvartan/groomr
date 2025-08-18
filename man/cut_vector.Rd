@@ -149,6 +149,7 @@ cut_vector(seq(10), c(3, 9), rm_end = TRUE)
 \seealso{
 Other vector functions: 
 \code{\link{remove_caps}()},
+\code{\link{replace_caps}()},
 \code{\link{split_by_pattern}()}
 }
 \concept{vector functions}

@@ -10,6 +10,10 @@ testthat::test_that("remove_caps() | General test", {
 })
 
 testthat::test_that("remove_caps() | Error test", {
+  # checkmate::assert_atomic(x)
+  remove_caps(x = list(a = 1, b = 2), start = TRUE, end = TRUE) |>
+    testthat::expect_error()
+
   # checkmate::assert_flag(start)
   remove_caps(x = "a", start = 1, end = TRUE) |>
     testthat::expect_error()

@@ -25,6 +25,7 @@
 #' remove_caps(c("a", "b", "c"), end = FALSE)
 #' #> [1] "b" "c" # Expected
 remove_caps <- function(x, start = TRUE, end = TRUE) {
+  checkmate::assert_atomic(x)
   checkmate::assert_flag(start)
   checkmate::assert_flag(end)
 
