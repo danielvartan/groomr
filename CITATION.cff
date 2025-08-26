@@ -6,7 +6,6 @@
 cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
-license: MIT
 title: 'groomr: Tidy Tools'
 version: 0.1.0.9000
 identifiers:
@@ -207,7 +206,7 @@ references:
     email: lionel@posit.co
   year: '2025'
   doi: 10.32614/CRAN.package.purrr
-  version: '>= 1.0.4'
+  version: '>= 1.1.0'
 - type: software
   title: readr
   abstract: 'readr: Read Rectangular Text Data'
@@ -227,6 +226,19 @@ references:
   year: '2025'
   doi: 10.32614/CRAN.package.readr
   version: '>= 2.1.5'
+- type: software
+  title: rvest
+  abstract: 'rvest: Easily Harvest (Scrape) Web Pages'
+  notes: Imports
+  url: https://rvest.tidyverse.org/
+  repository: https://CRAN.R-project.org/package=rvest
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  year: '2025'
+  doi: 10.32614/CRAN.package.rvest
+  version: '>= 1.0.4'
 - type: software
   title: stringdist
   abstract: 'stringdist: Approximate String Matching, Fuzzy Text Search, and String
@@ -268,20 +280,7 @@ references:
     email: csardi.gabor@gmail.com
   year: '2025'
   doi: 10.32614/CRAN.package.zip
-  version: '>= 2.3.2'
-- type: software
-  title: covr
-  abstract: 'covr: Test Coverage for Packages'
-  notes: Suggests
-  url: https://covr.r-lib.org
-  repository: https://CRAN.R-project.org/package=covr
-  authors:
-  - family-names: Hester
-    given-names: Jim
-    email: james.f.hester@gmail.com
-  year: '2025'
-  doi: 10.32614/CRAN.package.covr
-  version: '>= 3.6.4'
+  version: '>= 2.3.3'
 - type: software
   title: datasets
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -307,19 +306,6 @@ references:
   year: '2025'
   doi: 10.32614/CRAN.package.knitr
   version: '>= 1.50'
-- type: software
-  title: mockr
-  abstract: 'mockr: Mocking in R'
-  notes: Suggests
-  url: https://krlmlr.github.io/mockr/
-  repository: https://CRAN.R-project.org/package=mockr
-  authors:
-  - family-names: Müller
-    given-names: Kirill
-    email: kirill@cynkra.com
-  year: '2025'
-  doi: 10.32614/CRAN.package.mockr
-  version: '>= 0.2.2'
 - type: software
   title: spelling
   abstract: 'spelling: Tools for Spell Checking in R'

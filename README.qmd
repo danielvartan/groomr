@@ -27,9 +27,9 @@ cat(
   badger::badge_github_actions(action = "R-CMD-check.yaml"),
   badger::badge_codecov() |> rutils::shush(),
   badger::badge_license(
-    "MIT",
-    "green",
-    url = "https://choosealicense.com/licenses/mit/"
+    "GPLv3",
+    "bd0000",
+    url = "https://www.gnu.org/licenses/gpl-3.0"
   ),
   badger::badge_custom(
     "Contributor%20Covenant",
@@ -59,16 +59,16 @@ remotes::install_github("danielvartan/groomr")
 
 Here are some functions that you can use with `groomr`:
 
-- [`make_machine_readable()`](https://danielvartan.github.io/groomr/reference/make_machine_readable.html): Make a string machine-readable.
-- [`normalize_names()`](https://danielvartan.github.io/groomr/reference/normalize_names.html): Make file and directory names machine-readable.
-- [`remove_blank_line_dups()`](https://danielvartan.github.io/groomr/reference/remove_blank_line_dups.html): Remove blank lines duplicates in files.
-- [`replace_in_file()`](https://danielvartan.github.io/groomr/reference/replace_in_file.html): Replace a pattern in files.
-- [`sort_files_by_size()`](https://danielvartan.github.io/groomr/reference/sort_files_by_size.html): Sort files based on their size.
-- [`split_by_pattern()`](https://danielvartan.github.io/groomr/reference/split_by_pattern.html): Split a character vector by a pattern.
+- [`make_machine_readable()`](https://danielvartan.github.io/groomr/reference/make_machine_readable.html): Make a string machine-readable
+- [`normalize_names()`](https://danielvartan.github.io/groomr/reference/normalize_names.html): Make file and directory names machine-readable
+- [`remove_blank_line_dups()`](https://danielvartan.github.io/groomr/reference/remove_blank_line_dups.html): Remove blank lines duplicates in files
+- [`replace_in_file()`](https://danielvartan.github.io/groomr/reference/replace_in_file.html): Replace a pattern in files
+- [`sort_files_by_size()`](https://danielvartan.github.io/groomr/reference/sort_files_by_size.html): Sort files based on their size
+- [`split_by_pattern()`](https://danielvartan.github.io/groomr/reference/split_by_pattern.html): Split a character vector by a pattern
 - [`split_file()`](https://danielvartan.github.io/groomr/reference/split_file.html): Split a single file into `n` parts.
-- [`split_files_by_size()`](https://danielvartan.github.io/groomr/reference/split_files_by_size.html): Split files based on their size.
+- [`split_files_by_size()`](https://danielvartan.github.io/groomr/reference/split_files_by_size.html): Split files based on their size
 - [`to_title_case_pt()`](https://danielvartan.github.io/groomr/reference/to_title_case_pt.html): Convert to title case considering Portuguese rules.
-- [`zip_files_by_pattern()`](https://danielvartan.github.io/groomr/reference/zip_files_by_pattern.html): Zip files by a pattern.
+- [`zip_files_by_pattern()`](https://danielvartan.github.io/groomr/reference/zip_files_by_pattern.html): Zip files by a pattern
 
 Click [here](https://danielvartan.github.io/groomr/) to see the full list.
 
@@ -80,14 +80,30 @@ Click [here](https://danielvartan.github.io/groomr/) to see the full list.
 
 cat(
   badger::badge_license(
-    "MIT",
-    "green",
-    url = "https://choosealicense.com/licenses/mit/"
+    "GPLv3",
+    "bd0000",
+    url = "https://www.gnu.org/licenses/gpl-3.0"
   )
 )
 ```
 
-`groomr` code is released under the [MIT license](https://opensource.org/license/mit).
+`groomr` code is released under the [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0).
+
+```text
+Copyright (C) 2025 Daniel Vartanian
+
+The code in this repository is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <https://www.gnu.org/licenses/>.
+```
 
 ## Contributing
 
