@@ -1,6 +1,6 @@
 Package: groomr
 Title: Tidy Tools
-Version: 0.1.0.9000
+Version: 0.1.0.9001
 Authors@R: c(
         person(
             given = "Daniel",
@@ -14,12 +14,12 @@ Description: A set of tools to help you tidy and organize R objects and
     files efficiently. It provides a set of functions for cleaning, renaming,
     splitting, and managing files and data, making your workflows more
     streamlined and reproducible.
-License: MIT + file LICENSE
+License: GPL (>=3) + file LICENSE
 URL: https://danielvartan.github.io/groomr/,
     https://github.com/danielvartan/groomr/
 BugReports: https://github.com/danielvartan/groomr/issues/
 Depends:
-    R (>= 4.3)
+    R (>= 4.4)
 Imports:
     checkmate (>= 2.3.2),
     cli (>= 3.6.5),
@@ -30,11 +30,12 @@ Imports:
     lifecycle,
     magrittr (>= 2.0.3),
     prettycheck,
-    purrr (>= 1.0.4),
+    purrr (>= 1.1.0),
     readr (>= 2.1.5),
+    rvest (>= 1.0.4),
     stringdist (>= 0.9.15),
     stringr (>= 1.5.1),
-    zip (>= 2.3.2)
+    zip (>= 2.3.3)
 Suggests:
     covr (>= 3.6.4),
     datasets (>= 4.4),

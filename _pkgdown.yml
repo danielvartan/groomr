@@ -59,6 +59,10 @@ reference:
   - replace_caps
   - split_by_pattern
 
+- title: Others
+  contents:
+  - parse_html_table
+
 authors:
   Daniel Vartanian:
     href: https://github.com/danielvartan/
