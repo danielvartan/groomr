@@ -47,13 +47,13 @@
 #' to_title_case_pt("Alta Floresta d'Oeste")
 #' #> [1] "Alta Floresta D'Oeste" # Expected
 to_title_case_pt <- function(
-    x, #nolint
-    articles = TRUE,
-    conjunctions = TRUE,
-    oblique_pronouns = TRUE,
-    prepositions = TRUE,
-    custom_rules = c("(.)\\bD(el)\\b" = "\\1d\\2") # Del
-  ) {
+  x, #nolint
+  articles = TRUE,
+  conjunctions = TRUE,
+  oblique_pronouns = TRUE,
+  prepositions = TRUE,
+  custom_rules = c("(.)\\bD(el)\\b" = "\\1d\\2") # Del
+) {
   checkmate::assert_character(x)
   checkmate::assert_flag(articles)
   checkmate::assert_flag(conjunctions)
@@ -90,7 +90,7 @@ to_title_case_pt <- function(
       # Durante
       "(.)\\bD(urante)\\b" = "\\1D\\2",
       # E | Embora | Enquanto | Então | Entretanto | Exceto
-      "(.)\\bE((mbora|n(quanto|t(\\u00e3o|retanto))|xceto)?)\\b" = "\\1e\\2",
+      "(.)\\bE((mbora|n(quanto|t(\u00e3o|retanto))|xceto)?)\\b" = "\\1e\\2",
       # Logo
       "(.)\\bL(ogo)\\b" = "\\1l\\2",
       # Mas
@@ -100,11 +100,11 @@ to_title_case_pt <- function(
       # Ou | Ora
       "(.)\\bO(u|ra)\\b" = "\\1o\\2",
       # Pois | Porém | Porque | Porquanto | Portanto
-      "(.)\\bP(o(is|r(\\u00e9m|qu(e|anto)|tanto)))\\b" = "\\1p\\2",
+      "(.)\\bP(o(is|r(\u00e9m|qu(e|anto)|tanto)))\\b" = "\\1p\\2",
       # Quando | Quanto | Que
       "(.)\\bQ(u(an[dt]o|e))\\b" = "\\1q\\2",
       # Se | Senão
-      "(.)\\bS(e(n\\u00e3o)?)\\b" = "\\1s\\2",
+      "(.)\\bS(e(n\u00e3o)?)\\b" = "\\1s\\2",
       # Todavia
       "(.)\\bT(odavia)\\b" = "\\1t\\2"
     )
@@ -132,9 +132,9 @@ to_title_case_pt <- function(
     rules <- c(
       rules,
       # Ao | Aos | Ante | Até | Após
-      "(.)\\bA((o)(s)?|nte|t\\u00e9|p\\u00f3s)\\b" = "\\1a\\2",
+      "(.)\\bA((o)(s)?|nte|t\u00e9|p\u00f3s)\\b" = "\\1a\\2",
       # As
-      "(.)\\b\\u00c0(s)?\\b" = "\\1\\u00e0\\2",
+      "(.)\\b\u00c0(s)?\\b" = "\\1\u00e0\\2",
       # Com | Contra
       "(.)\\bC(om|ontra)\\b" = "\\1c\\2",
       # Da | Das | Do | Dos | De | Desde
@@ -148,7 +148,7 @@ to_title_case_pt <- function(
       # Sem | Sob | Sobre
       "(.)\\bS(em|(ob(re)?))\\b" = "\\1s\\2",
       # Trás
-      "(.)\\bT(r\\u00e1s)\\b" = "\\1t\\2",
+      "(.)\\bT(r\u00e1s)\\b" = "\\1t\\2",
       # Del
       "(.)\\bD(el)\\b" = "\\1d\\2"
     )
