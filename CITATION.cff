@@ -7,7 +7,7 @@ cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
 title: 'groomr: Tidy Tools'
-version: 0.1.0.9000
+version: 0.1.0.9001
 identifiers:
 - type: url
   value: https://github.com/danielvartan/groomr/
@@ -48,7 +48,7 @@ references:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
   year: '2025'
-  version: '>= 4.3'
+  version: '>= 4.4'
 - type: software
   title: checkmate
   abstract: 'checkmate: Fast and Versatile Argument Checks'
@@ -62,7 +62,7 @@ references:
     orcid: https://orcid.org/0000-0001-9754-0393
   year: '2025'
   doi: 10.32614/CRAN.package.checkmate
-  version: '>= 2.3.2'
+  version: '>= 2.3.3'
 - type: software
   title: cli
   abstract: 'cli: Helpers for Developing Command Line Interfaces'
@@ -87,9 +87,9 @@ references:
     given-names: Matthew
     email: matthew.d.lincoln@gmail.com
     orcid: https://orcid.org/0000-0002-4387-3384
-  year: '2025'
   doi: 10.32614/CRAN.package.clipr
   version: '>= 0.8.0'
+  year: '2025'
 - type: software
   title: dplyr
   abstract: 'dplyr: A Grammar of Data Manipulation'
@@ -148,6 +148,20 @@ references:
   doi: 10.32614/CRAN.package.fpeek
   version: '>= 0.1.2'
 - type: software
+  title: hms
+  abstract: 'hms: Pretty Time of Day'
+  notes: Imports
+  url: https://hms.tidyverse.org/
+  repository: https://CRAN.R-project.org/package=hms
+  authors:
+  - family-names: Müller
+    given-names: Kirill
+    email: kirill@cynkra.com
+    orcid: https://orcid.org/0000-0002-1416-3412
+  year: '2025'
+  doi: 10.32614/CRAN.package.hms
+  version: '>= 1.1.4'
+- type: software
   title: lifecycle
   abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'
   notes: Imports
@@ -163,6 +177,7 @@ references:
     orcid: https://orcid.org/0000-0003-4757-117X
   year: '2025'
   doi: 10.32614/CRAN.package.lifecycle
+  version: '>= 1.0.4'
 - type: software
   title: magrittr
   abstract: 'magrittr: A Forward-Pipe Operator for R'
@@ -175,10 +190,10 @@ references:
     email: stefan@stefanbache.dk
   - family-names: Wickham
     given-names: Hadley
-    email: hadley@rstudio.com
+    email: hadley@posit.co
   year: '2025'
   doi: 10.32614/CRAN.package.magrittr
-  version: '>= 2.0.3'
+  version: '>= 2.0.4'
 - type: software
   title: prettycheck
   abstract: 'prettycheck: Pretty assertive programming'
@@ -206,7 +221,7 @@ references:
     email: lionel@posit.co
   year: '2025'
   doi: 10.32614/CRAN.package.purrr
-  version: '>= 1.1.0'
+  version: '>= 1.2.0'
 - type: software
   title: readr
   abstract: 'readr: Read Rectangular Text Data'
@@ -225,7 +240,7 @@ references:
     orcid: https://orcid.org/0000-0002-6983-2759
   year: '2025'
   doi: 10.32614/CRAN.package.readr
-  version: '>= 2.1.5'
+  version: '>= 2.1.6'
 - type: software
   title: rvest
   abstract: 'rvest: Easily Harvest (Scrape) Web Pages'
@@ -238,7 +253,7 @@ references:
     email: hadley@posit.co
   year: '2025'
   doi: 10.32614/CRAN.package.rvest
-  version: '>= 1.0.4'
+  version: '>= 1.0.5'
 - type: software
   title: stringdist
   abstract: 'stringdist: Approximate String Matching, Fuzzy Text Search, and String
@@ -267,7 +282,7 @@ references:
     email: hadley@posit.co
   year: '2025'
   doi: 10.32614/CRAN.package.stringr
-  version: '>= 1.5.1'
+  version: '>= 1.6.0'
 - type: software
   title: zip
   abstract: 'zip: Cross-Platform ''zip'' Compression'
@@ -281,6 +296,19 @@ references:
   year: '2025'
   doi: 10.32614/CRAN.package.zip
   version: '>= 2.3.3'
+- type: software
+  title: covr
+  abstract: 'covr: Test Coverage for Packages'
+  notes: Suggests
+  url: https://covr.r-lib.org
+  repository: https://CRAN.R-project.org/package=covr
+  authors:
+  - family-names: Hester
+    given-names: Jim
+    email: james.f.hester@gmail.com
+  year: '2025'
+  doi: 10.32614/CRAN.package.covr
+  version: '>= 3.6.5'
 - type: software
   title: datasets
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -307,6 +335,19 @@ references:
   doi: 10.32614/CRAN.package.knitr
   version: '>= 1.50'
 - type: software
+  title: mockr
+  abstract: 'mockr: Mocking in R'
+  notes: Suggests
+  url: https://krlmlr.github.io/mockr/
+  repository: https://CRAN.R-project.org/package=mockr
+  authors:
+  - family-names: Müller
+    given-names: Kirill
+    email: kirill@cynkra.com
+  year: '2025'
+  doi: 10.32614/CRAN.package.mockr
+  version: '>= 0.2.2'
+- type: software
   title: spelling
   abstract: 'spelling: Tools for Spell Checking in R'
   notes: Suggests
@@ -322,7 +363,7 @@ references:
     email: james.hester@rstudio.com
   year: '2025'
   doi: 10.32614/CRAN.package.spelling
-  version: '>= 2.3.1'
+  version: '>= 2.3.2'
 - type: software
   title: testthat
   abstract: 'testthat: Unit Testing for R'
@@ -335,5 +376,5 @@ references:
     email: hadley@posit.co
   year: '2025'
   doi: 10.32614/CRAN.package.testthat
-  version: '>= 3.2.3'
+  version: '>= 3.3.0'
 

@@ -14,35 +14,37 @@ Description: A set of tools to help you tidy and organize R objects and
     files efficiently. It provides a set of functions for cleaning, renaming,
     splitting, and managing files and data, making your workflows more
     streamlined and reproducible.
-License: GPL (>=3) + file LICENSE
+License: GPL (>=3)
 URL: https://danielvartan.github.io/groomr/,
     https://github.com/danielvartan/groomr/
 BugReports: https://github.com/danielvartan/groomr/issues/
 Depends:
     R (>= 4.4)
 Imports:
-    checkmate (>= 2.3.2),
+    checkmate (>= 2.3.3),
     cli (>= 3.6.5),
     clipr (>= 0.8.0),
     dplyr (>= 1.1.4),
     fs (>= 1.6.6),
     fpeek (>= 0.1.2),
-    lifecycle,
-    magrittr (>= 2.0.3),
+    hms (>= 1.1.4),
+    lifecycle (>= 1.0.4),
+    magrittr (>= 2.0.4),
     prettycheck,
-    purrr (>= 1.1.0),
-    readr (>= 2.1.5),
-    rvest (>= 1.0.4),
+    purrr (>= 1.2.0),
+    readr (>= 2.1.6),
+    rvest (>= 1.0.5),
     stringdist (>= 0.9.15),
-    stringr (>= 1.5.1),
+    stringr (>= 1.6.0),
     zip (>= 2.3.3)
 Suggests:
-    covr (>= 3.6.4),
+    covr (>= 3.6.5),
     datasets (>= 4.4),
+    gtsummary (>= 2.4.0),
     knitr (>= 1.50),
     mockr (>= 0.2.2),
-    spelling (>= 2.3.1),
-    testthat (>= 3.2.3)
+    spelling (>= 2.3.2),
+    testthat (>= 3.3.0)
 Remotes:
     github::danielvartan/prettycheck
 Config/testthat/edition: 3
@@ -51,4 +53,4 @@ Language: en-US
 LazyData: true
 LazyDataCompression: bzip2
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3

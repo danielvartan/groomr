@@ -44,6 +44,10 @@ reference:
   - split_files_by_size
   - zip_files_by_pattern
 
+- title: gtsummary
+  contents:
+  - fmt_hms
+
 - title: Strings
   contents:
   - find_closest_match_dbl_2

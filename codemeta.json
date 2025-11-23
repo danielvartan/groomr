@@ -7,14 +7,14 @@
   "relatedLink": "https://danielvartan.github.io/groomr/",
   "codeRepository": "https://github.com/danielvartan/groomr/",
   "issueTracker": "https://github.com/danielvartan/groomr/issues/",
-  "license": "GNU",
-  "version": "0.1.0.9000",
+  "license": "https://spdx.org/licenses/GPL-3.0",
+  "version": "0.1.0.9001",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.5.1 (2025-06-13)",
+  "runtimePlatform": "R version 4.5.2 (2025-10-31)",
   "author": [
     {
       "@type": "Person",
@@ -47,7 +47,7 @@
       "@type": "SoftwareApplication",
       "identifier": "covr",
       "name": "covr",
-      "version": ">= 3.6.4",
+      "version": ">= 3.6.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -92,7 +92,7 @@
       "@type": "SoftwareApplication",
       "identifier": "spelling",
       "name": "spelling",
-      "version": ">= 2.3.1",
+      "version": ">= 2.3.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -105,7 +105,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 3.2.3",
+      "version": ">= 3.3.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -120,13 +120,13 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 4.3"
+      "version": ">= 4.4"
     },
     "2": {
       "@type": "SoftwareApplication",
       "identifier": "checkmate",
       "name": "checkmate",
-      "version": ">= 2.3.2",
+      "version": ">= 2.3.3",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -202,8 +202,22 @@
     },
     "8": {
       "@type": "SoftwareApplication",
+      "identifier": "hms",
+      "name": "hms",
+      "version": ">= 1.1.4",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=hms"
+    },
+    "9": {
+      "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
+      "version": ">= 1.0.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -212,11 +226,11 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=lifecycle"
     },
-    "9": {
+    "10": {
       "@type": "SoftwareApplication",
       "identifier": "magrittr",
       "name": "magrittr",
-      "version": ">= 2.0.3",
+      "version": ">= 2.0.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -225,17 +239,17 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=magrittr"
     },
-    "10": {
+    "11": {
       "@type": "SoftwareApplication",
       "identifier": "prettycheck",
       "name": "prettycheck",
       "sameAs": "https://github.com/danielvartan/prettycheck"
     },
-    "11": {
+    "12": {
       "@type": "SoftwareApplication",
       "identifier": "purrr",
       "name": "purrr",
-      "version": ">= 1.1.0",
+      "version": ">= 1.2.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -244,11 +258,11 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=purrr"
     },
-    "12": {
+    "13": {
       "@type": "SoftwareApplication",
       "identifier": "readr",
       "name": "readr",
-      "version": ">= 2.1.5",
+      "version": ">= 2.1.6",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -257,11 +271,11 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=readr"
     },
-    "13": {
+    "14": {
       "@type": "SoftwareApplication",
       "identifier": "rvest",
       "name": "rvest",
-      "version": ">= 1.0.4",
+      "version": ">= 1.0.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -270,7 +284,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=rvest"
     },
-    "14": {
+    "15": {
       "@type": "SoftwareApplication",
       "identifier": "stringdist",
       "name": "stringdist",
@@ -283,11 +297,11 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringdist"
     },
-    "15": {
+    "16": {
       "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
-      "version": ">= 1.5.1",
+      "version": ">= 1.6.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -296,7 +310,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     },
-    "16": {
+    "17": {
       "@type": "SoftwareApplication",
       "identifier": "zip",
       "name": "zip",
@@ -311,7 +325,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "280.219KB",
+  "fileSize": "283.368KB",
   "citation": [
     {
       "@type": "CreativeWork",

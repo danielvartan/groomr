@@ -1,3 +1,4 @@
+**/*.quarto_ipynb
 *.knit.md
 *.utf8.md
 .Rapp.history
