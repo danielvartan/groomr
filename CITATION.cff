@@ -7,13 +7,13 @@ cff-version: 1.2.0
 message: 'To cite package "groomr" in publications use:'
 type: software
 title: 'groomr: Tidy Tools'
-version: 0.1.0.9001
+version: 0.1.0.9000
 identifiers:
 - type: url
   value: https://github.com/danielvartan/groomr/
-abstract: A set of tools to help you tidy and organize R objects and files efficiently.
-  It provides a set of functions for cleaning, renaming, splitting, and managing files
-  and data, making your workflows more streamlined and reproducible.
+abstract: A set of tools for tidying and organizing R objects and files. It provides
+  functions for cleaning, renaming, splitting, and managing files and data, making
+  workflows more efficient and reproducible.
 authors:
 - family-names: Vartanian
   given-names: Daniel
@@ -25,11 +25,10 @@ preferred-citation:
   authors:
   - family-names: Vartanian
     given-names: Daniel
-    email: danvartan@gmail.com
+    email: danielvartan@proton.me
     orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2025'
+  year: '2026'
   url: https://danielvartan.github.io/groomr
-  notes: R package
 repository-code: https://github.com/danielvartan/groomr/issues/
 url: https://danielvartan.github.io/groomr/
 contact:
@@ -47,7 +46,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2025'
+  year: '2026'
   version: '>= 4.4'
 - type: software
   title: checkmate
@@ -60,9 +59,9 @@ references:
     given-names: Michel
     email: michellang@gmail.com
     orcid: https://orcid.org/0000-0001-9754-0393
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.checkmate
-  version: '>= 2.3.3'
+  version: '>= 2.3.4'
 - type: software
   title: cli
   abstract: 'cli: Helpers for Developing Command Line Interfaces'
@@ -73,7 +72,7 @@ references:
   - family-names: Csárdi
     given-names: Gábor
     email: gabor@posit.co
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.cli
   version: '>= 3.6.5'
 - type: software
@@ -87,9 +86,9 @@ references:
     given-names: Matthew
     email: matthew.d.lincoln@gmail.com
     orcid: https://orcid.org/0000-0002-4387-3384
+  year: '2026'
   doi: 10.32614/CRAN.package.clipr
   version: '>= 0.8.0'
-  year: '2025'
 - type: software
   title: dplyr
   abstract: 'dplyr: A Grammar of Data Manipulation'
@@ -113,9 +112,9 @@ references:
     given-names: Davis
     email: davis@posit.co
     orcid: https://orcid.org/0000-0003-4777-038X
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.dplyr
-  version: '>= 1.1.4'
+  version: '>= 1.2.0'
 - type: software
   title: fs
   abstract: 'fs: Cross-Platform File System Operations Based on ''libuv'''
@@ -131,22 +130,22 @@ references:
   - family-names: Csárdi
     given-names: Gábor
     email: csardi.gabor@gmail.com
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.fs
   version: '>= 1.6.6'
 - type: software
   title: fpeek
   abstract: 'fpeek: Check Text Files Content at a Glance'
   notes: Imports
-  url: https://github.com/davidgohel/fpeek
+  url: https://davidgohel.github.io/fpeek/
   repository: https://CRAN.R-project.org/package=fpeek
   authors:
   - family-names: Gohel
     given-names: David
     email: david.gohel@ardata.fr
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.fpeek
-  version: '>= 0.1.2'
+  version: '>= 0.2.0'
 - type: software
   title: hms
   abstract: 'hms: Pretty Time of Day'
@@ -158,7 +157,7 @@ references:
     given-names: Kirill
     email: kirill@cynkra.com
     orcid: https://orcid.org/0000-0002-1416-3412
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.hms
   version: '>= 1.1.4'
 - type: software
@@ -175,9 +174,9 @@ references:
     given-names: Hadley
     email: hadley@posit.co
     orcid: https://orcid.org/0000-0003-4757-117X
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.lifecycle
-  version: '>= 1.0.4'
+  version: '>= 1.0.5'
 - type: software
   title: magrittr
   abstract: 'magrittr: A Forward-Pipe Operator for R'
@@ -191,20 +190,9 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.magrittr
   version: '>= 2.0.4'
-- type: software
-  title: prettycheck
-  abstract: 'prettycheck: Pretty assertive programming'
-  notes: Imports
-  url: https://danielvartan.github.io/prettycheck/
-  authors:
-  - family-names: Vartanian
-    given-names: Daniel
-    email: danvartan@gmail.com
-    orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2025'
 - type: software
   title: purrr
   abstract: 'purrr: Functional Programming Tools'
@@ -219,9 +207,9 @@ references:
   - family-names: Henry
     given-names: Lionel
     email: lionel@posit.co
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.purrr
-  version: '>= 1.2.0'
+  version: '>= 1.2.1'
 - type: software
   title: readr
   abstract: 'readr: Read Rectangular Text Data'
@@ -238,9 +226,9 @@ references:
     given-names: Jennifer
     email: jenny@posit.co
     orcid: https://orcid.org/0000-0002-6983-2759
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.readr
-  version: '>= 2.1.6'
+  version: '>= 2.2.0'
 - type: software
   title: rvest
   abstract: 'rvest: Easily Harvest (Scrape) Web Pages'
@@ -251,7 +239,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.rvest
   version: '>= 1.0.5'
 - type: software
@@ -267,9 +255,9 @@ references:
     name-particle: van der
     email: mark.vanderloo@gmail.com
     orcid: https://orcid.org/0000-0002-9807-4686
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.stringdist
-  version: '>= 0.9.15'
+  version: '>= 0.9.17'
 - type: software
   title: stringr
   abstract: 'stringr: Simple, Consistent Wrappers for Common String Operations'
@@ -280,7 +268,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.stringr
   version: '>= 1.6.0'
 - type: software
@@ -293,9 +281,23 @@ references:
   - family-names: Csárdi
     given-names: Gábor
     email: csardi.gabor@gmail.com
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.zip
   version: '>= 2.3.3'
+- type: software
+  title: brand.yml
+  abstract: 'brand.yml: Unified Branding with a Simple YAML File'
+  notes: Suggests
+  url: https://posit-dev.github.io/brand-yml/pkg/r/
+  repository: https://CRAN.R-project.org/package=brand.yml
+  authors:
+  - family-names: Aden-Buie
+    given-names: Garrick
+    email: garrick@posit.co
+    orcid: https://orcid.org/0000-0002-7111-0077
+  year: '2026'
+  doi: 10.32614/CRAN.package.brand.yml
+  version: '>= 0.1.0'
 - type: software
   title: covr
   abstract: 'covr: Test Coverage for Packages'
@@ -306,7 +308,7 @@ references:
   - family-names: Hester
     given-names: Jim
     email: james.f.hester@gmail.com
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.covr
   version: '>= 3.6.5'
 - type: software
@@ -318,8 +320,41 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2025'
+  year: '2026'
   version: '>= 4.4'
+- type: software
+  title: gtsummary
+  abstract: 'gtsummary: Presentation-Ready Data Summary and Analytic Result Tables'
+  notes: Suggests
+  url: https://www.danieldsjoberg.com/gtsummary/
+  repository: https://CRAN.R-project.org/package=gtsummary
+  authors:
+  - family-names: Sjoberg
+    given-names: Daniel D.
+    email: danield.sjoberg@gmail.com
+    orcid: https://orcid.org/0000-0003-0862-2018
+  - family-names: Larmarange
+    given-names: Joseph
+    orcid: https://orcid.org/0000-0001-7097-700X
+  - family-names: Curry
+    given-names: Michael
+    orcid: https://orcid.org/0000-0002-0261-4044
+  - family-names: Rua
+    given-names: Emily
+    name-particle: de la
+    orcid: https://orcid.org/0009-0000-8738-5561
+  - family-names: Lavery
+    given-names: Jessica
+    orcid: https://orcid.org/0000-0002-2746-5647
+  - family-names: Whiting
+    given-names: Karissa
+    orcid: https://orcid.org/0000-0002-4683-1868
+  - family-names: Zabor
+    given-names: Emily C.
+    orcid: https://orcid.org/0000-0002-1402-4498
+  year: '2026'
+  doi: 10.32614/CRAN.package.gtsummary
+  version: '>= 2.5.0'
 - type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
@@ -331,9 +366,9 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.knitr
-  version: '>= 1.50'
+  version: '>= 1.51'
 - type: software
   title: mockr
   abstract: 'mockr: Mocking in R'
@@ -344,7 +379,7 @@ references:
   - family-names: Müller
     given-names: Kirill
     email: kirill@cynkra.com
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.mockr
   version: '>= 0.2.2'
 - type: software
@@ -361,7 +396,7 @@ references:
   - family-names: Hester
     given-names: Jim
     email: james.hester@rstudio.com
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.spelling
   version: '>= 2.3.2'
 - type: software
@@ -374,7 +409,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.testthat
-  version: '>= 3.3.0'
+  version: '>= 3.3.2'
 

@@ -1,4 +1,3 @@
-library(prettycheck)
 library(testthat)
 
 library(groomr)

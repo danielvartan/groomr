@@ -1,8 +1,9 @@
 utils::bibentry(
-  header = "To cite {groomr} in publications use:",
+  header = "To cite groomr in publications use:",
   bibtype = "Misc",
   title = paste0(
-    "{groomr}:", " ",
+    "groomr:",
+    " ",
     "Tidy tools for R"
   ),
   author = c(
@@ -10,22 +11,26 @@ utils::bibentry(
       given = "Daniel",
       family = "Vartanian",
       role = c("aut", "cre", "ccp", "cph"),
-      email = "danvartan@gmail.com",
+      email = "danielvartan@proton.me",
       comment = c(ORCID = "0000-0001-7782-759X")
     )
   ),
-  year = "2025",
+  year = "2026",
   url = paste0(
     "https://danielvartan.github.io/",
     "groomr"
   ),
-  note = "R package",
   textVersion = paste0(
-    "Vartanian, D.", ". ",
-    "(2025)", ". ",
-    "{groomr}:", " ",
-    "Tidy tools for R", ". ",
-    "R package", ". ",
+    "Vartanian, D.",
+    " ",
+    "(2026)",
+    ". ",
+    "groomr",
+    ": ",
+    "Tidy tools for R",
+    " ",
+    "[Computer software]",
+    ". ",
     "https://danielvartan.github.io/",
     "groomr"
   )

@@ -2,13 +2,13 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "groomr",
-  "description": "A set of tools to help you tidy and organize R objects and files efficiently. It provides a set of functions for cleaning, renaming, splitting, and managing files and data, making your workflows more streamlined and reproducible.",
+  "description": "A set of tools for tidying and organizing R objects and files. It provides functions for cleaning, renaming, splitting, and managing files and data, making workflows more efficient and reproducible.",
   "name": "groomr: Tidy Tools",
   "relatedLink": "https://danielvartan.github.io/groomr/",
   "codeRepository": "https://github.com/danielvartan/groomr/",
   "issueTracker": "https://github.com/danielvartan/groomr/issues/",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.1.0.9001",
+  "version": "0.1.0.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -45,6 +45,19 @@
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
+      "identifier": "brand.yml",
+      "name": "brand.yml",
+      "version": ">= 0.1.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=brand.yml"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "covr",
       "name": "covr",
       "version": ">= 3.6.5",
@@ -64,9 +77,22 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "gtsummary",
+      "name": "gtsummary",
+      "version": ">= 2.5.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=gtsummary"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "knitr",
       "name": "knitr",
-      "version": ">= 1.50",
+      "version": ">= 1.51",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -105,7 +131,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 3.3.0",
+      "version": ">= 3.3.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -126,7 +152,7 @@
       "@type": "SoftwareApplication",
       "identifier": "checkmate",
       "name": "checkmate",
-      "version": ">= 2.3.3",
+      "version": ">= 2.3.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -165,7 +191,7 @@
       "@type": "SoftwareApplication",
       "identifier": "dplyr",
       "name": "dplyr",
-      "version": ">= 1.1.4",
+      "version": ">= 1.2.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -191,7 +217,7 @@
       "@type": "SoftwareApplication",
       "identifier": "fpeek",
       "name": "fpeek",
-      "version": ">= 0.1.2",
+      "version": ">= 0.2.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -217,7 +243,7 @@
       "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
-      "version": ">= 1.0.4",
+      "version": ">= 1.0.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -241,15 +267,9 @@
     },
     "11": {
       "@type": "SoftwareApplication",
-      "identifier": "prettycheck",
-      "name": "prettycheck",
-      "sameAs": "https://github.com/danielvartan/prettycheck"
-    },
-    "12": {
-      "@type": "SoftwareApplication",
       "identifier": "purrr",
       "name": "purrr",
-      "version": ">= 1.2.0",
+      "version": ">= 1.2.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -258,11 +278,11 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=purrr"
     },
-    "13": {
+    "12": {
       "@type": "SoftwareApplication",
       "identifier": "readr",
       "name": "readr",
-      "version": ">= 2.1.6",
+      "version": ">= 2.2.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -271,7 +291,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=readr"
     },
-    "14": {
+    "13": {
       "@type": "SoftwareApplication",
       "identifier": "rvest",
       "name": "rvest",
@@ -284,11 +304,11 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=rvest"
     },
-    "15": {
+    "14": {
       "@type": "SoftwareApplication",
       "identifier": "stringdist",
       "name": "stringdist",
-      "version": ">= 0.9.15",
+      "version": ">= 0.9.17",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -297,7 +317,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringdist"
     },
-    "16": {
+    "15": {
       "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
@@ -310,7 +330,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     },
-    "17": {
+    "16": {
       "@type": "SoftwareApplication",
       "identifier": "zip",
       "name": "zip",
@@ -325,23 +345,22 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "283.368KB",
+  "fileSize": "285.646KB",
   "citation": [
     {
       "@type": "CreativeWork",
-      "datePublished": "2025",
+      "datePublished": "2026",
       "author": [
         {
           "@type": "Person",
           "givenName": "Daniel",
           "familyName": "Vartanian",
-          "email": "danvartan@gmail.com",
+          "email": "danielvartan@proton.me",
           "@id": "https://orcid.org/0000-0001-7782-759X"
         }
       ],
-      "name": "{groomr}: Tidy tools for R",
-      "url": "https://danielvartan.github.io/groomr",
-      "description": "R package"
+      "name": "groomr: Tidy tools for R",
+      "url": "https://danielvartan.github.io/groomr"
     }
   ],
   "releaseNotes": "https://github.com/danielvartan/groomr/blob/main/NEWS.md",

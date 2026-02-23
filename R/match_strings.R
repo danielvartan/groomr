@@ -40,7 +40,7 @@ match_strings <- function(raw, reference, one_by_one = FALSE, ...) {
   checkmate::assert_flag(one_by_one)
 
   if (isTRUE(one_by_one)) {
-    prettycheck::assert_identical(raw, reference, type = "length")
+    checkmate::assert_true(length(raw) == length(reference))
 
     match <-
       purrr::map2_chr(

@@ -1,5 +1,6 @@
-# groomr 0.1.0.9000 (Development Version)
+# groomr 0.1.0.9000 (development version)
 
+- Removed [`prettycheck`](https://github.com/danielvartan/prettycheck) as a dependency.
 - Added `get_file_sizes()` function to get the length files.
 - Added `replace_caps()` function to replace caps in an atomic vector.
 - Added `parse_html_table()` function to parse HTML tables from a `character` vector.

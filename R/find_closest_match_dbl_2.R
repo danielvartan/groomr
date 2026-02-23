@@ -38,25 +38,25 @@ find_closest_match_dbl_2 <- function(x, y, x_ref, y_ref, tol = 0.05) {
   purrr::map2_int(
     .x = x,
     .y = y,
-    .f = find_closest_match_dbl_2_scalar,
+    .f = find_closest_match_dbl_2.scalar,
     x_ref = x_ref,
     y_ref = y_ref,
     tol = tol
   )
 }
 
-find_closest_match_dbl_2_scalar <- function( #nolint
-    x, #nolint
-    y,
-    x_ref,
-    y_ref,
-    tol = 0.05
-  ) {
+find_closest_match_dbl_2.scalar <- function(
+  x,
+  y,
+  x_ref,
+  y_ref,
+  tol = 0.05
+) {
   checkmate::assert_number(x, na.ok = TRUE)
   checkmate::assert_number(y, na.ok = TRUE)
-  prettycheck::assert_numeric(x_ref, min_len = 2)
-  prettycheck::assert_numeric(y_ref, min_len = 2)
-  prettycheck::assert_identical(x_ref, y_ref, type = "length")
+  checkmate::assert_numeric(x_ref, min.len = 2)
+  checkmate::assert_numeric(y_ref, min.len = 2)
+  checkmate::assert_true(length(x_ref) == length(y_ref))
   checkmate::assert_number(tol, lower = 0)
 
   # R CMD Check variable bindings fix

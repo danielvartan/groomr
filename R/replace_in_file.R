@@ -38,15 +38,15 @@
 #' readLines(con)
 #' close(con)
 replace_in_file <- function(
-    file, #nolint
-    pattern,
-    replacement
-  ) {
+  file,
+  pattern,
+  replacement
+) {
   checkmate::assert_string(file)
   checkmate::assert_file_exists(file)
   checkmate::assert_string(pattern)
   checkmate::assert_string(replacement)
-  prettycheck::assert_identical(pattern, replacement, type = "length")
+  checkmate::assert_true(length(pattern) == length(replacement))
 
   cli::cli_progress_bar(
     "Replacing patterns",

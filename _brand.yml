@@ -1,7 +1,5 @@
 meta:
-  name:
-    short: "{groomr}"
-    long: "{groomr}: Tidy Tools"
+  name: "groomr: Tidy Tools"
   link:
     home: https://danielvartan.github.io/groomr
     github: https://github.com/danielvartan/groomr

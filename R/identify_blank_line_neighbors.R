@@ -35,18 +35,35 @@
 #' identify_blank_line_neighbors(x, pattern = "^line 2$")
 #' #> [1] 4 6 # Expected
 identify_blank_line_neighbors <- function(
-    x, #nolint
-    pattern = NULL,
-    index = NULL,
-    top = TRUE,
-    bottom = TRUE
-  ) {
+  x,
+  pattern = NULL,
+  index = NULL,
+  top = TRUE,
+  bottom = TRUE
+) {
   checkmate::assert_character(x)
   checkmate::assert_string(pattern, null.ok = TRUE)
   checkmate::assert_integerish(index, null.ok = TRUE)
   checkmate::assert_flag(top)
   checkmate::assert_flag(bottom)
-  prettycheck::assert_pick(pattern, index, pick = 1)
+
+  if (is.null(pattern) && is.null(index)) {
+    cli::cli_abort(
+      paste0(
+        "At least one of the parameters {.arg pattern} or ",
+        "{.arg index} must be provided."
+      )
+    )
+  }
+
+  if (!is.null(pattern) && !is.null(index)) {
+    cli::cli_abort(
+      paste0(
+        "Only one of the parameters {.arg pattern} or ",
+        "{.arg index} can be provided."
+      )
+    )
+  }
 
   if (is.null(index)) {
     line <- stringr::str_which(x, pattern)
