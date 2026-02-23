@@ -1,7 +1,9 @@
 # Changelog
 
-## groomr 0.1.0.9000 (Development Version)
+## groomr 0.1.0.9000 (development version)
 
+- Removed [`prettycheck`](https://github.com/danielvartan/prettycheck)
+  as a dependency.
 - Added `get_file_sizes()` function to get the length files.
 - Added
   [`replace_caps()`](https://danielvartan.github.io/groomr/reference/replace_caps.md)

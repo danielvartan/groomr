@@ -11,13 +11,12 @@
 Source:
 [`inst/CITATION`](https://github.com/danielvartan/groomr/blob/main/inst/CITATION)
 
-Vartanian, D.. (2025). {groomr}: Tidy tools for R. R package.
+Vartanian, D. (2026). groomr: Tidy tools for R \[Computer software\].
 https://danielvartan.github.io/groomr
 
     @Misc{,
-      title = {{groomr}: Tidy tools for R},
+      title = {groomr: Tidy tools for R},
       author = {Daniel Vartanian},
-      year = {2025},
+      year = {2026},
       url = {https://danielvartan.github.io/groomr},
-      note = {R package},
     }

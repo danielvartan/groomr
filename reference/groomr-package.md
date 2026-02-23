@@ -1,9 +1,8 @@
 # groomr: Tidy Tools
 
-A set of tools to help you tidy and organize R objects and files
-efficiently. It provides a set of functions for cleaning, renaming,
-splitting, and managing files and data, making your workflows more
-streamlined and reproducible.
+A set of tools for tidying and organizing R objects and files. It
+provides functions for cleaning, renaming, splitting, and managing files
+and data, making workflows more efficient and reproducible.
 
 ## See also
 

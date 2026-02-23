@@ -74,6 +74,6 @@ file.create(file) |> invisible()
 normalize_names(dir)
 
 list.files(dir)
-#> [1] "test-test-1ad55aa81cb0"
+#> [1] "test-test-1d945c2bb624"
 #> [1] "test-test-***" # Expected
 ```
